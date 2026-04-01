@@ -1,0 +1,15 @@
+The dataset details are as follows:
+
+Language(s): English and German.
+
+Source: Parliamentary debates corpora spanning approximately 160 years.
+
+Size: Not explicitly stated in the abstract; assumed to be large given the scope of the study and the use of multiple parsers.
+
+Modality: Textual (written parliamentary debates).
+
+Labels: Syntactic metrics (e.g., dependency distance, tree height, degree variance) and trends (upward/downward changes over time).
+
+Metadata: Time period (c. 160 years), sentence length distributions, and parser-specific outputs.
+
+Splits: Not explicitly mentioned; likely chronological splits for diachronic analysis.

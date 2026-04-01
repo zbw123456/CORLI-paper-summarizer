@@ -1,0 +1,15 @@
+The dataset details are not explicitly provided in the paper abstract or metadata. Assumptions must be made based on the task described.
+
+Language(s): Not specified. Assumed to be English due to the context of LLM usage and IR applications.
+
+Source: Not explicitly mentioned. Likely derived from public corpora used for training dense retrievers (e.g., MS MARCO, Wikipedia, or other standard IR datasets).
+
+Size: Not provided. Assumed to vary depending on the target corpus used for evaluation.
+
+Modality: Textual. Focuses on dense retrieval tasks involving query and document representations.
+
+Labels: Not applicable, as the approach is unsupervised.
+
+Metadata: Not detailed. May include query-document pairs, retriever identifiers, and performance metrics if derived from standard datasets.
+
+Splits: Not specified. Assumed to follow standard IR dataset splits (train, validation, test) if applicable.

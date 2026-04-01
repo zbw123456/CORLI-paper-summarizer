@@ -1,0 +1,7 @@
+This study explores how the structure of English and German has changed over the last 160 years, focusing on how words relate to each other in sentences. The researchers used parliamentary debate records from both languages to track these changes.
+
+The team measured 15 different aspects of sentence structure, including how far apart connected words are in a sentence and how balanced the sentence tree is. They used five different computer programs, called dependency parsers, to analyze the data. These parsers help identify which words depend on others in a sentence. The researchers found that while newer parsers handle old text with spelling mistakes or OCR errors well, the results can still vary depending on which parser is used. This means relying on just one parser might not give a complete picture of how language has changed.
+
+Overall, the study shows that English and German have followed similar paths in their structural changes over time. In only 4% of the cases they examined did the two languages show opposite trends. The biggest shifts in sentence structure seem to happen in very long or very short sentences rather than in average-length ones.
+
+This is one of the most thorough analyses of how English and German syntax has evolved in recent history, using modern technology to compare the two languages side by side.

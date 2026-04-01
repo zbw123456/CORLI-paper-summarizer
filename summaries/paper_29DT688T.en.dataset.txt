@@ -1,0 +1,13 @@
+Language(s): English
+
+Source: Large-scale English news data annotated with verified URLs, country tags, and continent tags
+
+Size: Not explicitly stated (models trained at 0.5B and 1B parameter scales)
+
+Modality: Text (news articles)
+
+Labels: Country tags, continent tags, and URL-level metadata
+
+Metadata: Verified URLs, country tags, continent tags
+
+Splits: Not explicitly stated (models pre-trained on data covering 4 continents and 17 countries)

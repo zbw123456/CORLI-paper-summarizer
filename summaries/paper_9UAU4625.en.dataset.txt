@@ -1,0 +1,13 @@
+Language(s): English
+
+Source: Not explicitly stated in the abstract; likely derived from L1 and L2 written and spoken texts used in the study.
+
+Size: Not explicitly stated in the abstract; assumed to be large-scale based on the description of a "large-scale accuracy analysis."
+
+Modality: Written and spoken text
+
+Labels: Not explicitly stated in the abstract; likely includes part-of-speech tags and syntactic parse structures.
+
+Metadata: Not explicitly stated in the abstract; may include text type (written/spoken), L1 vs. L2 distinction, and register information.
+
+Splits: Not explicitly stated in the abstract; assumed to include separate evaluations for written and spoken texts, as well as L1 and L2 samples.

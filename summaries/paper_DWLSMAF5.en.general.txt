@@ -1,0 +1,7 @@
+The study looks at how English grammar has changed over time, focusing on a specific structure called the "perfect." In modern English, the perfect tense is formed with "have" plus a past participle, like "I have eaten." But in earlier English, people also used "be" plus a past participle, like "I am gone." Over time, "have" became the dominant choice, except in a few cases.
+
+The researchers wanted to understand why this change happened. Was it because of natural selection—where one form proved more useful and spread—or was it just random chance, like a word becoming popular without a clear reason? To find out, they analyzed a huge amount of text from three sources: EEBO (Early English Books Online), COHA (Corpus of Historical American English), and Google Books. These sources cover English from the 1400s to the present day.
+
+They focused on intransitive verbs, which don’t take a direct object, like "go" or "arrive." Most of these verbs showed a clear shift from using "be" to using "have" over time. A computer model then classified these changes, and most were labeled as "selection," meaning the shift likely happened because the "have" form was more useful or efficient, not by accident.
+
+This suggests that the evolution of English grammar wasn’t random but driven by natural selection, similar to how biological traits evolve. The findings also offer a new way to study how grammar changes in human languages over long periods.

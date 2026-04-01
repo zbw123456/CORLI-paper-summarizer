@@ -1,0 +1,15 @@
+The dataset details are not explicitly provided in the abstract or metadata. Assumptions are made based on the paper's context.
+
+Language(s): English (corpora likely contain English text, inferred from the focus on mental health terms and computational social science applications).
+
+Source: Two historical corpora (specific corpora not named in the abstract; likely include diachronic English text sources such as COHA, COCA, or similar).
+
+Size: Not specified in the abstract or metadata.
+
+Modality: Textual (corpora consisting of written language).
+
+Labels: Not explicitly mentioned; however, the framework evaluates semantic dimensions (sentiment, breadth, intensity) and frequency shifts, suggesting potential derived labels or annotations for these dimensions.
+
+Metadata: Not detailed in the abstract; may include temporal information (dates of texts), corpus identifiers, and word frequency data.
+
+Splits: Not mentioned; the analysis focuses on comparative diachronic corpora rather than predefined splits.

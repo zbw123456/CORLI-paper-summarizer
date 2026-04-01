@@ -1,0 +1,15 @@
+The dataset is created for the purpose of demonstrating the negative semantic prosody of Chinese BEI passives in English-Chinese translation.
+
+Language(s): English and Chinese.
+
+Source: The dataset is constructed by the authors for this study, with sentence pairs sourced from existing corpora or generated for the task. The exact source corpora are not specified in the abstract.
+
+Size: The size of the dataset is not explicitly mentioned in the abstract.
+
+Modality: Textual data, consisting of English-Chinese sentence pairs.
+
+Labels: The dataset includes labels indicating the semantic prosody of the BEI passive structures, categorized as negative, neutral, or favourable. This is inferred from the context of the study.
+
+Metadata: The metadata likely includes information about the source sentences, the alignment of English-Chinese pairs, and the classification of semantic prosody for each pair. The exact details are not provided in the abstract.
+
+Splits: The abstract does not specify the splits for training, validation, or testing. Assumption: The dataset is likely divided into these splits for fine-tuning and evaluation purposes.

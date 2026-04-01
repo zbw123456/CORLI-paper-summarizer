@@ -1,0 +1,15 @@
+The dataset details are not explicitly provided in the abstract or metadata. Assumptions are made based on the paper's description.
+
+Language(s): Major Western languages (specific languages not listed).
+
+Source: Historical linguistic corpora rooted in capitalist contexts (exact sources not specified).
+
+Size: Not specified; described as long-term quantitative analysis over two centuries.
+
+Modality: Textual (word frequency time series data).
+
+Labels: Semantically coherent clusters of word usage (specific labels not provided).
+
+Metadata: Not explicitly mentioned; likely includes timestamps, word frequencies, and semantic categories.
+
+Splits: Not mentioned; no indication of predefined splits.

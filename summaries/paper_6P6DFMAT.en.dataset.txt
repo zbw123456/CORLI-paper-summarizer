@@ -1,0 +1,15 @@
+The dataset details extracted from the paper are as follows:
+
+Language(s): English and German (historical language stages)
+
+Source: Created by scholars with proficiency in the respective language stages; no explicit mention of a specific corpus or source for the dataset itself.
+
+Size: Not explicitly stated in the abstract; assumed to be a gold standard dataset of limited size given the manual annotation process.
+
+Modality: Textual (words with associated emotional connotations)
+
+Labels: Valence-Arousal-Dominance (VAD) scores for words
+
+Metadata: Not explicitly mentioned; assumed to include word forms, historical language stage, and VAD annotations.
+
+Splits: Not mentioned in the abstract; assumed to be a single annotated dataset without predefined splits.

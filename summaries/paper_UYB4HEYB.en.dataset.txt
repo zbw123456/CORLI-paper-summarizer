@@ -1,0 +1,13 @@
+Language(s): English
+
+Source: Survey paper focusing on English data; mentions past competitions and available datasets.
+
+Size: Not explicitly stated; survey covers multiple datasets without specific sizes.
+
+Modality: Text
+
+Labels: Complex word identification (binary or graded complexity labels)
+
+Metadata: Includes psycholinguistic features, word frequency, word length, and other features.
+
+Splits: Not explicitly mentioned; assumes standard train/test splits for datasets referenced in the survey.

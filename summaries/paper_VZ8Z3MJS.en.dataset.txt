@@ -1,0 +1,15 @@
+The dataset details are inferred from the paper title and author affiliations, as the abstract is missing.
+
+Language(s): English (primary), with potential inclusion of French or other languages based on author affiliations (e.g., Université catholique de Louvain, Université de Rennes).
+
+Source: Likely derived from educational or ESP (English for Specific Purposes) contexts, possibly sourced from textbooks, academic materials, or learner corpora. Authors include researchers from language education and computational linguistics, suggesting a focus on language learning applications.
+
+Size: Not specified in the provided metadata. Assumed to be moderate to large, given the involvement of multiple institutions and the complexity of generating contextual exercises.
+
+Modality: Textual (written language), as the task involves generating contexts for vocabulary exercises, which are typically text-based.
+
+Labels: Not explicitly mentioned. Assumed to include vocabulary items, contextual sentences, and possibly difficulty levels or domain-specific tags (e.g., medical, legal, or technical English).
+
+Metadata: Likely includes exercise type (e.g., fill-in-the-blank, matching), target vocabulary, source domain (ESP field), and contextual relevance. May also include metadata on learner proficiency or educational level.
+
+Splits: Not specified. Assumed to include training, validation, and test sets for model development and evaluation, though exact proportions are unknown.

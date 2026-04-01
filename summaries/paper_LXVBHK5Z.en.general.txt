@@ -1,0 +1,7 @@
+This paper explores how advanced AI systems can help analyze grammar in languages around the world. Traditionally, studying grammar patterns in large collections of text (corpora) requires a lot of manual work and technical skills. The researchers propose using "agentic" large language models (LLMs) – AI systems that can reason, plan, and take action – to automate parts of this process.
+
+The team built a framework where the AI interprets linguistic questions, writes code to analyze text data, and provides clear answers backed by evidence from the data. They tested this system on a well-known collection of annotated language data called Universal Dependencies (UD), which includes texts from over 170 languages. Their focus was on word-order patterns, such as whether a language typically places the subject before the verb or the object after the verb.
+
+The evaluation looked at three key aspects: whether the AI correctly identified the dominant word order in a language, how thoroughly it covered different word-order variations, and how accurately it reflected the actual distribution of these patterns in real language data. The results show that combining AI reasoning with structured linguistic data is not only possible but also effective, opening the door to faster and more scalable grammatical research.
+
+This work is a first step toward making complex grammatical analysis more accessible and automated, helping linguists and researchers study language patterns across many languages with less manual effort.

@@ -1,0 +1,13 @@
+Language(s): English
+
+Source: Five widely adopted NER datasets (not specified in the abstract; assumed to include common benchmarks like CoNLL-2003, ACE 2004/2005, Ontonotes 5.0, and Few-NERD)
+
+Size: Not explicitly stated in the abstract; assumed to vary by dataset (e.g., CoNLL-2003 contains ~20k training samples)
+
+Modality: Text (unimodal)
+
+Labels: Entity types (e.g., person, location, organization) specific to each dataset; special tokens @@ and ## mark entity spans
+
+Metadata: Not detailed in the abstract; assumed to include dataset names, entity types, and split ratios (train/validation/test)
+
+Splits: Not specified in the abstract; assumed to follow standard splits for each dataset (e.g., CoNLL-2003 uses 14,987 train, 3,466 validation, 3,684 test samples)

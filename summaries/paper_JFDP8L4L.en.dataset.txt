@@ -1,0 +1,15 @@
+The dataset details extracted from the paper are as follows:
+
+Language(s): 8 languages (specific languages not mentioned in the abstract).
+
+Source: 32 datasets spanning the 8 languages (exact sources not specified in the abstract).
+
+Size: Not explicitly stated in the abstract; assumed to vary across datasets.
+
+Modality: Text classification datasets (specific modalities not detailed in the abstract).
+
+Labels: Task-dependent (e.g., sentiment classification labels; exact label types not specified).
+
+Metadata: Not explicitly mentioned in the abstract.
+
+Splits: Not explicitly mentioned in the abstract; assumed to follow standard train/test splits for each dataset.

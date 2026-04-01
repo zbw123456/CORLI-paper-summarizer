@@ -1,0 +1,15 @@
+The dataset details extracted from the paper are as follows:
+
+Language(s): English (L2 learners), French (L1), Italian (L1), German (L1).
+
+Source: ANGLISH corpus (Tortel and Hirst, 2010), ISLE corpus (Menzel et al., 2000).
+
+Size: Not explicitly stated in the abstract; assumed to include read speech and graded data from the ANGLISH corpus and ISLE corpus.
+
+Modality: Speech (read speech).
+
+Labels: CEFR proficiency levels (for ANGLISH corpus), learner levels (for ISLE corpus), language detection probabilities, confidence scores for Whisper subtokens, alternative transcriptions.
+
+Metadata: Speaker L1 (French, Italian, German), proficiency levels (CEFR for ANGLISH; unspecified for ISLE), read speech context.
+
+Splits: Not explicitly mentioned; assumed to include separate sets for training and evaluation in classification tasks.

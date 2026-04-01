@@ -1,0 +1,1086 @@
+[
+  {
+    "id": "paper_VZ8Z3MJS",
+    "zoteroKey": "VZ8Z3MJS",
+    "libraryType": "group",
+    "itemType": "conferencePaper",
+    "correctedItemType": "conferencePaper",
+    "title": "Generating Contexts for ESP Vocabulary Exercises with LLMs",
+    "abstract": "",
+    "doi": "",
+    "tags": [],
+    "authors": [
+      "Iglika Nikolova-Stoupak",
+      "Serge Bibauw",
+      "Amandine Dumont",
+      "Françoise Stas",
+      "Patrick Watrin",
+      "Thomas François",
+      "Thomas Gaillat",
+      "Cyriel Mallart",
+      "Fabienne Moreau",
+      "Jen-Yu Li",
+      "Griselda Drouet",
+      "David Alfter",
+      "Elena Volodina",
+      "Arne Jönsson"
+    ],
+    "year": 2024,
+    "publication": "",
+    "url": "https://aclanthology.org/2024.nlp4call-1.12/"
+  },
+  {
+    "id": "paper_KDCMHJAD",
+    "zoteroKey": "KDCMHJAD",
+    "libraryType": "group",
+    "itemType": "book",
+    "correctedItemType": "book",
+    "title": "Understanding Participation in CALL Vocabulary Tasks through Complexity Theory",
+    "abstract": "This study explored participation by Japanese university English as a Foreign Language (EFL) learners in Computer Assisted Language Learning/Mobile Assisted Language Learning (CALL/MALL) vocabulary tasks through the lens of Complexity Theory (CT). CT, which studies how complex systems are influenced by changes in interconnected variables (Larsen-Freeman & Cameron, 2008), has been advocated as an approach that aligns well with Second Language Acquisition (SLA) and CALL research (Godwin-Jones, 2019). In this study, CT was applied to action research involving learners using smartphones to create game-based vocabulary quizzes. It aimed to understand how the context, personal attributes, and in-class interactions affected participation and learning outcomes. The results show the variability and nonlinearity of learners' language development, the importance of initial conditions, and the vital role of teacher input. It also demonstrated that there are various ways to successfully complete a task, so viewing tasks as dynamic systems may be a fruitful approach. [For the complete volume, \"CALL for Widening Participation: Short Papers from EUROCALL 2020 (28th, Online, August 20-21, 2020),\" see ED610330.]",
+    "doi": "",
+    "tags": [
+      "College Freshmen",
+      "Computer Assisted Instruction",
+      "Cooperative Learning",
+      "English (Second Language)",
+      "Foreign Countries",
+      "Game Based Learning",
+      "Handheld Devices",
+      "Late Adolescents",
+      "Second Language Instruction",
+      "Second Language Learning",
+      "Student Participation",
+      "Telecommunications",
+      "Tests",
+      "Vocabulary Development"
+    ],
+    "authors": [
+      "Paul Dickinson"
+    ],
+    "year": 2020,
+    "publication": "",
+    "url": "https://eric.ed.gov/?id=ED611099"
+  },
+  {
+    "id": "paper_5KRAT9C2",
+    "zoteroKey": "5KRAT9C2",
+    "libraryType": "group",
+    "itemType": "preprint",
+    "correctedItemType": "preprint",
+    "title": "Sources of Hallucination by Large Language Models on Inference Tasks",
+    "abstract": "Large Language Models (LLMs) are claimed to be capable of Natural Language Inference (NLI), necessary for applied tasks like question answering and summarization. We present a series of behavioral studies on several LLM families (LLaMA, GPT-3.5, and PaLM) which probe their behavior using controlled experiments. We establish two biases originating from pretraining which predict much of their behavior, and show that these are major sources of hallucination in generative LLMs. First, memorization at the level of sentences: we show that, regardless of the premise, models falsely label NLI test samples as entailing when the hypothesis is attested in training data, and that entities are used as ``indices'' to access the memorized data. Second, statistical patterns of usage learned at the level of corpora: we further show a similar effect when the premise predicate is less frequent than that of the hypothesis in the training data, a bias following from previous studies. We demonstrate that LLMs perform significantly worse on NLI test samples which do not conform to these biases than those which do, and we offer these as valuable controls for future LLM evaluation.",
+    "doi": "10.48550/arXiv.2305.14552",
+    "tags": [
+      "Computer Science - Artificial Intelligence",
+      "Computer Science - Computation and Language"
+    ],
+    "authors": [
+      "Nick McKenna",
+      "Tianyi Li",
+      "Liang Cheng",
+      "Mohammad Javad Hosseini",
+      "Mark Johnson",
+      "Mark Steedman"
+    ],
+    "year": 2023,
+    "publication": "",
+    "url": "http://arxiv.org/abs/2305.14552"
+  },
+  {
+    "id": "paper_722MU5FC",
+    "zoteroKey": "722MU5FC",
+    "libraryType": "group",
+    "itemType": "conferencePaper",
+    "correctedItemType": "conferencePaper",
+    "title": "Leveraging LLMs for Unsupervised Dense Retriever Ranking",
+    "abstract": "In this paper we present Large Language Model Assisted Retrieval Model Ranking (LARMOR), an effective unsupervised approach that leverages LLMs for selecting which dense retriever to use on a test corpus (target). Dense retriever selection is crucial for many IR applications that rely on using dense retrievers trained on public corpora to encode or search a new, private target corpus. This is because when confronted with domain shift, where the downstream corpora, domains, or tasks of the target corpus differ from the domain/task the dense retriever was trained on, its performance often drops. Furthermore, when the target corpus is unlabeled, e.g., in a zero-shot scenario, the direct evaluation of the model on the target corpus becomes unfeasible. Unsupervised selection of the most effective pre-trained dense retriever becomes then a crucial challenge. Current methods for dense retriever selection are insufficient in handling scenarios with domain shift.",
+    "doi": "10.1145/3626772.3657798",
+    "tags": [],
+    "authors": [
+      "Ekaterina Khramtsova",
+      "Shengyao Zhuang",
+      "Mahsa Baktashmotlagh",
+      "Guido Zuccon"
+    ],
+    "year": 2024,
+    "publication": "",
+    "url": "https://dl.acm.org/doi/10.1145/3626772.3657798"
+  },
+  {
+    "id": "paper_WCM694B5",
+    "zoteroKey": "WCM694B5",
+    "libraryType": "group",
+    "itemType": "journalArticle",
+    "correctedItemType": "journalArticle",
+    "title": "Keyword Extraction: A Modern Perspective",
+    "abstract": "The goal of keyword extraction is to extract from a text, words, or phrases indicative of what it is talking about. In this work, we look at keyword extraction from a number of different perspectives: Statistics, Automatic Term Indexing, Information Retrieval (IR), Natural Language Processing (NLP), and the emerging Neural paradigm. The 1990s have seen some early attempts to tackle the issue primarily based on text statistics [13, 17]. Meanwhile, in IR, efforts were largely led by DARPA’s Topic Detection and Tracking (TDT) project [2]. In this contribution, we discuss how past innovations paved a way for more recent developments, such as LDA, PageRank, and Neural Networks. We walk through the history of keyword extraction over the last 50 years, noting differences and similarities among methods that emerged during the time. We conduct a large meta-analysis of the past literature using datasets from news media, science, and medicine to business and bureaucracy, to draw a general picture of what a successful approach would look like.",
+    "doi": "10.1007/s42979-022-01481-7",
+    "tags": [
+      "Computational Linguistics",
+      "Literature mining",
+      "Natural language processing (NLP)",
+      "Reverse engineering"
+    ],
+    "authors": [
+      "Tadashi Nomoto"
+    ],
+    "year": 2022,
+    "publication": "SN Computer Science",
+    "url": "https://link.springer.com/article/10.1007/s42979-022-01481-7"
+  },
+  {
+    "id": "paper_SEQ7EXND",
+    "zoteroKey": "SEQ7EXND",
+    "libraryType": "group",
+    "itemType": "webpage",
+    "correctedItemType": "journalArticle",
+    "title": "Building custom NLP tools to annotate discourse-functional features for second language writing research: A tutorial - ScienceDirect",
+    "abstract": "",
+    "doi": "10.1016/j.rmal.2024.100153",
+    "tags": [
+      "Appraisal analysis",
+      "Corpus annotation",
+      "Epistemic stance",
+      "Natural language processing"
+    ],
+    "authors": [
+      "Masaki Eguchi"
+    ],
+    "year": 2024,
+    "publication": "",
+    "url": "https://www.sciencedirect.com/science/article/pii/S2772766124000594?via%3Dihub"
+  },
+  {
+    "id": "paper_FNE7P2W5",
+    "zoteroKey": "FNE7P2W5",
+    "libraryType": "group",
+    "itemType": "webpage",
+    "correctedItemType": "webpage",
+    "title": "Design Opportunities for Explainable AI Paraphrasing Tools: A User Study with Non-native English Speakers",
+    "abstract": "We investigate how non-native English speakers (NNESs) interact with diverse information aids to assess and select AI-generated paraphrases. We develop ParaScope, an AI paraphrasing assistant that integrates diverse information aids, such as back-translation, explanations, and usage examples, and logs user interaction data. Our in-lab study with 22 NNESs reveals that user preferences for information aids vary by language proficiency, with workflows progressing from global to more detailed information. While back-translation was the most frequently used aid, it was not a decisive factor in suggestion acceptance; users combined multiple information aids to make informed decisions. Our findings demonstrate the potential of explainable AI paraphrasing tools to enhance NNESs' confidence, autonomy, and writing efficiency, while also emphasizing the importance of thoughtful design to prevent information overload. Based on these findings, we offer design implications for explainable AI paraphrasing tools that support NNESs in making informed decisions when using AI writing systems.",
+    "doi": "10.48550/arXiv.2405.07475",
+    "tags": [
+      "AI Writing Assistants",
+      "Back-Translation",
+      "Explainable AI (XAI)",
+      "Generative AI",
+      "Human-AI Collaboration",
+      "Human-Computer Interaction",
+      "Information Overload",
+      "Language Proficiency",
+      "Non-Native English Speakers (NNES)",
+      "User Interface Design",
+      "User Study"
+    ],
+    "authors": [
+      "Yewon Kim",
+      "Thanh-Long V. Le",
+      "Donghwi Kim",
+      "Mina Lee",
+      "Sung-Ju Lee"
+    ],
+    "year": 2024,
+    "publication": "",
+    "url": "https://arxiv.org/abs/2405.07475v2"
+  },
+  {
+    "id": "paper_PFW2ATQA",
+    "zoteroKey": "PFW2ATQA",
+    "libraryType": "group",
+    "itemType": "webpage",
+    "correctedItemType": "webpage",
+    "title": "Creativity in the Age of AI: Rethinking the Role of Intentional Agency",
+    "abstract": "Many theorists of creativity maintain that intentional agency is a necessary condition of creativity. We argue that this requirement, which we call the Intentional Agency Condition (IAC), should be rejected as a general condition of creativity, while retaining its relevance in specific contexts. We show that recent advances in generative AI have rendered the IAC increasingly problematic, both descriptively and functionally. We offer two reasons for abandoning it at the general level. First, we present corpus evidence indicating that authors and journalists are increasingly comfortable ascribing creativity to generative AI, despite its lack of intentional agency. This development places pressure on the linguistic intuitions that have traditionally been taken to support the IAC. Second, drawing on the method of conceptual engineering, we argue that the IAC no longer fulfils its core social function. Rather than facilitating the identification and encouragement of reliable sources of novel and valuable products, it now feeds into biases that distort our assessments of AI-generated outputs. We therefore propose replacing the IAC with a consistency requirement, according to which creativity tracks the reliable generation of novel and valuable products. Nonetheless, we explain why the IAC should be retained in specific local domains.",
+    "doi": "10.48550/arXiv.2601.15797",
+    "tags": [
+      "Intentional Agency Condition",
+      "artificial intelligence"
+    ],
+    "authors": [
+      "James S. Pearson",
+      "Matthew J. Dennis",
+      "Marc Cheong"
+    ],
+    "year": 2026,
+    "publication": "",
+    "url": "https://arxiv.org/abs/2601.15797v1"
+  },
+  {
+    "id": "paper_E34JXEEN",
+    "zoteroKey": "E34JXEEN",
+    "libraryType": "group",
+    "itemType": "webpage",
+    "correctedItemType": "webpage",
+    "title": "Controlled Language Generation for Language Learning Items",
+    "abstract": "This work aims to employ natural language generation (NLG) to rapidly generate items for English language learning applications: this requires both language models capable of generating fluent, high-quality English, and to control the output of the generation to match the requirements of the relevant items. We experiment with deep pretrained models for this task, developing novel methods for controlling items for factors relevant in language learning: diverse sentences for different proficiency levels and argument structure to test grammar. Human evaluation demonstrates high grammatically scores for all models (3.4 and above out of 4), and higher length (24%) and complexity (9%) over the baseline for the advanced proficiency model. Our results show that we can achieve strong performance while adding additional control to ensure diverse, tailored content for individual users.",
+    "doi": "10.48550/arXiv.2211.15731",
+    "tags": [
+      "Computer-Assisted Language Learning (CALL)",
+      "Controllable Text Generation",
+      "Educational Technology",
+      "English Language Teaching (ELT)",
+      "Human Evaluation",
+      "Language Learning Applications",
+      "Natural Language Generation (NLG)",
+      "Pre-trained Language Models",
+      "Sentence Generation"
+    ],
+    "authors": [
+      "Kevin Stowe",
+      "Debanjan Ghosh",
+      "Mengxuan Zhao"
+    ],
+    "year": 2022,
+    "publication": "",
+    "url": "https://arxiv.org/abs/2211.15731v1"
+  },
+  {
+    "id": "paper_NUJ2QIPU",
+    "zoteroKey": "NUJ2QIPU",
+    "libraryType": "group",
+    "itemType": "webpage",
+    "correctedItemType": "webpage",
+    "title": "ColorConceptBench: A Benchmark for Probabilistic Color-Concept Understanding in Text-to-Image Models",
+    "abstract": "While text-to-image (T2I) models have advanced considerably, their capability to associate colors with implicit concepts remains underexplored. To address the gap, we introduce ColorConceptBench, a new human-annotated benchmark to systematically evaluate color-concept associations through the lens of probabilistic color distributions. ColorConceptBench moves beyond explicit color names or codes by probing how models translate 1,281 implicit color concepts using a foundation of 6,369 human annotations. Our evaluation of seven leading T2I models reveals that current models lack sensitivity to abstract semantics, and crucially, this limitation appears resistant to standard interventions (e.g., scaling and guidance). This demonstrates that achieving human-like color semantics requires more than larger models, but demands a fundamental shift in how models learn and represent implicit meaning.",
+    "doi": "10.48550/arXiv.2601.16836",
+    "tags": [
+      "Computation and Language",
+      "Computer Science - Computation and Language",
+      "Computer Vision and Pattern Recognition",
+      "annotation"
+    ],
+    "authors": [
+      "Chenxi Ruan",
+      "Yu Xiao",
+      "Yihan Hou",
+      "Guosheng Hu",
+      "Wei Zeng"
+    ],
+    "year": 2026,
+    "publication": "",
+    "url": "https://arxiv.org/abs/2601.16836v2"
+  },
+  {
+    "id": "paper_822I3M8I",
+    "zoteroKey": "822I3M8I",
+    "libraryType": "group",
+    "itemType": "webpage",
+    "correctedItemType": "webpage",
+    "title": "A Multidimensional Framework for Evaluating Lexical Semantic Change with Social Science Applications",
+    "abstract": "Historical linguists have identified multiple forms of lexical semantic change. We present a three-dimensional framework for integrating these forms and a unified computational methodology for evaluating them concurrently. The dimensions represent increases or decreases in semantic 1) sentiment, 2) breadth, and 3) intensity. These dimensions can be complemented by the evaluation of shifts in the frequency of the target words and the thematic content of its collocates. This framework enables lexical semantic change to be mapped economically and systematically and has applications in computational social science. We present an illustrative analysis of semantic shifts in mental health and mental illness in two corpora, demonstrating patterns of semantic change that illuminate contemporary concerns about pathologization, stigma, and concept creep.",
+    "doi": "10.48550/arXiv.2406.06052",
+    "tags": [
+      "Computational Social Science",
+      "Corpus Linguistics",
+      "Historical Corpus",
+      "Lexical Semantic Change",
+      "Mental Health",
+      "Quantitative Methodology",
+      "Stigma",
+      "Word Embeddings"
+    ],
+    "authors": [
+      "Naomi Baes",
+      "Nick Haslam",
+      "Ekaterina Vylomova"
+    ],
+    "year": 2024,
+    "publication": "",
+    "url": "https://arxiv.org/abs/2406.06052v1"
+  },
+  {
+    "id": "paper_ABAGDTCA",
+    "zoteroKey": "ABAGDTCA",
+    "libraryType": "group",
+    "itemType": "webpage",
+    "correctedItemType": "webpage",
+    "title": "Translationese-index: Using Likelihood Ratios for Graded and Generalizable Measurement of Translationese",
+    "abstract": "Translationese refers to linguistic properties that usually occur in translated texts. Previous works study translationese by framing it as a binary classification between original texts and translated texts. In this paper, we argue that translationese should be graded instead of binary and propose the first measure for translationese -- the translationese-index (T-index), computed from the likelihood ratios of two contrastively fine-tuned language models (LMs). We use synthesized translations and translations in the wild to evaluate T-index's generalizability in cross-domain settings and its validity against human judgments. Our results show that T-index can generalize to unseen genres, authors, and language pairs. Moreover, T-index computed using two 0.5B LMs fine-tuned on only 1-5k pairs of synthetic data can effectively capture translationese, as demonstrated by alignment with human pointwise ratings and pairwise judgments. Additionally, the correlation between T-index and existing machine translation (MT) quality estimation (QE) metrics such as BLEU and COMET is low, suggesting that T-index is not covered by these metrics and can serve as a complementary metric in MT QE.",
+    "doi": "10.48550/arXiv.2507.12260",
+    "tags": [
+      "Binary Classification",
+      "Computational Linguistics",
+      "Corpus Linguistics",
+      "Language Models (LMs)",
+      "Likelihood Ratios",
+      "Machine Translation",
+      "Natural Language Processing (NLP)",
+      "Translationese Index (T-index)"
+    ],
+    "authors": [
+      "Yikang Liu",
+      "Wanyang Zhang",
+      "Yiming Wang",
+      "Jialong Tang",
+      "Pei Zhang",
+      "Baosong Yang",
+      "Fei Huang",
+      "Rui Wang",
+      "Hai Hu"
+    ],
+    "year": 2025,
+    "publication": "",
+    "url": "https://arxiv.org/abs/2507.12260v2"
+  },
+  {
+    "id": "paper_2XP7P9WI",
+    "zoteroKey": "2XP7P9WI",
+    "libraryType": "group",
+    "itemType": "webpage",
+    "correctedItemType": "webpage",
+    "title": "Syntactic Language Change in English and German: Metrics, Parsers, and Convergences",
+    "abstract": "Many studies have shown that human languages tend to optimize for lower complexity and increased communication efficiency. Syntactic dependency distance, which measures the linear distance between dependent words, is often considered a key indicator of language processing difficulty and working memory load. The current paper looks at diachronic trends in syntactic language change in both English and German, using corpora of parliamentary debates from the last c. 160 years. We base our observations on five dependency parsers, including the widely used Stanford CoreNLP as well as 4 newer alternatives. Our analysis of syntactic language change goes beyond linear dependency distance and explores 15 metrics relevant to dependency distance minimization (DDM) and/or based on tree graph properties, such as the tree height and degree variance. Even though we have evidence that recent parsers trained on modern treebanks are not heavily affected by data 'noise' such as spelling changes and OCR errors in our historic data, we find that results of syntactic language change are sensitive to the parsers involved, which is a caution against using a single parser for evaluating syntactic language change as done in previous work. We also show that syntactic language change over the time period investigated is largely similar between English and German for the different metrics explored: only 4% of cases we examine yield opposite conclusions regarding upwards and downtrends of syntactic metrics across German and English. We also show that changes in syntactic measures seem to be more frequent at the tails of sentence length distributions. To our best knowledge, ours is the most comprehensive analysis of syntactic language change using modern NLP technology in recent corpora of English and German.",
+    "doi": "10.48550/arXiv.2402.11549",
+    "tags": [
+      "Corpus Linguistics",
+      "Cross-Linguistic Comparison",
+      "Dependency Distance Minimization (DDM)",
+      "Diachronic Syntax",
+      "Language Complexity",
+      "Robustness Analysis",
+      "Sentence Length"
+    ],
+    "authors": [
+      "Yanran Chen",
+      "Wei Zhao",
+      "Anne Breitbarth",
+      "Manuel Stoeckel",
+      "Alexander Mehler",
+      "Steffen Eger"
+    ],
+    "year": 2024,
+    "publication": "",
+    "url": "https://arxiv.org/abs/2402.11549v2"
+  },
+  {
+    "id": "paper_DTQF3EN6",
+    "zoteroKey": "DTQF3EN6",
+    "libraryType": "group",
+    "itemType": "webpage",
+    "correctedItemType": "webpage",
+    "title": "Subtle Misogyny Detection and Mitigation: An Expert-Annotated Dataset",
+    "abstract": "Using novel approaches to dataset development, the Biasly dataset captures the nuance and subtlety of misogyny in ways that are unique within the literature. Built in collaboration with multi-disciplinary experts and annotators themselves, the dataset contains annotations of movie subtitles, capturing colloquial expressions of misogyny in North American film. The dataset can be used for a range of NLP tasks, including classification, severity score regression, and text generation for rewrites. In this paper, we discuss the methodology used, analyze the annotations obtained, and provide baselines using common NLP algorithms in the context of misogyny detection and mitigation. We hope this work will promote AI for social good in NLP for bias detection, explanation, and removal.",
+    "doi": "10.48550/arXiv.2311.09443",
+    "tags": [
+      "AI for Social Good",
+      "Benchmark Baselines",
+      "Bias Mitigation",
+      "Computational Social Science",
+      "Dataset Development",
+      "Ethical AI",
+      "Misogyny Detection",
+      "Multi-Disciplinary Collaboration",
+      "Natural Language Processing (NLP)",
+      "Rewriting / Text Revision",
+      "Text Generation"
+    ],
+    "authors": [
+      "Brooklyn Sheppard",
+      "Anna Richter",
+      "Allison Cohen",
+      "Elizabeth Allyn Smith",
+      "Tamara Kneese",
+      "Carolyne Pelletier",
+      "Ioana Baldini",
+      "Yue Dong"
+    ],
+    "year": 2023,
+    "publication": "",
+    "url": "https://arxiv.org/abs/2311.09443v1"
+  },
+  {
+    "id": "paper_P995IDHH",
+    "zoteroKey": "P995IDHH",
+    "libraryType": "group",
+    "itemType": "webpage",
+    "correctedItemType": "journalArticle",
+    "title": "Snooker Statistics and Zipf's Law",
+    "abstract": "Zipf's law is well known in linguistics: the frequency of a word is inversely proportional to its rank. This is a special case of a more general power law, a common phenomenon in many kinds of real-world statistical data. Here, it is shown that snooker statistics also follow such a mathematical pattern, but with varying (estimated) parameter values. Two types of rankings (prize money earned and centuries scored), and three time-frames (all-time, decade, and year) are considered. The results indicate that the power law parameter values depend on the type of ranking used as well as the time-frame considered. Furthermore, in some cases the resulting parameter values vary significantly over time, for which a plausible explanation is provided.",
+    "doi": "10.3390/stats5040058",
+    "tags": [
+      "Frequency-Rank Relationship",
+      "Sports Analytics",
+      "Statistical Linguistics",
+      "Statistical Regularities",
+      "Time-Frame Analysis"
+    ],
+    "authors": [
+      "Wim Hordijk"
+    ],
+    "year": 2022,
+    "publication": "",
+    "url": "https://arxiv.org/abs/2201.06818v2"
+  },
+  {
+    "id": "paper_YRWSD54H",
+    "zoteroKey": "YRWSD54H",
+    "libraryType": "group",
+    "itemType": "webpage",
+    "correctedItemType": "webpage",
+    "title": "SiDiaC: Sinhala Diachronic Corpus",
+    "abstract": "SiDiaC, the first comprehensive Sinhala Diachronic Corpus, covers a historical span from the 5th to the 20th century CE. SiDiaC comprises 58k words across 46 literary works, annotated carefully based on the written date, after filtering based on availability, authorship, copyright compliance, and data attribution. Texts from the National Library of Sri Lanka were digitised using Google Document AI OCR, followed by post-processing to correct formatting and modernise the orthography. The construction of SiDiaC was informed by practices from other corpora, such as FarPaHC, particularly in syntactic annotation and text normalisation strategies, due to the shared characteristics of low-resourced language status. This corpus is categorised based on genres into two layers: primary and secondary. Primary categorisation is binary, classifying each book into Non-Fiction or Fiction, while the secondary categorisation is more specific, grouping texts under Religious, History, Poetry, Language, and Medical genres. Despite challenges including limited access to rare texts and reliance on secondary date sources, SiDiaC serves as a foundational resource for Sinhala NLP, significantly extending the resources available for Sinhala, enabling diachronic studies in lexical change, neologism tracking, historical syntax, and corpus-based lexicography.",
+    "doi": "10.48550/arXiv.2509.17912",
+    "tags": [
+      "Language Texts",
+      "Natural language processing (NLP)",
+      "Optical Character Recognition (OCR)",
+      "SiDiaC (Sinhala Diachronic Corpus)",
+      "Syntactic Annotation"
+    ],
+    "authors": [
+      "Nevidu Jayatilleke",
+      "Nisansa de Silva"
+    ],
+    "year": 2025,
+    "publication": "",
+    "url": "https://arxiv.org/abs/2509.17912v2"
+  },
+  {
+    "id": "paper_EHUJF25P",
+    "zoteroKey": "EHUJF25P",
+    "libraryType": "group",
+    "itemType": "journalArticle",
+    "correctedItemType": "journalArticle",
+    "title": "Semantic Prosody in Machine Translation: the English-Chinese Case of Passive Structures",
+    "abstract": "Semantic prosody is a collocational meaning formed through the co-occurrence of a linguistic unit and a consistent series of collocates, which should be treated separately from semantic meaning. Since words that are literal translations of each other may have different semantic prosody, more attention should be paid to this linguistic property to generate accurate translations. However, current machine translation models cannot handle this problem. To bridge the gap, we propose an approach to teach machine translation models about semantic prosody of a specific structure. We focus on Chinese BEI passives and create a dataset of English-Chinese sentence pairs with the purpose of demonstrating the negative semantic prosody of BEI passives. Then we fine-tune OPUS-MT, NLLB-600M and mBART50 models with our dataset for the English-Chinese translation task. Our results show that finetuned MT models perform better on using BEI passives for translating unfavourable content and avoid using it for neutral and favourable content. Also, in NLLB-600M, which is a multilingual model, this knowledge of semantic prosody can be transferred from EnglishChinese translation to other language pairs, such as Spanish-Chinese.",
+    "doi": "10.48550/arXiv.2510.14662",
+    "tags": [
+      "Fine-tuning",
+      "Machine Translation",
+      "Multilingual NLP",
+      "Negative Semantic Prosody"
+    ],
+    "authors": [
+      "Xinyue Ma",
+      "Pol Pastells",
+      "Mireia Farrús",
+      "Mariona Taulé"
+    ],
+    "year": 2025,
+    "publication": "",
+    "url": ""
+  },
+  {
+    "id": "paper_NTRNVIAD",
+    "zoteroKey": "NTRNVIAD",
+    "libraryType": "group",
+    "itemType": "webpage",
+    "correctedItemType": "webpage",
+    "title": "Oscillatory dynamics between language usage and economic activity",
+    "abstract": "Over the past two centuries, the frequency of word usage in major Western languages has exhibited small amplitude regular cycles, superimposed on larger background trends. We show that these cycles of word usage organize into semantically coherent clusters that track, interact with, or precede macroeconomic rhythms. To explore the nature of this interaction, we build on a minimal mathematical model that captures usage dynamics through parameters linked to real world processes. Parameter fitting reveals that word usage operates near a Hopf bifurcation, a critical regime associated with heightened sensitivity, uncovering a robust and specific coupling between language usage and economic activity. In linguistic datasets that allow long term quantitative analysis, rooted in capitalist contexts, this coupling appears as an oscillatory dynamic, reflecting a feedback process in which language both shapes material reality and manages the changes it produces.",
+    "doi": "",
+    "tags": [
+      "Collective Attention",
+      "Corpus Linguistics",
+      "Historical Linguistics",
+      "Language Usage",
+      "Long-Term Trends",
+      "Macroeconomic Rhythms",
+      "Mathematical Modeling",
+      "Quantitative Linguistics",
+      "Semantic Clustering",
+      "Time Series Analysis",
+      "Word Frequency Dynamics"
+    ],
+    "authors": [
+      "Alejandro Pardo Pintos",
+      "Diego E. Shalom",
+      "Guillermo Cecchi",
+      "Gabriel Mindlin",
+      "Marcos A. Trevisan"
+    ],
+    "year": 2025,
+    "publication": "",
+    "url": "https://arxiv.org/abs/2507.08957v1"
+  },
+  {
+    "id": "paper_ZP4QVHJ5",
+    "zoteroKey": "ZP4QVHJ5",
+    "libraryType": "group",
+    "itemType": "webpage",
+    "correctedItemType": "webpage",
+    "title": "On the Distinctive Co-occurrence Characteristics of Antonymy",
+    "abstract": "Antonymy has long received particular attention in lexical semantics. Previous studies have shown that antonym pairs frequently co-occur in text, across genres and parts of speech, more often than would be expected by chance. However, whether this co-occurrence pattern is distinctive of antonymy remains unclear, due to a lack of comparison with other semantic relations. This work fills the gap by comparing antonymy with three other relations across parts of speech using robust co-occurrence metrics. We find that antonymy is distinctive in three respects: antonym pairs co-occur with high strength, in a preferred linear order, and within short spans. All results are available online.",
+    "doi": "",
+    "tags": [
+      "Antonymy",
+      "Co-occurrence Analysis",
+      "Contrastive Analysis",
+      "Corpus Linguistics",
+      "Distributional Semantics",
+      "Lexical Patterns",
+      "Lexical Semantics",
+      "Parts of Speech (POS)",
+      "Quantitative Linguistics",
+      "Semantic Distinctiveness",
+      "Semantic Relations",
+      "Text Co-occurrence"
+    ],
+    "authors": [
+      "Zhihan Cao",
+      "Hiroaki Yamada",
+      "Takenobu Tokunaga"
+    ],
+    "year": 2025,
+    "publication": "",
+    "url": "https://arxiv.org/abs/2509.11534v1"
+  },
+  {
+    "id": "paper_6P6DFMAT",
+    "zoteroKey": "6P6DFMAT",
+    "libraryType": "group",
+    "itemType": "webpage",
+    "correctedItemType": "webpage",
+    "title": "Modeling Word Emotion in Historical Language: Quantity Beats Supposed Stability in Seed Word Selection",
+    "abstract": "To understand historical texts, we must be aware that language -- including the emotional connotation attached to words -- changes over time. In this paper, we aim at estimating the emotion which is associated with a given word in former language stages of English and German. Emotion is represented following the popular Valence-Arousal-Dominance (VAD) annotation scheme. While being more expressive than polarity alone, existing word emotion induction methods are typically not suited for addressing it. To overcome this limitation, we present adaptations of two popular algorithms to VAD. To measure their effectiveness in diachronic settings, we present the first gold standard for historical word emotions, which was created by scholars with proficiency in the respective language stages and covers both English and German. In contrast to claims in previous work, our findings indicate that hand-selecting small sets of seed words with supposedly stable emotional meaning is actually harmful rather than helpful.",
+    "doi": "",
+    "tags": [
+      "Computational Linguistics",
+      "Cross-Linguistic Analysis",
+      "Emotional Stability",
+      "Historical Corpora",
+      "Historical Linguistics",
+      "Psycholinguistics",
+      "Seed Words",
+      "Sentiment Analysis",
+      "Valence-Arousal-Dominance (VAD)",
+      "annotation"
+    ],
+    "authors": [
+      "Johannes Hellrich",
+      "Sven Buechel",
+      "Udo Hahn"
+    ],
+    "year": 2018,
+    "publication": "",
+    "url": "https://arxiv.org/abs/1806.08115v2"
+  },
+  {
+    "id": "paper_UYB4HEYB",
+    "zoteroKey": "UYB4HEYB",
+    "libraryType": "group",
+    "itemType": "webpage",
+    "correctedItemType": "webpage",
+    "title": "Lexical Complexity Prediction: An Overview",
+    "abstract": "The occurrence of unknown words in texts significantly hinders reading comprehension. To improve accessibility for specific target populations, computational modelling has been applied to identify complex words in texts and substitute them for simpler alternatives. In this paper, we present an overview of computational approaches to lexical complexity prediction focusing on the work carried out on English data. We survey relevant approaches to this problem which include traditional machine learning classifiers (e.g. SVMs, logistic regression) and deep neural networks as well as a variety of features, such as those inspired by literature in psycholinguistics as well as word frequency, word length, and many others. Furthermore, we introduce readers to past competitions and available datasets created on this topic. Finally, we include brief sections on applications of lexical complexity prediction, such as readability and text simplification, together with related studies on languages other than English.",
+    "doi": "",
+    "tags": [
+      "Assistive Technologies",
+      "Benchmark Datasets",
+      "Complex Word Identification (CWI)",
+      "Computational Linguistics",
+      "Lexical Complexity Prediction",
+      "Lexical Resources",
+      "Lexical Simplification",
+      "Logistic Regression",
+      "Machine Learning",
+      "Multilingual NLP",
+      "Natural language processing (NLP)",
+      "Psycholinguistic Features",
+      "Readability Assessment",
+      "Reading Comprehension",
+      "Support Vector Machines (SVM)",
+      "Text Simplification",
+      "Word Frequency"
+    ],
+    "authors": [
+      "Kai North",
+      "Marcos Zampieri",
+      "Matthew Shardlow"
+    ],
+    "year": 2023,
+    "publication": "",
+    "url": "https://arxiv.org/abs/2303.04851v1"
+  },
+  {
+    "id": "paper_AJXBQ4C2",
+    "zoteroKey": "AJXBQ4C2",
+    "libraryType": "group",
+    "itemType": "webpage",
+    "correctedItemType": "webpage",
+    "title": "Laugh at Your Own Pace: Basic Performance Evaluation of Language Learning Assistance by Adjustment of Video Playback Speeds Based on Laughter Detection",
+    "abstract": "Among various methods to learn a second language (L2), such as listening and shadowing, Extensive Viewing involves learning L2 by watching many videos. However, it is difficult for many L2 learners to smoothly and effortlessly comprehend video contents made for native speakers at the original speed. Therefore, we developed a language learning assistance system that automatically adjusts the playback speed according to the learner's comprehension. Our system judges that learners understand the contents if they laugh at the punchlines of comedy dramas, and vice versa. Experimental results show that this system supports learners with relatively low L2 ability (under 700 in TOEIC Score in the experimental condition) to understand video contents. Our system can widen learners' possible options of native speakers' videos as Extensive Viewing material.",
+    "doi": "",
+    "tags": [
+      "Adaptive Video Playback",
+      "Comedy Dramas",
+      "Computer-Assisted Language Learning (CALL)",
+      "Educational Technology",
+      "Extensive Viewing",
+      "L2 Listening Comprehension",
+      "Laughter Detection",
+      "Learner Proficiency",
+      "Second Language Acquisition (SLA)",
+      "TOEIC",
+      "Video-Based Learning"
+    ],
+    "authors": [
+      "Naoto Nishida",
+      "Hinako Nozaki",
+      "Buntarou Shizuki"
+    ],
+    "year": 2025,
+    "publication": "",
+    "url": "https://arxiv.org/abs/2504.09835v1"
+  },
+  {
+    "id": "paper_QXLJNQ92",
+    "zoteroKey": "QXLJNQ92",
+    "libraryType": "group",
+    "itemType": "webpage",
+    "correctedItemType": "webpage",
+    "title": "Large Language Model probabilities cannot distinguish between possible and impossible language",
+    "abstract": "A controversial test for Large Language Models concerns the ability to discern possible from impossible language. While some evidence attests to the models' sensitivity to what crosses the limits of grammatically impossible language, this evidence has been contested on the grounds of the soundness of the testing material. We use model-internal representations to tap directly into the way Large Language Models represent the 'grammatical-ungrammatical' distinction. In a novel benchmark, we elicit probabilities from 4 models and compute minimal-pair surprisal differences, juxtaposing probabilities assigned to grammatical sentences to probabilities assigned to (i) lower frequency grammatical sentences, (ii) ungrammatical sentences, (iii) semantically odd sentences, and (iv) pragmatically odd sentences. The prediction is that if string-probabilities can function as proxies for the limits of grammar, the ungrammatical condition will stand out among the conditions that involve linguistic violations, showing a spike in the surprisal rates. Our results do not reveal a unique surprisal signature for ungrammatical prompts, as the semantically and pragmatically odd conditions consistently show higher surprisal. We thus demonstrate that probabilities do not constitute reliable proxies for model-internal representations of syntactic knowledge. Consequently, claims about models being able to distinguish possible from impossible language need verification through a different methodology.",
+    "doi": "",
+    "tags": [
+      "Grammar",
+      "large language models",
+      "limits"
+    ],
+    "authors": [
+      "Evelina Leivada",
+      "Raquel Montero",
+      "Paolo Morosi",
+      "Natalia Moskvina",
+      "Tamara Serrano",
+      "Marcel Aguilar",
+      "Fritz Guenther"
+    ],
+    "year": 2025,
+    "publication": "",
+    "url": "https://arxiv.org/abs/2509.15114v1"
+  },
+  {
+    "id": "paper_2XWT9BEK",
+    "zoteroKey": "2XWT9BEK",
+    "libraryType": "group",
+    "itemType": "webpage",
+    "correctedItemType": "webpage",
+    "title": "Idiomify -- Building a Collocation-supplemented Reverse Dictionary of English Idioms with Word2Vec for non-native learners",
+    "abstract": "The aim of idiomify is to build a collocation-supplemented reverse dictionary of idioms for the non-native learners of English. We aim to do so because the reverse dictionary could help the non-natives explore idioms on demand, and the collocations could also guide them on using idioms more adequately. The cornerstone of the project is a reliable way of mining idioms from corpora, which is however a challenge because idioms extensively vary in forms. We tackle this by automatically deriving matching rules from their base forms. We use Point-wise Mutual Inclusion (PMI), Term Frequency - Inverse Document Frequency (TF-IDF) to model collocations, since both of them are popular metric for pairwise significance. We also try Term Frequency (TF) as the baseline model. As for implementing the reverse-dictionary, three approaches could be taken: inverted index, graphs and distributional semantics. We choose to take the last approach and implement the reverse dictionary with Word2Vec, because it is the most flexible approach of all and Word2Vec is a simple yet strong baseline. Evaluating the methods has revealed rooms for improvement. We learn that we can better identify idioms with the help of slop, wildcard and reordering techniques. We also learn that we can get the best of both PMI and TF-IDF if we use machine learning to find the sweet spot. Lastly, We learn that Idiomify could be further improved with a mixture of inverted index and distributional semantics approach. The limits aside, the proposed methods are feasible, and their benefits to the non-natives are apparent, which therefore can be used to aid the non-natives in acquiring English idioms.",
+    "doi": "",
+    "tags": [
+      "Collocation Extraction",
+      "Computer-Assisted Language Learning (CALL)",
+      "Corpus Mining",
+      "Evaluation Metrics",
+      "Idiom Acquisition",
+      "Lexical Resources",
+      "Machine Learning",
+      "Natural Language Processing (NLP)",
+      "Non-native English Learners",
+      "Pattern Matching",
+      "Pointwise Mutual Information (PMI)",
+      "Second Language Learning (L2)",
+      "Word2Vec"
+    ],
+    "authors": [
+      "Eu-Bin Kim"
+    ],
+    "year": 2022,
+    "publication": "",
+    "url": "https://arxiv.org/abs/2204.05634v1"
+  },
+  {
+    "id": "paper_D2DQHNMP",
+    "zoteroKey": "D2DQHNMP",
+    "libraryType": "group",
+    "itemType": "webpage",
+    "correctedItemType": "webpage",
+    "title": "HistBERT: A Pre-trained Language Model for Diachronic Lexical Semantic Analysis",
+    "abstract": "Contextualized word embeddings have demonstrated state-of-the-art performance in various natural language processing tasks including those that concern historical semantic change. However, language models such as BERT was trained primarily on contemporary corpus data. To investigate whether training on historical corpus data improves diachronic semantic analysis, we present a pre-trained BERT-based language model, HistBERT, trained on the balanced Corpus of Historical American English. We examine the effectiveness of our approach by comparing the performance of the original BERT and that of HistBERT, and we report promising results in word similarity and semantic shift analysis. Our work suggests that the effectiveness of contextual embeddings in diachronic semantic analysis is dependent on the temporal profile of the input text and care should be taken in applying this methodology to study historical semantic change.",
+    "doi": "",
+    "tags": [
+      "BERT",
+      "Contextualized Word Embeddings",
+      "Corpus of Historical American English (COHA)",
+      "Diachronic Semantic Change",
+      "Digital Humanities",
+      "Domain Adaptation",
+      "HistBERT",
+      "Historical Linguistics",
+      "Natural Language Processing (NLP)",
+      "Pre-trained Language Models",
+      "Temporal Adaptation",
+      "Word Similarity"
+    ],
+    "authors": [
+      "Wenjun Qiu",
+      "Yang Xu"
+    ],
+    "year": 2022,
+    "publication": "",
+    "url": "https://arxiv.org/abs/2202.03612v1"
+  },
+  {
+    "id": "paper_DN58HRLA",
+    "zoteroKey": "DN58HRLA",
+    "libraryType": "group",
+    "itemType": "webpage",
+    "correctedItemType": "webpage",
+    "title": "Iterative Data Curation with Theoretical Guarantees",
+    "abstract": "In recent years, more and more large data sets have become available. Data accuracy, the absence of verifiable errors in data, is crucial for these large materials to enable high-quality research, downstream applications, and model training. This results in the problem of how to curate or improve data accuracy in such large and growing data, especially when the data is too large for manual curation to be feasible. This paper presents a unified procedure for iterative and continuous improvement of data sets. We provide theoretical guarantees that data accuracy tests speed up error reduction and, most importantly, that the proposed approach will, asymptotically, eliminate all errors in data with probability one. We corroborate the theoretical results with simulations and a real-world use case.",
+    "doi": "",
+    "tags": [],
+    "authors": [
+      "Väinö Yrjänäinen",
+      "Johan Jonasson",
+      "Måns Magnusson"
+    ],
+    "year": 2025,
+    "publication": "",
+    "url": "https://arxiv.org/abs/2510.11428v2"
+  },
+  {
+    "id": "paper_WAYGZSP8",
+    "zoteroKey": "WAYGZSP8",
+    "libraryType": "group",
+    "itemType": "webpage",
+    "correctedItemType": "webpage",
+    "title": "Large corpora and large language models: a replicable method for automating grammatical annotation",
+    "abstract": "Much linguistic research relies on annotated datasets of features extracted from text corpora, but the rapid quantitative growth of these corpora has created practical difficulties for linguists to manually annotate large data samples. In this paper, we present a replicable, supervised method that leverages large language models for assisting the linguist in grammatical annotation through prompt engineering, training, and evaluation. We introduce a methodological pipeline applied to the case study of formal variation in the English evaluative verb construction 'consider X (as) (to be) Y', based on the large language model Claude 3.5 Sonnet and corpus data from Davies' NOW and EnTenTen21 (SketchEngine). Overall, we reach a model accuracy of over 90% on our held-out test samples with only a small amount of training data, validating the method for the annotation of very large quantities of tokens of the construction in the future. We discuss the generalisability of our results for a wider range of case studies of grammatical constructions and grammatical variation and change, underlining the value of AI copilots as tools for future linguistic research, notwithstanding some important caveats.",
+    "doi": "",
+    "tags": [
+      "Corpus Linguistics",
+      "annotation",
+      "grammatical variation",
+      "large language models"
+    ],
+    "authors": [
+      "Cameron Morin",
+      "Matti Marttinen Larsson"
+    ],
+    "year": 2025,
+    "publication": "",
+    "url": "https://arxiv.org/abs/2411.11260v2"
+  },
+  {
+    "id": "paper_LXVBHK5Z",
+    "zoteroKey": "LXVBHK5Z",
+    "libraryType": "group",
+    "itemType": "preprint",
+    "correctedItemType": "preprint",
+    "title": "Towards Corpus-Grounded Agentic LLMs for Multilingual Grammatical Analysis",
+    "abstract": "Empirical grammar research has become increasingly data-driven, but the systematic analysis of annotated corpora still requires substantial methodological and technical effort. We explore how agentic large language models (LLMs) can streamline this process by reasoning over annotated corpora and producing interpretable, data-grounded answers to linguistic questions. We introduce an agentic framework for corpus-grounded grammatical analysis that integrates concepts such as natural-language task interpretation, code generation, and data-driven reasoning. As a proof of concept, we apply it to Universal Dependencies (UD) corpora, testing it on multilingual grammatical tasks inspired by the World Atlas of Language Structures (WALS). The evaluation spans 13 word-order features and over 170 languages, assessing system performance across three complementary dimensions – dominant-order accuracy, order-coverage completeness, and distributional fidelity – which reflect how well the system generalizes, identifies, and quantifies word-order variations. The results demonstrate the feasibility of combining LLM reasoning with structured linguistic data, offering a first step toward interpretable, scalable automation of corpus-based grammatical inquiry.",
+    "doi": "10.48550/arXiv.2512.00214",
+    "tags": [
+      "Computer Science - Computation and Language",
+      "Large Language Models (LLMs)",
+      "Universal Dependencies",
+      "agentic systems",
+      "corpus linguistics",
+      "grammatical analysis",
+      "word-order variation"
+    ],
+    "authors": [
+      "Matej Klemen",
+      "Tjaša Arčon",
+      "Luka Terčon",
+      "Marko Robnik-Šikonja",
+      "Kaja Dobrovoljc"
+    ],
+    "year": 2025,
+    "publication": "",
+    "url": "http://arxiv.org/abs/2512.00214"
+  },
+  {
+    "id": "paper_JFDP8L4L",
+    "zoteroKey": "JFDP8L4L",
+    "libraryType": "group",
+    "itemType": "preprint",
+    "correctedItemType": "preprint",
+    "title": "Text Classification in the LLM Era -- Where do we stand?",
+    "abstract": "Large Language Models revolutionized NLP and showed dramatic performance improvements across several tasks. In this paper, we investigated the role of such language models in text classification and how they compare with other approaches relying on smaller pre-trained language models. Considering 32 datasets spanning 8 languages, we compared zero-shot classification, few-shot fine-tuning and synthetic data based classifiers with classifiers built using the complete human labeled dataset. Our results show that zero-shot approaches do well for sentiment classification, but are outperformed by other approaches for the rest of the tasks, and synthetic data sourced from multiple LLMs can build better classifiers than zero-shot open LLMs. We also see wide performance disparities across languages in all the classification scenarios. We expect that these findings would guide practitioners working on developing text classification systems across languages.",
+    "doi": "10.48550/arXiv.2502.11830",
+    "tags": [
+      "Computer Science - Computation and Language",
+      "Multilingual NLP",
+      "Sentiment Classification",
+      "Smaller Pre-trained Language Models",
+      "Task-dependent Performance"
+    ],
+    "authors": [
+      "Sowmya Vajjala",
+      "Shwetali Shimangaud"
+    ],
+    "year": 2025,
+    "publication": "",
+    "url": "http://arxiv.org/abs/2502.11830"
+  },
+  {
+    "id": "paper_29DT688T",
+    "zoteroKey": "29DT688T",
+    "libraryType": "group",
+    "itemType": "preprint",
+    "correctedItemType": "preprint",
+    "title": "Metadata Conditioned Large Language Models for Localization",
+    "abstract": "Large language models are typically trained by treating text as a single global distribution, often resulting in geographically homogenized behavior. We study metadata conditioning as a lightweight approach for localization, pre-training 31 models (at 0.5B and 1B parameter scales) from scratch on large-scale English news data annotated with verified URLs, country tags, and continent tags, covering 4 continents and 17 countries. Across four controlled experiments, we show that metadata conditioning consistently improves in-region performance without sacrificing cross-region generalization, enables global models to recover localization comparable to region-specific models, and improves learning efficiency. Our ablation studies demonstrate that URL-level metadata alone captures much of the geographic signal, while balanced regional data coverage remains essential, as metadata cannot fully compensate for missing regions. Finally, we introduce a downstream benchmark of 800 localized news MCQs and show that after instruction tuning, metadata conditioned global models achieve accuracy comparable to LLaMA-3.2-1B-Instruct, despite being trained on substantially less data. Together, these results establish metadata conditioning as a practical and compute-efficient approach for localization of language models.",
+    "doi": "10.48550/arXiv.2601.15236",
+    "tags": [
+      "Computer Science - Computation and Language",
+      "Country / Continent",
+      "Large Language Models (LLMs)",
+      "Learning Efficiency",
+      "Missing Regions Compensation",
+      "Multiple Choice Questions"
+    ],
+    "authors": [
+      "Anjishnu Mukherjee",
+      "Ziwei Zhu",
+      "Antonios Anastasopoulos"
+    ],
+    "year": 2026,
+    "publication": "",
+    "url": "http://arxiv.org/abs/2601.15236"
+  },
+  {
+    "id": "paper_BL2IDIHH",
+    "zoteroKey": "BL2IDIHH",
+    "libraryType": "group",
+    "itemType": "preprint",
+    "correctedItemType": "preprint",
+    "title": "Language Models are Few-Shot Learners",
+    "abstract": "Recent work has demonstrated substantial gains on many NLP tasks and benchmarks by pre-training on a large corpus of text followed by ﬁne-tuning on a speciﬁc task. While typically task-agnostic in architecture, this method still requires task-speciﬁc ﬁne-tuning datasets of thousands or tens of thousands of examples. By contrast, humans can generally perform a new language task from only a few examples or from simple instructions – something which current NLP systems still largely struggle to do. Here we show that scaling up language models greatly improves task-agnostic, few-shot performance, sometimes even reaching competitiveness with prior state-of-the-art ﬁnetuning approaches. Speciﬁcally, we train GPT-3, an autoregressive language model with 175 billion parameters, 10x more than any previous non-sparse language model, and test its performance in the few-shot setting. For all tasks, GPT-3 is applied without any gradient updates or ﬁne-tuning, with tasks and few-shot demonstrations speciﬁed purely via text interaction with the model. GPT-3 achieves strong performance on many NLP datasets, including translation, question-answering, and cloze tasks, as well as several tasks that require on-the-ﬂy reasoning or domain adaptation, such as unscrambling words, using a novel word in a sentence, or performing 3-digit arithmetic. At the same time, we also identify some datasets where GPT-3’s few-shot learning still struggles, as well as some datasets where GPT-3 faces methodological issues related to training on large web corpora. Finally, we ﬁnd that GPT-3 can generate samples of news articles which human evaluators have difﬁculty distinguishing from articles written by humans. We discuss broader societal impacts of this ﬁnding and of GPT-3 in general.",
+    "doi": "10.48550/arXiv.2005.14165",
+    "tags": [
+      "Autoregressive Language Model",
+      "Computer Science - Computation and Language",
+      "Few-Shot Learning",
+      "Natural language processing (NLP)",
+      "Pre-training"
+    ],
+    "authors": [
+      "Tom B. Brown",
+      "Benjamin Mann",
+      "Nick Ryder",
+      "Melanie Subbiah",
+      "Jared Kaplan",
+      "Prafulla Dhariwal",
+      "Arvind Neelakantan",
+      "Pranav Shyam",
+      "Girish Sastry",
+      "Amanda Askell",
+      "Sandhini Agarwal",
+      "Ariel Herbert-Voss",
+      "Gretchen Krueger",
+      "Tom Henighan",
+      "Rewon Child",
+      "Aditya Ramesh",
+      "Daniel M. Ziegler",
+      "Jeffrey Wu",
+      "Clemens Winter",
+      "Christopher Hesse",
+      "Mark Chen",
+      "Eric Sigler",
+      "Mateusz Litwin",
+      "Scott Gray",
+      "Benjamin Chess",
+      "Jack Clark",
+      "Christopher Berner",
+      "Sam McCandlish",
+      "Alec Radford",
+      "Ilya Sutskever",
+      "Dario Amodei"
+    ],
+    "year": 2020,
+    "publication": "",
+    "url": "http://arxiv.org/abs/2005.14165"
+  },
+  {
+    "id": "paper_NCAJST5Y",
+    "zoteroKey": "NCAJST5Y",
+    "libraryType": "group",
+    "itemType": "journalArticle",
+    "correctedItemType": "journalArticle",
+    "title": "Whisper for L2 speech scoring",
+    "abstract": "In this paper, we examine whether confidence scores produced by the C++ re-implementation of Whisper (Radford et al., in: International conference on machine learning, 2023) can be used to score L2 learners of English and classify them. We test whether the language prediction and its probability can be used to classify French learners of English using a specifically collected dataset for read speech and a graded corpus, the ANGLISH corpus (Tortel and Hirst, in: Proceedings of speech prosody 2010, 2010. https://doi.org/10.21437/SpeechProsody.2010-49 ). We show that probability scores associated with the Whisper subtokens can be used to classify learners into levels using the knn algorithm. We show the limitations of the language detection probability beyond an initial threshold where the native language L1 of the learner can actually be predicted by the speaker. We have also used the ISLE corpus (Menzel et al., in: Proceedings of LREC 2000: Language resources and evaluation conference, European Language Resources Association, 2000) to test the prediction of the levels of Italian and German learners of English (Atwell et al., in: ICAME Jurnal, 27:5–18, 2003). We show how language detection for Whisper’s multilingual larger models can be used to detect less advanced learners’ first language but cannot be used for learner level classification with advanced learners. Using a greedy alignment algorithm, we also discuss the confidence score assigned to Whisper output subtokens and how this may be used for speaker scoring, prediction of learner levels, and learner feedback. We show that low confidence scores and alternative transcriptions can be used as potential cues for learner pronunciation errors.",
+    "doi": "10.1007/s10772-024-10141-5",
+    "tags": [
+      "ANGLISH Corpus",
+      "Alternative Transcriptions",
+      "CEFR Levels / Proficiency Levels",
+      "Computer-Assisted Language Learning (CALL)",
+      "L2 Learners / Second Language Acquisition (SLA)",
+      "Language Detection / Language Identification (LID)",
+      "Read Speech",
+      "k-Nearest Neighbors (kNN)"
+    ],
+    "authors": [
+      "Nicolas Ballier",
+      "Taylor Arnold",
+      "Adrien Méli",
+      "Tori Thurston",
+      "Jean-Baptiste Yunès"
+    ],
+    "year": 2024,
+    "publication": "International Journal of Speech Technology",
+    "url": "https://link.springer.com/article/10.1007/s10772-024-10141-5"
+  },
+  {
+    "id": "paper_DWLSMAF5",
+    "zoteroKey": "DWLSMAF5",
+    "libraryType": "group",
+    "itemType": "preprint",
+    "correctedItemType": "preprint",
+    "title": "Detecting directional forces in the evolution of grammar: A case study of the English perfect with intransitives across EEBO, COHA, and Google Books",
+    "abstract": "Languages have diverse characteristics that have emerged through evolution. In modern English grammar, the perfect is formed with have+PP (past participle), but in earlier English the be+PP form also existed. It is widely recognised that the auxiliary verb BE was replaced by HAVE throughout evolution, except for some special cases. However, whether this evolution was caused by natural selection or random drift is still unclear. Here we examined directional forces in the evolution of the English perfect with intransitives by combining three large-scale data sources: EEBO (Early English Books Online), COHA (Corpus of Historical American English), and Google Books. We found that most intransitive verbs exhibited an apparent transition from be+PP to have+PP, most of which were classiﬁed as ‘selection’ by a deep neural network-based model. These results suggest that the English perfect could have evolved through natural selection rather than random drift, and provide insights into the cultural evolution of grammar.",
+    "doi": "10.48550/arXiv.2110.08567",
+    "tags": [
+      "COHA (Corpus of Historical American English)",
+      "Computer Science - Computers and Society",
+      "Corpus Linguistics",
+      "EEBO (Early English Books Online)",
+      "English Grammar",
+      "Historical Linguistics",
+      "Quantitative Methodology",
+      "cultural evolution",
+      "evolutionary force",
+      "human language",
+      "natural selection",
+      "random drift",
+      "volutionary Linguistics"
+    ],
+    "authors": [
+      "Shimpei Okuda",
+      "Michio Hosaka",
+      "Kazutoshi Sasahara"
+    ],
+    "year": 2023,
+    "publication": "",
+    "url": "http://arxiv.org/abs/2110.08567"
+  },
+  {
+    "id": "paper_HIUUY82T",
+    "zoteroKey": "HIUUY82T",
+    "libraryType": "group",
+    "itemType": "preprint",
+    "correctedItemType": "preprint",
+    "title": "The Emergence of Grammar through Reinforcement Learning",
+    "abstract": "The evolution of grammatical systems of syntactic and semantic composition is modeled here with a novel application of reinforcement learning theory. To test the functionalist thesis that speakers' expressive purposes shape their language, we include within the model a probability distribution over different messages that could be expressed in a given context. The proposed learning and production algorithm then breaks down language learning into a sequence of simple steps, such that each step benefits from the message probabilities. The results are presented in the form of numerical simulations of language histories and analytic proofs. The potential for applying these mathematical models to the study of natural language is illustrated with two case studies from the history of English.",
+    "doi": "10.48550/arXiv.2503.01635",
+    "tags": [
+      "Cognitive Science",
+      "Computational Modeling",
+      "Computer Science - Computation and Language",
+      "Computer Science - Information Theory",
+      "Diachronic Linguistics",
+      "Functional Linguistics",
+      "Historical Linguistics",
+      "Numerical Simulation",
+      "Reinforcement Learning"
+    ],
+    "authors": [
+      "Stephen Wechsler",
+      "James W. Shearer",
+      "Katrin Erk"
+    ],
+    "year": 2025,
+    "publication": "",
+    "url": "http://arxiv.org/abs/2503.01635"
+  },
+  {
+    "id": "paper_GXL4Z9MX",
+    "zoteroKey": "GXL4Z9MX",
+    "libraryType": "group",
+    "itemType": "journalArticle",
+    "correctedItemType": "journalArticle",
+    "title": "Exploring the potential of using an AI language model for automated essay scoring",
+    "abstract": "The widespread adoption of ChatGPT, an AI language model, has the potential to bring about significant changes to the research, teaching, and learning of foreign languages. The present study aims to leverage this technology to perform automated essay scoring (AES) and evaluate its reliability and accuracy. Specifically, we utilized the GPT-3 text-davinci-003 model to automatically score all 12,100 essays contained in the ETS Corpus of Non-Native Written English (TOEFL11) and compared these scores to benchmark levels. The study also explored the extent to which linguistic features influence AES with GPT. The results showed that AES using GPT has a certain level of accuracy and reliability and could provide valuable support for human evaluations. Furthermore, the analysis revealed that utilizing linguistic features could enhance the accuracy of the scoring. These findings suggest that AI language models, such as ChatGPT, can be effectively utilized as AES tools, potentially revolutionizing methods of writing evaluation and feedback in both research and practice. The paper concludes by discussing the practical implications of using GPT for AES and exploring prospective future considerations.",
+    "doi": "10.1016/j.rmal.2023.100050",
+    "tags": [
+      "AI in Education",
+      "Automated essay scoring (AES)",
+      "Computer-Assisted Language Learning (CALL)",
+      "Educational Technology",
+      "English as a Foreign Language (EFL)",
+      "GPT (Generative Pre-trained Transformer)",
+      "Human-AI Collaboration",
+      "Linguistic features",
+      "Natural language processing (NLP)",
+      "Transformer-based large language models"
+    ],
+    "authors": [
+      "Atsushi Mizumoto",
+      "Masaki Eguchi"
+    ],
+    "year": 2023,
+    "publication": "Research Methods in Applied Linguistics",
+    "url": "https://www.sciencedirect.com/science/article/pii/S2772766123000101"
+  },
+  {
+    "id": "paper_9UAU4625",
+    "zoteroKey": "9UAU4625",
+    "libraryType": "group",
+    "itemType": "journalArticle",
+    "correctedItemType": "journalArticle",
+    "title": "Evaluating NLP models with written and spoken L2 samples",
+    "abstract": "The use of natural language processing tools such as part-of-speech taggers and syntactic parsers are increasingly being used in studies of second language (L2) proficiency and development. However, relatively little work has focused on reporting on the accuracy of these tools or optimizing their performance in L2 contexts. While some studies reference the published overall accuracy of a particular tool or include a small-scale accuracy analysis, very few (if any) studies provide a comprehensive account of the performance of taggers and parsers across a range of written and spoken registers. In this study, we provide a large-scale accuracy analysis of popular taggers and parsers across L1 and L2 written and spoken texts, both when default and L2-optimized models are used. Accuracy is examined both at the feature level (e.g., identifying adjective-noun relationships) and the text level (e.g., mean mutualinformation scores). The results highlight the strength and weaknesses of these tools.",
+    "doi": "10.1016/j.rmal.2024.100120",
+    "tags": [
+      "L1 vs. L2 Comparison",
+      "L2 speaking",
+      "L2 writing",
+      "Learner corpus research",
+      "Linguistic analysis",
+      "Model Optimization",
+      "Natural language processing",
+      "Second Language Acquisition (SLA)",
+      "Tool Evaluation"
+    ],
+    "authors": [
+      "Kristopher Kyle",
+      "Masaki Eguchi"
+    ],
+    "year": 2024,
+    "publication": "Research Methods in Applied Linguistics",
+    "url": "https://www.sciencedirect.com/science/article/pii/S2772766124000260"
+  },
+  {
+    "id": "paper_9WDBNR46",
+    "zoteroKey": "9WDBNR46",
+    "libraryType": "group",
+    "itemType": "journalArticle",
+    "correctedItemType": "journalArticle",
+    "title": "AI-Assisted Corpus Linguistics: Integrating NLP Models Into Corpus Analysis",
+    "abstract": "Integrating natural language processing (NLP) and artificial intelligence (AI) models into corpus linguistics has opened new avenues for linguistic analysis, yet their suitability for rigorous academic research remains debated due to issues like opacity and interpretability. This systematic review explores how NLP models transform traditional corpus linguistics methodologies, focusing on their applications, benefits, and challenges. Employing a PRISMA-guided approach, the study reviewed peer-reviewed literature from 2013 to 2025 across databases like Scopus and ACL Anthology, using keywords such as “AI in corpus linguistics” and “NLP corpus analysis”. Inclusion criteria targeted studies applying NLP models (e.g., BERT, GPT) to linguistic tasks, resulting in 12 selected studies after screening 922 records. A quality assessment using the CASP checklist ensured robustness, followed by thematic synthesis of findings. Results highlight that NLP models enhance corpus analysis by automating tasks like keyword extraction and pragmatic annotation, while offering scalability and semantic depth. Applications span discourse analysis, diachronic studies, and sociolinguistic variation, supported by tools like CorpusChat and Hugging Face Transformers. However, challenges include model biases, lack of transparency, and domain mismatch. The study explores that AI-driven NLP models significantly advance corpus linguistics but require addressing ethical, privacy, and reproducibility concerns to ensure academic rigor. Future research should focus on developing domain-specific models and enhancing interpretability to fully harness AI’s potential in linguistic studies.",
+    "doi": "10.17507/tpls.1602.24",
+    "tags": [
+      "artificial intelligence",
+      "corpus analysis",
+      "corpus linguistic",
+      "natural processing language"
+    ],
+    "authors": [
+      "Abdullah Saad Al-Qarni"
+    ],
+    "year": 2026,
+    "publication": "Theory and Practice in Language Studies",
+    "url": "https://tpls.academypublication.com/index.php/tpls/article/view/11687"
+  },
+  {
+    "id": "paper_Q68J7SEA",
+    "zoteroKey": "Q68J7SEA",
+    "libraryType": "group",
+    "itemType": "preprint",
+    "correctedItemType": "preprint",
+    "title": "GPT-NER: Named Entity Recognition via Large Language Models",
+    "abstract": "Despite the fact that large-scale Language Models (LLM) have achieved SOTA performances on a variety of NLP tasks, its performance on NER is still significantly below supervised baselines. This is due to the gap between the two tasks the NER and LLMs: the former is a sequence labeling task in nature while the latter is a text-generation model. In this paper, we propose GPT-NER to resolve this issue. GPT-NER bridges the gap by transforming the sequence labeling task to a generation task that can be easily adapted by LLMs e.g., the task of finding location entities in the input text \"Columbus is a city\" is transformed to generate the text sequence \"@@Columbus## is a city\", where special tokens @@## marks the entity to extract. To efficiently address the \"hallucination\" issue of LLMs, where LLMs have a strong inclination to over-confidently label NULL inputs as entities, we propose a self-verification strategy by prompting LLMs to ask itself whether the extracted entities belong to a labeled entity tag. We conduct experiments on five widely adopted NER datasets, and GPT-NER achieves comparable performances to fully supervised baselines, which is the first time as far as we are concerned. More importantly, we find that GPT-NER exhibits a greater ability in the low-resource and few-shot setups, when the amount of training data is extremely scarce, GPT-NER performs significantly better than supervised models. This demonstrates the capabilities of GPT-NER in real-world NER applications where the number of labeled examples is limited.",
+    "doi": "10.48550/arXiv.2304.10428",
+    "tags": [
+      "Computer Science - Computation and Language"
+    ],
+    "authors": [
+      "Shuhe Wang",
+      "Xiaofei Sun",
+      "Xiaoya Li",
+      "Rongbin Ouyang",
+      "Fei Wu",
+      "Tianwei Zhang",
+      "Jiwei Li",
+      "Guoyin Wang"
+    ],
+    "year": 2023,
+    "publication": "",
+    "url": "http://arxiv.org/abs/2304.10428"
+  }
+]

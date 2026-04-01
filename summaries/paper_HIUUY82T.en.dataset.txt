@@ -1,0 +1,15 @@
+The dataset details are not explicitly described in the provided paper metadata. Assumptions based on the abstract and context:
+
+Language(s): Not specified; likely English (given case studies) or simulated linguistic data.
+
+Source: Not provided; likely derived from numerical simulations and analytic proofs as described in the abstract.
+
+Size: Not specified; no mention of dataset size or number of samples.
+
+Modality: Textual (linguistic data) and numerical (simulations).
+
+Labels: Not explicitly stated; may include syntactic/semantic structures or message probabilities in the simulations.
+
+Metadata: Not detailed; potential metadata could include simulation parameters, context probabilities, or historical linguistic features from the case studies.
+
+Splits: Not mentioned; no reference to training, validation, or test splits.

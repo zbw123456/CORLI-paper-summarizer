@@ -1,0 +1,10 @@
+The paper does not provide explicit dataset details such as language(s), source, size, modality, labels, metadata, or splits. The abstract mentions a meta-analysis using datasets from various domains (news media, science, medicine, business, bureaucracy) but does not specify any concrete datasets or their characteristics.
+
+Assumptions:
+Language(s): Likely English, given the context of the paper and typical datasets in computational linguistics.
+Source: Not specified; likely a combination of publicly available and proprietary datasets from the mentioned domains.
+Size: Not specified; the paper refers to a "large meta-analysis" but does not quantify the dataset size.
+Modality: Textual data only, as keyword extraction is a text-based task.
+Labels: Not explicitly mentioned; keyword extraction typically involves labeled data where keywords are annotated.
+Metadata: Not specified; may include document IDs, domains, or timestamps if datasets are curated.
+Splits: Not mentioned; no information on train/test/validation splits.

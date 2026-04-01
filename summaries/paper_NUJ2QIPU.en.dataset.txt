@@ -1,0 +1,15 @@
+Language(s): English
+
+Source: Human annotations (ColorConceptBench dataset)
+
+Size: 1,281 implicit color concepts; 6,369 human annotations
+
+Modality: Text (text-to-image model inputs and evaluations)
+
+Labels: Probabilistic color distributions associated with implicit concepts
+
+Metadata: Not explicitly detailed in the abstract
+
+Splits: Not explicitly detailed in the abstract
+
+Assumptions: The dataset likely includes splits for training, validation, and testing, though not specified in the abstract. Metadata may include concept descriptions, annotation guidelines, or model evaluation results, but these are not detailed in the provided text.

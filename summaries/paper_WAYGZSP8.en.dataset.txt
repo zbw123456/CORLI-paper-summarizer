@@ -1,0 +1,13 @@
+Language(s): English
+
+Source: Davies' NOW and EnTenTen21 (SketchEngine) corpora
+
+Size: Not explicitly stated; assumed to be large given the context of corpus linguistics and the goal of annotating "very large quantities of tokens"
+
+Modality: Text
+
+Labels: Grammatical annotation of the English evaluative verb construction 'consider X (as) (to be) Y' (e.g., presence/absence of 'as' or 'to be', syntactic structure)
+
+Metadata: Not explicitly detailed; assumed to include corpus source, construction type, and annotation guidelines
+
+Splits: Held-out test samples (size not specified)

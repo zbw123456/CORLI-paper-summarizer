@@ -1,0 +1,7 @@
+This paper explores how large language models (LLMs) can help create realistic and useful contexts for vocabulary exercises in English for Specific Purposes (ESP). ESP focuses on teaching specialized vocabulary for fields like medicine, law, or engineering, rather than general English.
+
+The researchers suggest that LLMs can generate tailored contexts—short texts or situations where target words naturally appear—making vocabulary learning more meaningful. For example, instead of memorizing the word "diagnosis" in isolation, a learner might read a short medical case description where the word is used naturally.
+
+The study likely involves testing whether these AI-generated contexts improve vocabulary retention compared to traditional methods. It may also examine how accurate and natural the generated contexts sound to both teachers and learners.
+
+While the abstract is missing, a key assumption is that the LLMs can produce contexts that are both grammatically correct and contextually appropriate for specific professional or academic fields. The paper probably includes examples of generated contexts and feedback from educators or students on their usefulness.

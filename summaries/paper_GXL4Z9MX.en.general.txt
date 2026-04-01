@@ -1,0 +1,7 @@
+This study looked at whether an AI language model could automatically grade essays written by non-native English speakers. The researchers used a version of ChatGPT called GPT-3 to score over 12,000 essays from a well-known English test (TOEFL). They then compared the AI’s scores to the official scores given by human evaluators.
+
+The results showed that the AI could grade essays with reasonable accuracy and reliability. It wasn’t perfect, but it performed well enough to be a useful tool for teachers or researchers. The study also found that adding certain language features—like sentence structure or vocabulary complexity—helped the AI improve its scoring.
+
+The researchers suggest that AI like this could change how writing is evaluated in schools and language programs. It might save time for teachers while still providing helpful feedback to students. However, they note that human oversight would still be important to ensure fairness and accuracy.
+
+Overall, this study shows that AI language models could play a bigger role in grading written work, especially in language learning settings. The authors see this as a step toward more efficient and consistent writing evaluation in education.

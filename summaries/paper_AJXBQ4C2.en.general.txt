@@ -1,0 +1,9 @@
+This study explores a new way to help people learn a second language by watching videos. Many learners struggle to understand videos made for native speakers because they play too fast. The researchers created a system that changes the playback speed of videos based on whether the learner laughs at the right moments.
+
+The idea is simple: if a learner laughs at a joke or punchline in a comedy show, the system assumes they understood it and keeps the video at normal speed. If they don’t laugh, the system slows down the video to give them more time to process the content. This approach is called "Extensive Viewing," where learners watch many videos to improve their language skills.
+
+The experiment showed that this system works best for learners with lower language ability, specifically those scoring under 700 on the TOEIC test. For these learners, the system helped them understand the videos better by adjusting the speed automatically. This means they can use more native-level videos for practice, making their learning more effective.
+
+The system uses laughter detection to judge comprehension, which is a natural reaction to humor. By relying on this reaction, the system avoids interrupting the learner’s experience with quizzes or manual controls. Instead, it adapts in real time, making the learning process smoother and more intuitive.
+
+Overall, this research suggests that adjusting video speed based on laughter can be a practical tool for language learners, especially those at an intermediate level. It opens up more opportunities to use authentic, native-level videos for learning without feeling overwhelmed.

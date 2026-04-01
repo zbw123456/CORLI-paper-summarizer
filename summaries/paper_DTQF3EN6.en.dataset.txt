@@ -1,0 +1,13 @@
+Language(s): English
+
+Source: Movie subtitles from North American films
+
+Size: Not explicitly stated in the abstract (assumed to be substantial given the scope of the project)
+
+Modality: Text
+
+Labels: Misogyny annotations (including severity scores and mitigation rewrites)
+
+Metadata: Not explicitly stated in the abstract (assumed to include film titles, character dialogues, and contextual information)
+
+Splits: Not explicitly stated in the abstract (assumed to include training, validation, and test sets)

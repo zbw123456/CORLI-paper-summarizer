@@ -1,0 +1,13 @@
+Language(s): English
+
+Source: arXiv (arXiv:2211.15731)
+
+Size: Not explicitly stated in the abstract. Assumption: Dataset size is not provided; likely derived from generated sentences rather than a pre-existing dataset.
+
+Modality: Text (sentence generation)
+
+Labels: Proficiency levels (e.g., beginner, intermediate, advanced), argument structure (for grammar testing)
+
+Metadata: Not explicitly mentioned in the abstract. Assumption: Metadata may include proficiency level tags, grammatical structure annotations, and human evaluation scores.
+
+Splits: Not explicitly mentioned in the abstract. Assumption: No predefined splits; generated sentences are evaluated based on proficiency level and grammatical control.

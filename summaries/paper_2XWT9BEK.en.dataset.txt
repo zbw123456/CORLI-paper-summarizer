@@ -1,0 +1,15 @@
+The dataset details are not explicitly provided in the given paper metadata. Assumptions are made based on the context of the paper.
+
+Language(s): English
+
+Source: Not specified in the paper; likely derived from English corpora used for idiom mining and collocation extraction.
+
+Size: Not explicitly mentioned; assumed to be based on the scale of idioms and collocations extracted from the corpora used.
+
+Modality: Textual (idioms and collocations in written form)
+
+Labels: Not explicitly stated; likely includes idiom forms, collocations, and possibly semantic or usage labels for non-native learners.
+
+Metadata: Not detailed in the paper; may include idiom base forms, extracted collocations, and metadata related to their usage or frequency.
+
+Splits: Not mentioned; no indication of train/test/validation splits in the paper.

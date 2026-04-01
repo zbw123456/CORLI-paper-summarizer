@@ -1,0 +1,15 @@
+The dataset details are not explicitly provided in the abstract or metadata. Assumptions based on the paper's focus on NLI biases and hallucinations:
+
+Language(s): English (implied by the focus on NLI tasks and LLM families like LLaMA, GPaT-3.5, and PaLM).
+
+Source: Not specified; likely derived from controlled experiments using standard NLI datasets or custom-generated test samples based on the described biases.
+
+Size: Not mentioned; assumed to be a curated subset of existing NLI datasets or newly constructed samples for probing memorization and statistical usage biases.
+
+Modality: Text (NLI tasks involve premise-hypothesis pairs).
+
+Labels: Entailment, contradiction, neutral (standard NLI labels).
+
+Metadata: Not detailed; may include model identifiers (LLaMA, GPT-3.5, PaLM), premise-hypothesis pairs, and bias conformity labels.
+
+Splits: Not specified; likely includes train/test splits for evaluating bias conformity and hallucination rates.

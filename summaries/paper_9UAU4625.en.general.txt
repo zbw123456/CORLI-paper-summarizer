@@ -1,0 +1,5 @@
+This study looks at how well common natural language processing (NLP) tools—like part-of-speech taggers and syntactic parsers—work when analyzing texts written or spoken by people learning a second language (L2). These tools are often used in research to study how L2 learners improve their language skills, but most studies don’t fully check how accurate these tools are when dealing with L2 learners’ language.
+
+The researchers tested popular NLP tools on both native speakers’ (L1) and L2 learners’ written and spoken texts. They compared the tools’ default settings with versions that were adjusted for L2 language. The accuracy was measured in two ways: first, by checking how well the tools identified specific language features (like adjective-noun pairs), and second, by looking at overall text-level scores (like how words relate to each other in meaning).
+
+The results show where these tools perform well and where they struggle when analyzing L2 language. This could help researchers choose the best tools for their studies and improve how these tools are trained to better handle L2 learners’ language.

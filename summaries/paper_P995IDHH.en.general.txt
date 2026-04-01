@@ -1,0 +1,7 @@
+Zipf’s law is a rule that often appears in real-world data. It says that the most common item in a set is about twice as frequent as the second most common, three times as frequent as the third, and so on. This pattern shows up in many places, from the lengths of rivers to the sizes of cities. Now, a new study shows that snooker statistics follow a similar pattern.
+
+The research looks at two ways to rank snooker players: by total prize money earned and by the number of centuries scored (a century is a break of 100 or more points in a single visit to the table). It also checks how these rankings change over three different time frames: all-time records, by decade, and by year.
+
+The results show that snooker rankings do follow a power law, which is a broader version of Zipf’s law. However, the exact shape of the pattern changes depending on whether the ranking is based on prize money or centuries, and whether the data covers all-time, a decade, or a single year. In some cases, the pattern shifts noticeably over time, and the study suggests a possible reason for this change.
+
+This finding adds snooker to the long list of fields where Zipf’s law or similar patterns appear. It also shows that even in sports, where human skill and competition play a big role, statistical regularities can emerge.

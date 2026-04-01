@@ -1,0 +1,13 @@
+Language(s): English
+
+Source: Balanced Corpus of Historical American English (COHA)
+
+Size: Not explicitly stated in the abstract; assumed to be the size of COHA (approximately 400 million words)
+
+Modality: Text
+
+Labels: Not explicitly mentioned; likely none for pre-training, but may include semantic shift annotations for evaluation
+
+Metadata: Not explicitly stated; assumed to include temporal information (e.g., publication dates) from COHA
+
+Splits: Not explicitly mentioned; assumed to follow COHA's existing splits or temporal divisions

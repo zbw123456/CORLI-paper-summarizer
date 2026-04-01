@@ -1,0 +1,13 @@
+Language(s): English
+
+Source: Snooker statistics dataset (prize money earned and centuries scored)
+
+Size: Not explicitly stated in the abstract; assumed to cover all-time, decade, and year time-frames for snooker players
+
+Modality: Tabular data (numerical rankings and frequencies)
+
+Labels: Prize money earned, centuries scored
+
+Metadata: Time-frames (all-time, decade, year), ranking types (prize money earned, centuries scored)
+
+Splits: Not applicable (analysis performed on aggregated rankings across different time-frames)

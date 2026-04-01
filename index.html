@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Paper Summaries</title>
+</head>
+<body>
+
+<h2>Paper List</h2>
+
+<table border="1" cellpadding="10">
+  <tr>
+    <th>Title</th>
+    <th>Actions</th>
+  </tr>
+
+  <tr>
+    <td>Multimodal AI for Aphasia Assessment</td>
+    <td>
+      <button onclick="loadSummary('paper_001','vulgarize')">General</button>
+      <button onclick="loadSummary('paper_001','methodology')">Method</button>
+      <button onclick="loadSummary('paper_001','dataset')">Dataset</button>
+    </td>
+  </tr>
+
+  <tr>
+    <td>LLMs for Clinical Decision Support</td>
+    <td>
+      <button onclick="loadSummary('paper_002','vulgarize')">General</button>
+      <button onclick="loadSummary('paper_002','methodology')">Method</button>
+      <button onclick="loadSummary('paper_002','dataset')">Dataset</button>
+    </td>
+  </tr>
+
+</table>
+
+<h3>Summary</h3>
+<div id="output" style="border:1px solid black; padding:10px; width:600px;"></div>
+
+<script>
+async function loadSummary(id, type) {
+  const res = await fetch(`summaries/${id}.json`)
+  const data = await res.json()
+  document.getElementById("output").innerText = data[type]
+}
+</script>
+
+</body>
+</html>

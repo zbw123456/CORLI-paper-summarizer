@@ -1,0 +1,13 @@
+Language(s): English
+
+Source: Not explicitly specified in the abstract; assumed to be a corpus-based study using general-purpose English text data.
+
+Size: Not explicitly stated; assumed to be large-scale based on the mention of "robust co-occurrence metrics" and "results available online."
+
+Modality: Text
+
+Labels: Semantic relations (antonymy, and three other relations for comparison)
+
+Metadata: Not explicitly detailed; assumed to include parts of speech (POS) and co-occurrence metrics.
+
+Splits: Not mentioned; assumed to be a single dataset analyzed across different semantic relations and POS categories.

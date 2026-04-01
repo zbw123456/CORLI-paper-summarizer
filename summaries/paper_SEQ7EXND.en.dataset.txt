@@ -1,0 +1,13 @@
+Language(s): English
+
+Source: ScienceDirect (journal article)
+
+Size: Not specified in metadata
+
+Modality: Text (written discourse)
+
+Labels: Discourse-functional features including appraisal analysis and epistemic stance
+
+Metadata: Appraisal analysis, epistemic stance, corpus annotation
+
+Splits: Not specified in metadata

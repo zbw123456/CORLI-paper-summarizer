@@ -1,0 +1,13 @@
+Language(s): English
+
+Source: arXiv preprint (arXiv:2507.12260)
+
+Size: Not explicitly stated in the abstract; assumed to include synthesized translations and translations in the wild, with fine-tuning data of 1-5k pairs of synthetic data per language model.
+
+Modality: Text
+
+Labels: Binary classification labels (original vs. translated texts) implied for evaluation, though the T-index itself is a graded measure.
+
+Metadata: Not explicitly detailed in the abstract; assumed to include genre, author, and language pair information for cross-domain evaluation.
+
+Splits: Not explicitly mentioned in the abstract; assumed to include training, validation, and test splits for model fine-tuning and evaluation.

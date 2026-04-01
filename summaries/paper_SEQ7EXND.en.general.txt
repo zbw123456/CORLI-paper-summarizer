@@ -1,0 +1,5 @@
+This paper explains how to create specialized tools for analyzing writing in a second language. The focus is on understanding how writers express their opinions, certainty, and attitudes toward what they are saying. These tools use natural language processing (NLP) to automatically identify and label such features in texts.
+
+The tutorial guides readers through building custom NLP systems for annotating discourse-functional elements. These elements include how writers show their stance (like "I think" or "it seems") and how they evaluate ideas (such as "good" or "bad"). The goal is to help researchers study second language writing more efficiently by automating parts of the analysis process.
+
+The paper assumes the reader has some basic knowledge of NLP or programming, but it aims to be practical. It likely provides step-by-step instructions, examples, and tools that can be adapted for specific research needs. The methods could be useful for linguists, writing instructors, or anyone studying how language is used in real texts.

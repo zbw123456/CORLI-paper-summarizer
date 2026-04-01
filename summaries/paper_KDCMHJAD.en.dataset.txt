@@ -1,0 +1,13 @@
+Language(s): English
+
+Source: EUROCALL 2020 (28th, Online, August 20-21, 2020)
+
+Size: Not specified in the abstract or metadata
+
+Modality: CALL/MALL vocabulary tasks using smartphones
+
+Labels: Not explicitly mentioned; likely related to participation levels and learning outcomes
+
+Metadata: College Freshmen, Computer Assisted Instruction, Cooperative Learning, English (Second Language), Foreign Countries, Game Based Learning, Handheld Devices, Late Adolescents, Second Language Instruction, Second Language Learning, Student Participation, Telecommunications, Tests, Vocabulary Development
+
+Splits: Not specified

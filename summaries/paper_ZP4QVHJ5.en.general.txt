@@ -1,0 +1,7 @@
+Antonyms are words with opposite meanings, like "hot" and "cold" or "happy" and "sad." This study looks at how often these antonym pairs appear together in text compared to other word pairs with different relationships, such as synonyms (words with similar meanings) or hypernyms (words where one is a general category of the other, like "dog" and "animal").
+
+The researchers found that antonym pairs tend to appear together more often than expected by chance. This co-occurrence isn’t random; it follows three clear patterns. First, antonyms appear together more strongly than other word pairs. Second, they often appear in a specific order, like "hot and cold" rather than "cold and hot." Third, they usually appear close to each other in the text, within a few words of one another.
+
+To reach these conclusions, the team compared antonyms with three other types of word relationships across different parts of speech, using reliable statistical methods. They used large amounts of text data to ensure their findings were robust. The results of their analysis are available online for others to explore.
+
+This research helps us understand how language naturally groups words with opposite meanings, which could be useful for improving language processing tools like search engines or translation software.

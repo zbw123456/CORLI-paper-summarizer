@@ -1,0 +1,13 @@
+Language(s): Sinhala
+
+Source: National Library of Sri Lanka (digitised texts)
+
+Size: 58,000 words
+
+Modality: Text
+
+Labels: Primary genre (Non-Fiction or Fiction), secondary genre (Religious, History, Poetry, Language, Medical), written date
+
+Metadata: Authorship, copyright compliance, data attribution, OCR post-processing corrections, orthography modernisation
+
+Splits: Not explicitly mentioned in the abstract; assumed to be a single unified corpus without predefined splits

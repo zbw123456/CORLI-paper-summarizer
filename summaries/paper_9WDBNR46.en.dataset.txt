@@ -1,0 +1,15 @@
+The dataset details extracted from the paper are as follows:
+
+Language(s): Not explicitly stated in the abstract. Assumed to include English primarily, as most NLP models (e.g., BERT, GPT) and corpus linguistics studies focus on English, but other languages may be included depending on the reviewed studies.
+
+Source: Peer-reviewed literature from 2013 to 2025, sourced from databases such as Scopus and ACL Anthology.
+
+Size: 12 selected studies after screening 922 records.
+
+Modality: Textual data, as the focus is on corpus linguistics and NLP models applied to linguistic tasks.
+
+Labels: Not explicitly mentioned. Assumed to include annotations for linguistic tasks (e.g., keyword extraction, pragmatic annotation) based on the applications described.
+
+Metadata: Not explicitly detailed. Assumed to include study titles, authors, publication years, and methodological details (e.g., PRISMA-guided approach, CASP checklist for quality assessment).
+
+Splits: Not applicable, as this is a systematic review rather than a dataset with train/test splits.

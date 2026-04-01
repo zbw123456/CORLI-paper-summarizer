@@ -1,0 +1,13 @@
+Language(s): English
+
+Source: Novel benchmark designed by the authors, using model-internal representations from 4 large language models (specific models not listed in the abstract)
+
+Size: Not explicitly stated in the abstract
+
+Modality: Text (linguistic stimuli)
+
+Labels: Grammatical sentences, lower frequency grammatical sentences, ungrammatical sentences, semantically odd sentences, pragmatically odd sentences
+
+Metadata: Not explicitly detailed in the abstract (assumed to include sentence types, frequency data, and model-specific representations)
+
+Splits: Not explicitly mentioned in the abstract (assumed to include separate conditions for grammatical vs. ungrammatical comparisons)

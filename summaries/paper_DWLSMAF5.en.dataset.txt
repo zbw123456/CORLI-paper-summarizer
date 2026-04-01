@@ -1,0 +1,13 @@
+Language(s): English
+
+Source: EEBO (Early English Books Online), COHA (Corpus of Historical American English), Google Books
+
+Size: Not explicitly stated in the abstract; assumed to be large-scale based on the description of three large-scale data sources.
+
+Modality: Text (corpus data)
+
+Labels: Not explicitly stated; likely includes annotations for auxiliary verb usage (be+PP vs. have+PP) and verb types (intransitive verbs).
+
+Metadata: Not explicitly stated; assumed to include temporal information (dates of texts) and possibly verb lemmas or part-of-speech tags.
+
+Splits: Not explicitly stated; assumed to include temporal splits (e.g., by century or decade) across the three corpora.

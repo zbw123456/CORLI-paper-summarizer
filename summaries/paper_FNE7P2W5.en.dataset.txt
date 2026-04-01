@@ -1,0 +1,15 @@
+The dataset details are not explicitly provided in the given paper metadata. Assumptions based on the abstract and context:
+
+The study likely involves user interaction logs from the ParaScope tool, including user preferences, aid usage patterns, and decision-making processes. The language of the dataset is English, as the tool and study focus on non-native English speakers interacting with AI-generated paraphrases.
+
+Source: In-lab user study with 22 non-native English speakers.
+
+Size: 22 participants (small-scale study).
+
+Modality: Text-based interaction logs, including paraphrase suggestions, back-translation outputs, explanations, usage examples, and user selections.
+
+Labels: Not explicitly mentioned, but may include user decisions (acceptance/rejection of paraphrases), aid usage frequency, and perceived helpfulness.
+
+Metadata: Participant language proficiency levels, workflow progression (global to detailed information), and user confidence/autonomy metrics.
+
+Splits: No explicit splits mentioned; likely a single dataset from the in-lab study.

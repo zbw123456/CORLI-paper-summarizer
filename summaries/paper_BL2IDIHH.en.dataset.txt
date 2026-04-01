@@ -1,0 +1,15 @@
+The dataset details extracted from the provided paper metadata are as follows:
+
+Language(s): English (primary), with tasks involving other languages such as translation.
+
+Source: The dataset is derived from the GPT-3 model's performance evaluation on various NLP tasks. The model was pre-trained on a large corpus of text, primarily sourced from the Common Crawl, WebText, Books1, Books2, and Wikipedia datasets.
+
+Size: The model itself (GPT-3) has 175 billion parameters. The exact size of the evaluation datasets is not specified in the abstract, but the model was tested on a wide range of NLP datasets, including translation, question-answering, cloze tasks, and others.
+
+Modality: Textual data, as the model is an autoregressive language model designed for natural language processing tasks.
+
+Labels: The tasks evaluated include classification, translation, question-answering, cloze tasks, and reasoning tasks. Specific labels depend on the dataset used for each task, but the abstract does not provide detailed label information.
+
+Metadata: The paper does not explicitly mention metadata for the datasets. However, the evaluation tasks and datasets are likely to include metadata such as task descriptions, few-shot examples, and evaluation metrics.
+
+Splits: The abstract does not specify dataset splits. The model was evaluated in a few-shot setting, where tasks and demonstrations were provided via text interaction without gradient updates or fine-tuning.

@@ -1,0 +1,7 @@
+The study examines whether large language models (LLMs) can tell the difference between possible and impossible language by analyzing their internal probability scores. The researchers tested four models by comparing how they assign probabilities to different types of sentences: grammatical sentences, less common grammatical sentences, ungrammatical sentences, and sentences that are odd in meaning or context.
+
+The key idea was that if LLMs truly understand grammatical limits, their probability scores should show a clear difference when they encounter ungrammatical sentences compared to other types of odd sentences. The researchers expected ungrammatical sentences to stand out with much higher surprisal—a measure of how unexpected a sentence is to the model.
+
+However, the results did not support this prediction. Instead of ungrammatical sentences showing the highest surprisal, sentences that were semantically or pragmatically odd (meaning strange or contextually inappropriate) consistently had higher surprisal rates. This suggests that LLMs do not treat ungrammatical sentences as uniquely problematic compared to other types of linguistic oddities.
+
+The findings imply that the probability scores from LLMs may not reliably reflect their internal understanding of grammatical rules. Therefore, claims about LLMs distinguishing possible from impossible language should be tested using methods other than probability-based evaluations.

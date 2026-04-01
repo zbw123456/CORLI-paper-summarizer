@@ -1,0 +1,13 @@
+Language(s): English
+
+Source: Comedy dramas (native speaker content)
+
+Size: Not specified in the abstract
+
+Modality: Video-based (with adaptive playback speed adjustment)
+
+Labels: Laughter detection (binary classification: laugh or no laugh)
+
+Metadata: Learner proficiency (TOEIC score under 700), comprehension assessment via laughter
+
+Splits: Not specified in the abstract
