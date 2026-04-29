@@ -8,7 +8,7 @@ The author sincerely thanks the three supervisors: Thomas Gaillat, Maria ZIMINA-
 
 ## Project Overview
 
-**Paper Summarizer** is a pure JavaScript frontend tool for fetching academic paper metadata from Zotero and generating multilingual (English/Chinese) paper summaries and analysis.
+**Paper Summarizer** is a pure JavaScript frontend tool for fetching academic paper metadata from Zotero and generating paper in multilingual analysis summaries and analysis.
 
 **Core Features:**
 - Zotero data synchronization: supports user/group libraries, retrieving title, abstract, authors, year, DOI, etc.
@@ -63,7 +63,7 @@ L'auteur remercie sincèrement les trois superviseurs : Thomas Gaillat, Maria ZI
 
 ## Aperçu du projet
 
-**Paper Summarizer** est un outil frontend en JavaScript pur pour récupérer les métadonnées des articles académiques depuis Zotero et générer des résumés et analyses multilingues (anglais/chinois).
+**Paper Summarizer** est un outil frontend en JavaScript pur pour récupérer les métadonnées des articles académiques depuis Zotero et générer des résumés et analyses multilingues.
 
 **Fonctionnalités principales:**
 - Synchronisation des données Zotero : supporte les bibliothèques utilisateur/groupe, récupère le titre, résumé, auteurs, année, DOI, etc.
