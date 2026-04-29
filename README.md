@@ -22,7 +22,7 @@ The author sincerely thanks the three supervisors: Thomas Gaillat, Maria ZIMINA-
 
 **Technology Stack:**
 - Frontend: HTML + Bootstrap 5 + vanilla JavaScript (framework-free)
-- Data sources: Zotero Group ID, Zotero API, Mistral API (model: mistral-small-latest)
+- Data sources: Zotero Group ID, Zotero API, Mistral API (model: small4)
 - Deployment: static server only
 
 **Use Cases:**
@@ -82,7 +82,7 @@ L'auteur remercie sincèrement les encadrant·es : Thomas Gaillat, Maria ZIMINA-
 
 ## Aperçu du projet
 
-**Paper Summarizer** est un outil frontend en JavaScript pur pour récupérer les métadonnées des articles académiques depuis Zotero et générer des résumés et analyses multilingues par Mistral (mistral-small-latest).
+**Paper Summarizer** est un outil frontend en JavaScript pur pour récupérer les métadonnées des articles académiques depuis Zotero et générer des résumés et analyses multilingues par Mistral (small4).
 
 **Fonctionnalités principales:**
 - Synchronisation des données Zotero : supporte les bibliothèques utilisateur/groupe, récupère le titre, résumé, auteurs, année, DOI, etc.
