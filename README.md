@@ -1,5 +1,5 @@
 # Paper Summarizer (Pure JavaScript)
-*(See French version below / Voir la version française ci-dessous)*
+*(French version: [README_FR.md](README_FR.md))*
  
 <p align="center">
 	<img src="title.png" alt="Paper Summarizer" style="max-width:740px; width:100%; height:auto;">
@@ -104,66 +104,7 @@ Then open:
 
 `http://localhost:8000`
 
-****************************************************************************
-
-# Résumé de Papier (Pur JavaScript)
-**Auteur:** Bowen Zhang  
-**Ce travail a été réalisé dans le cadre d'un stage financé par le Consortium CORLI : https://corli.huma-num.fr**
-**Copyright:** Centre National de la Recherche Scientifique (CNRS)
-
-**Remerciements:**  
-L'auteur remercie sincèrement les encadrant·es : Thomas Gaillat, Maria ZIMINA-POIROT, et Sarra El Ayari pour leur supervision et soutien tout au long de ce projet.
-
-## Aperçu du projet
-
-**Paper Summarizer** est un outil frontend en JavaScript pur pour récupérer les métadonnées des articles académiques depuis Zotero et générer des résumés et analyses multilingues par Mistral (mistral-small-latest).
-
-**Fonctionnalités principales:**
-- Synchronisation des données Zotero : supporte les bibliothèques utilisateur/groupe, récupère le titre, résumé, auteurs, année, DOI, etc.
-- Génération de résumés : génère des résumés en trois parties (aperçu général, méthodologie, description de l'ensemble de données) pour chaque article
-- Gestion des étiquettes et filtrage : affiche les étiquettes par niveau de fréquence avec support de filtrage multi-sélection
-- Graphe de réseau de mots-clés : algorithme force-directed visualisant les mots-clés et leurs relations de co-occurrence
-- Mise en cache locale : articles et résumés stockés dans LocalStorage du navigateur
-
-**Pile technologique:**
-- Frontend : HTML + Bootstrap 5 + JavaScript vanilla (sans framework)
-- Sources de données : Zotero Group, ID API Zotero, API Mistral (modèle : mistral-small-latest)
-- Déploiement : serveur statique uniquement
-
-**Licence:**
-Ce projet est distribué sous la licence CC BY-NC-SA 4.0 — voir https://creativecommons.org/licenses/by-nc-sa/4.0/deed.fr
-
-**Cas d'utilisation:**
-Gestion des références de groupe de recherche, enseignement en classe, navigation rapide des revues de littérature.
-
-## Configuration initiale
-
-Pour la première configuration sur une nouvelle machine :
-
-- Guide chinois : [INSTALL_FROM_ZERO.md](INSTALL_FROM_ZERO.md)
-- Guide anglais : [INSTALL_FROM_ZERO_EN.md](INSTALL_FROM_ZERO_EN.md)
-- Guide français : [INSTALL_FROM_ZERO_FR.md](INSTALL_FROM_ZERO_FR.md)
-
-## Architecture actuelle
-
-- Frontend : page unique [index.html](index.html)
-- UI : HTML + Bootstrap
-- Runtime : JavaScript vanilla dans le navigateur
-- Données : fichiers JSON dans [data](data) et [summaries](summaries)
-- Configuration locale optionnelle : [config.local.js](config.local.js) (non commité)
-
-Aucun backend Node.js n'est requis.
-
-## Démarrage rapide
-
-Depuis la racine du dépôt téléchargé :
-
-```bash
-chmod +x ./start-server.sh
-./start-server.sh
-```
-
-Puis ouvrez :
-
-`http://localhost:8000`
+<p align="center">
+	<a href="README.md">English</a> | <strong>Français</strong>
+</p>
 
