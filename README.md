@@ -59,14 +59,20 @@ AI-generation notes:
 
 If you used any other AI assistance to produce documentation or code comments, please add an explicit note here identifying the file and the model used.
 
+Note on assistant-generated content:
+- Some documentation and inline comments in this repository (notably parts of `index.html` and `config.local.example.js`) were generated with GPT-5 mini. Generated outputs are recorded in `summaries/*.json` with `source`/`model` metadata when applicable.
+- Some code sections and helper script snippets were generated with Claude Code Haiku 4.5; per-file attributions are added in file headers where applicable.
+
 ## Quick start
 
+From the project root of the downloaded repository:
+
 ```bash
-cd /Users/bzhang/Downloads/paper-summarizer
+chmod +x ./start-server.sh
 ./start-server.sh
 ```
 
-Open:
+Then open:
 
 `http://localhost:8000`
 
@@ -122,12 +128,14 @@ Aucun backend Node.js n'est requis.
 
 ## Démarrage rapide
 
+Depuis la racine du dépôt téléchargé :
+
 ```bash
-cd /Users/bzhang/Downloads/paper-summarizer
+chmod +x ./start-server.sh
 ./start-server.sh
 ```
 
-Ouvert dans votre navigateur:
+Puis ouvrez :
 
 `http://localhost:8000`
 
