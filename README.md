@@ -60,8 +60,6 @@ For first-time setup on a new machine:
 
 No Node.js backend is required.
 
-## Reviewer Questions
-
 **Input validation and size limits**
 - This project does not accept arbitrary local file uploads, so there is no large-file parsing path that could crash the app.
 - User-facing inputs are limited to Zotero credentials, IDs, and API keys, which are validated before requests are sent.
