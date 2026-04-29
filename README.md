@@ -1,5 +1,9 @@
 # Paper Summarizer (Pure JavaScript)
 *(See French version below / Voir la version française ci-dessous)*
+ 
+<p align="center">
+	<img src="title.png" alt="Paper Summarizer" style="max-width:740px; width:100%; height:auto;">
+</p>
 
 **Author:** Bowen Zhang  
 **This work was conducted as part of a funded internship from the CORLI Consortium: https://corli.huma-num.fr**
@@ -19,6 +23,12 @@ The author sincerely thanks the three supervisors: Thomas Gaillat, Maria ZIMINA-
 - Tag management and filtering: displays tags by frequency level with multi-select filtering support
 - Keyword network graph: force-directed algorithm visualizing keywords and their co-occurrence relationships
 - Local caching: papers and summaries stored in browser LocalStorage
+
+<p align="center">
+	<img src="screenshot1.png" alt="App overview screenshot" style="max-width:720px; width:100%; height:auto; border:1px solid #e5e7eb;">
+	<br>
+	<em>Screenshot: main interface — paper list and filters.</em>
+</p>
 
 **Technology Stack:**
 - Frontend: HTML + Bootstrap 5 + vanilla JavaScript (framework-free)
@@ -41,6 +51,12 @@ For first-time setup on a new machine:
 - Runtime: vanilla JavaScript in browser
 - Data: JSON files in [data](data) and [summaries](summaries)
 - Optional local config: [config.local.js](config.local.js) (not committed)
+
+<p align="center">
+	<img src="screenshot2.png" alt="Detail view screenshot" style="max-width:720px; width:100%; height:auto; border:1px solid #e5e7eb;">
+	<br>
+	<em>Screenshot: paper detail and summary view.</em>
+</p>
 
 No Node.js backend is required.
 
