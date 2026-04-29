@@ -1,0 +1,35 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "Fetch papers (Zotero)",
+			"type": "shell",
+			"command": "node",
+			"args": [
+				"scripts/fetch_papers.mjs"
+			],
+			"problemMatcher": []
+		},
+		{
+			"label": "Generate summaries (Mistral)",
+			"type": "shell",
+			"command": "node",
+			"args": [
+				"scripts/generate_summaries.mjs"
+			],
+			"problemMatcher": [],
+			"group": "build"
+		},
+		{
+			"label": "Preview static site (8000)",
+			"type": "shell",
+			"command": "node",
+			"args": [
+				"scripts/serve.mjs"
+			],
+			"isBackground": true,
+			"problemMatcher": [],
+			"group": "build"
+		}
+	]
+}

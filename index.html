@@ -1,49 +1,1556 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Paper Summaries</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paper Summarizer - Pure JavaScript</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #4f46e5;
+            --secondary: #9ca3af;
+        }
+        
+        body {
+            background: linear-gradient(135deg, #f5f7fa 0%, #f0f1f5 100%);
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+        }
+        
+        .container-fluid {
+            padding: 1.5rem;
+        }
+        
+        .header {
+            background: white;
+            border-bottom: 2px solid #e5e7eb;
+            padding: 1.5rem;
+            margin-bottom: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+        }
+        
+        .header h1 {
+            color: var(--primary);
+            font-weight: 700;
+            margin: 0;
+        }
+        
+        .header .lead {
+            margin: 0.5rem 0 0 0;
+            color: #6b7280;
+        }
+        
+        .sidebar {
+            background: white;
+            border-radius: 8px;
+            padding: 1.5rem;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+        }
+        
+        .main-content {
+            background: white;
+            border-radius: 8px;
+            padding: 1.5rem;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+        }
+        
+        .tag-btn {
+            margin: 0.25rem;
+            border: 1px solid #d1d5db;
+            color: #374151;
+            transition: all 0.2s;
+        }
+        
+        .tag-btn:hover {
+            border-color: var(--primary);
+            color: var(--primary);
+        }
+        
+        .tag-btn.active {
+            background: var(--primary);
+            border-color: var(--primary);
+            color: white;
+        }
+        
+        .papers-list {
+            max-height: 600px;
+            overflow-y: auto;
+        }
+        
+        .paper-item {
+            padding: 1rem;
+            border-bottom: 1px solid #e5e7eb;
+            cursor: pointer;
+            transition: background 0.2s;
+            background: white;
+            border: none;
+            width: 100%;
+            text-align: left;
+        }
+        
+        .paper-item:hover {
+            background: #f9fafb;
+        }
+        
+        .paper-item.active {
+            background: #eef2ff;
+            border-left: 3px solid var(--primary);
+        }
+        
+        .tab-content {
+            display: none;
+        }
+        
+        .tab-content.active {
+            display: block;
+        }
+        
+        .tab-button {
+            background: white;
+            border: 1px solid #d1d5db;
+            color: #374151;
+            padding: 0.75rem 1.5rem;
+            margin-right: 0.5rem;
+            cursor: pointer;
+            border-radius: 4px;
+            transition: all 0.2s;
+        }
+        
+        .tab-button:hover {
+            border-color: var(--primary);
+            color: var(--primary);
+        }
+        
+        .tab-button.active {
+            background: var(--primary);
+            border-color: var(--primary);
+            color: white;
+        }
+        
+        .keyword-chip {
+            cursor: pointer;
+            margin: 0.25rem;
+            transition: all 0.2s;
+            background: #e5e7eb !important;
+            color: #374151 !important;
+        }
+        
+        .keyword-chip:hover {
+            background: var(--primary) !important;
+            color: white !important;
+        }
+        
+        .keyword-chip.active {
+            background: var(--primary) !important;
+            color: white !important;
+        }
+        
+        svg .node {
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+        
+        svg .node:hover {
+            opacity: 0.8;
+        }
+        
+        svg .node.active {
+            fill: #4f46e5 !important;
+            stroke: #2e1065 !important;
+        }
+        
+        svg text {
+            font-size: 11px;
+            pointer-events: none;
+        }
+        
+        .config-section {
+            background: #f9fafb;
+            border: 1px solid #e5e7eb;
+            border-radius: 6px;
+            padding: 1rem;
+            margin-bottom: 1rem;
+        }
+        
+        .config-label {
+            font-size: 0.875rem;
+            color: #6b7280;
+            margin-bottom: 0.5rem;
+        }
+        
+        .config-input {
+            font-size: 0.875rem;
+        }
+        
+        .btn-group-custom {
+            display: flex;
+            gap: 0.5rem;
+            margin-top: 1rem;
+        }
+        
+        .alert {
+            margin-bottom: 1rem;
+        }
+        
+        @media (max-width: 768px) {
+            .papers-list {
+                max-height: 300px;
+            }
+        }
+    </style>
 </head>
 <body>
+    <div class="container-fluid">
+        <!-- Header -->
+        <div class="header">
+            <h1>📚 Paper Summarizer</h1>
+            <p class="lead">Pure JavaScript • Zotero API • Mistral AI • Local Storage</p>
+        </div>
 
-<h2>Paper List</h2>
+        <!-- Alert Container -->
+        <div id="alertContainer"></div>
 
-<table border="1" cellpadding="10">
-  <tr>
-    <th>Title</th>
-    <th>Actions</th>
-  </tr>
+        <!-- Main Content -->
+        <div class="row">
+            <!-- Sidebar -->
+            <div class="col-lg-3">
+                <div class="sidebar">
+                    <!-- Configuration Panel -->
+                    <div class="mb-4" id="configurationPanel">
+                        <h5>Configuration</h5>
+                        <div class="config-section">
+                            <div class="config-label">Zotero Library Type</div>
+                            <select id="libraryType" class="form-select form-select-sm config-input">
+                                <option value="group">Group Library</option>
+                                <option value="user">User Library</option>
+                            </select>
+                        </div>
 
-  <tr>
-    <td>Multimodal AI for Aphasia Assessment</td>
-    <td>
-      <button onclick="loadSummary('paper_001','vulgarize')">General</button>
-      <button onclick="loadSummary('paper_001','methodology')">Method</button>
-      <button onclick="loadSummary('paper_001','dataset')">Dataset</button>
-    </td>
-  </tr>
+                        <div class="config-section">
+                            <div class="config-label">Zotero Group ID</div>
+                            <input type="text" id="zoteroGroupId" class="form-control form-control-sm config-input" placeholder="e.g., 12345">
+                        </div>
 
-  <tr>
-    <td>LLMs for Clinical Decision Support</td>
-    <td>
-      <button onclick="loadSummary('paper_002','vulgarize')">General</button>
-      <button onclick="loadSummary('paper_002','methodology')">Method</button>
-      <button onclick="loadSummary('paper_002','dataset')">Dataset</button>
-    </td>
-  </tr>
+                        <div class="config-section">
+                            <div class="config-label">Zotero User ID</div>
+                            <input type="text" id="zoteroUserId" class="form-control form-control-sm config-input" placeholder="e.g., 123456">
+                        </div>
 
-</table>
+                        <div class="config-section">
+                            <div class="config-label">Zotero API Key</div>
+                            <input type="password" id="zoteroApiKey" class="form-control form-control-sm config-input" placeholder="Your API key">
+                        </div>
 
-<h3>Summary</h3>
-<div id="output" style="border:1px solid black; padding:10px; width:600px;"></div>
+                        <div class="config-section">
+                            <div class="config-label">Mistral API Key</div>
+                            <input type="password" id="mistralApiKey" class="form-control form-control-sm config-input" placeholder="Your API key">
+                        </div>
 
-<script>
-async function loadSummary(id, type) {
-  const res = await fetch(`summaries/${id}.json`)
-  const data = await res.json()
-  document.getElementById("output").innerText = data[type]
-}
-</script>
+                        <div class="btn-group-custom">
+                            <button class="btn btn-sm btn-primary" id="fetchPapersBtn" onclick="fetchAndSavePapers()">
+                                ⬇️ Fetch Papers
+                            </button>
+                            <button class="btn btn-sm btn-info" id="generateSummariesBtn" onclick="generateAndSaveSummaries()">
+                                ✨ Generate Summaries
+                            </button>
+                        </div>
+                    </div>
 
+                    <!-- Tags Section -->
+                    <div class="mb-4">
+                        <div class="d-flex justify-content-between align-items-center mb-2">
+                            <h5>Tags</h5>
+                            <button class="btn btn-sm btn-outline-secondary" id="clearTagsBtn" onclick="clearAllTags()">Clear</button>
+                        </div>
+
+                        <div id="tagsContainer">
+                            <div class="d-flex align-items-center">
+                                <span class="spinner-border spinner-border-sm me-2" role="status"></span>
+                                <small class="text-muted">Loading tags...</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Main Content Area -->
+            <div class="col-lg-9">
+                <div class="main-content">
+                    <!-- Papers List Section -->
+                    <div class="mb-4">
+                        <div class="d-flex justify-content-between align-items-center mb-3">
+                            <h5>Papers (<span id="paperCount">0</span>)</h5>
+                            <input type="text" id="keywordSearchInput" class="form-control form-control-sm" placeholder="Search keywords..." style="max-width: 250px;">
+                        </div>
+
+                        <div class="papers-list" id="papersList">
+                            <div class="text-center text-muted p-3">
+                                <span class="spinner-border spinner-border-sm me-2" role="status"></span>
+                                Loading papers...
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Paper Details Section -->
+                    <div id="paperDetailsPanel" style="display: none;">
+                        <hr>
+                        <h4 id="paperTitle">Paper Title</h4>
+                        
+                        <div class="row mt-3 mb-3">
+                            <div class="col-md-6">
+                                <small class="text-muted d-block">ID</small>
+                                <strong id="paperId">N/A</strong>
+                            </div>
+                            <div class="col-md-6">
+                                <small class="text-muted d-block">Year</small>
+                                <strong id="paperYear">N/A</strong>
+                            </div>
+                        </div>
+
+                        <div class="row mb-3">
+                            <div class="col-md-6">
+                                <small class="text-muted d-block">Type</small>
+                                <strong id="paperType">N/A</strong>
+                            </div>
+                            <div class="col-md-6">
+                                <small class="text-muted d-block">Authors</small>
+                                <strong id="paperAuthors">N/A</strong>
+                            </div>
+                        </div>
+
+                        <div id="paperTagsContainer" style="display: none;">
+                            <small class="text-muted d-block">Tags</small>
+                            <div id="paperTags" class="mb-3"></div>
+                        </div>
+
+                        <div id="paperAbstractContainer" style="display: none;">
+                            <small class="text-muted d-block">Abstract</small>
+                            <p id="paperAbstract" class="text-muted" style="font-size: 0.9rem; line-height: 1.5;"></p>
+                        </div>
+
+                        <div id="paperUrlContainer" style="display: none;">
+                            <small class="text-muted d-block">URL</small>
+                            <a id="paperUrl" href="#" target="_blank" class="mb-3 d-inline-block" style="font-size: 0.9rem;"></a>
+                        </div>
+                    </div>
+
+                    <!-- Summary Section -->
+                    <div id="summaryPanel" style="display: none;">
+                        <hr>
+                        <div class="mb-3">
+                            <div class="d-flex justify-content-between align-items-center mb-3">
+                                <h5>Summaries</h5>
+                                <div>
+                                    <select id="languageSelect" class="form-select form-select-sm d-inline-block" style="width: auto;">
+                                        <option value="en">English</option>
+                                        <option value="zh">中文</option>
+                                    </select>
+                                    <button class="btn btn-sm btn-outline-secondary ms-2" onclick="copySummariesToClipboard()">📋 Copy</button>
+                                    <button class="btn btn-sm btn-outline-secondary ms-1" onclick="downloadSummariesAsText()">💾 Download</button>
+                                </div>
+                            </div>
+
+                            <!-- Tab Buttons -->
+                            <div class="mb-3">
+                                <button class="tab-button active" onclick="switchSummaryTab('general')">General</button>
+                                <button class="tab-button" onclick="switchSummaryTab('methodology')">Methodology</button>
+                                <button class="tab-button" onclick="switchSummaryTab('dataset')">Dataset</button>
+                            </div>
+
+                            <!-- Tab Content -->
+                            <div id="summary-general" class="tab-content active" style="max-height: 400px; overflow-y: auto; padding: 1rem; background: #f9fafb; border-radius: 6px;">
+                                <p class="text-muted">Loading...</p>
+                            </div>
+                            <div id="summary-methodology" class="tab-content" style="max-height: 400px; overflow-y: auto; padding: 1rem; background: #f9fafb; border-radius: 6px;">
+                                <p class="text-muted">Loading...</p>
+                            </div>
+                            <div id="summary-dataset" class="tab-content" style="max-height: 400px; overflow-y: auto; padding: 1rem; background: #f9fafb; border-radius: 6px;">
+                                <p class="text-muted">Loading...</p>
+                            </div>
+                        </div>
+
+                        <!-- Keywords Section -->
+                        <hr>
+                        <h5>Keywords & Insights</h5>
+                        
+                        <div id="keywordNavList" class="mb-3 d-flex flex-wrap">
+                            <span class="text-muted small">Loading keywords...</span>
+                        </div>
+
+                        <svg id="keywordMindmap" width="100%" height="400" style="border: 1px solid #e5e7eb; border-radius: 6px; background: white;"></svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./config.local.js"></script>
+    <script>
+        // ==================== CONFIGURATION ====================
+        // STOPWORDS: Set of common English words filtered out during keyword extraction to avoid
+        // polluting the keyword graph with noise words. Includes articles, prepositions, common verbs.
+        const STOPWORDS = new Set([
+            'a', 'an', 'and', 'are', 'as', 'at', 'be', 'by', 'can', 'for', 'from', 'has', 'have', 'how', 'if', 'in', 'is', 'it', 'its', 'may', 'not', 'of', 'on', 'or', 'our', 'paper', 'study', 'that', 'the', 'their', 'this', 'to', 'was', 'we', 'were', 'with', 'you', 'your', 'using', 'used', 'use'
+        ]);
+
+        // TAG_HIGH_MIN / TAG_MEDIUM_MIN: Thresholds for categorizing tags by frequency across papers.
+        // Tags appearing >= TAG_HIGH_MIN times are marked HIGH priority, >= TAG_MEDIUM_MIN are MEDIUM,
+        // below that are LOW. Used by renderTags() to display visual hierarchy.
+        const TAG_HIGH_MIN = 5;
+        const TAG_MEDIUM_MIN = 2;
+        
+        // DEFAULT_CONFIG: fallback configuration object defining required fields (Zotero library type/IDs,
+        // API keys). Used as base before merging with localStorage and window.APP_CONFIG.
+        const DEFAULT_CONFIG = {
+            libraryType: 'group',
+            zoteroGroupId: '',
+            zoteroUserId: '',
+            zoteroApiKey: '',
+            mistralApiKey: ''
+        };
+        // APP_CONFIG: injected from config.local.js if present. Allows local override of defaults
+        // without committing sensitive API keys to version control.
+        const APP_CONFIG = window.APP_CONFIG || {};
+        
+        // SUMMARY_PROMPTS: template prompts for three summary types (general, methodology, dataset),
+        // each available in both English (en) and Chinese (zh). Templates use {title}, {abstract},
+        // {tags} placeholders replaced at prompt generation time.
+        const SUMMARY_PROMPTS = {
+            general: {
+                en: 'Write a concise, plain-English overview of the paper for a research reader. Focus on the main idea, why it matters, and the key takeaway. Use 2-4 short paragraphs.\n\nPaper title: {title}\nAbstract: {abstract}\nTags: {tags}',
+                zh: '请用简洁、通俗的中文概述这篇论文，重点说明核心想法、研究意义和主要结论。请写 2-4 个短段落。\n\n论文标题：{title}\n摘要：{abstract}\n标签：{tags}'
+            },
+            methodology: {
+                en: 'Summarize the methodology of the paper in a clear and structured way. If the abstract does not contain enough detail, infer cautiously and state uncertainty instead of inventing specifics. Use bullet points if helpful.\n\nPaper title: {title}\nAbstract: {abstract}\nTags: {tags}',
+                zh: '请结构化总结这篇论文的方法部分。如果摘要信息不足，请谨慎推断，并明确说明不确定之处，不要编造细节。可以使用项目符号。\n\n论文标题：{title}\n摘要：{abstract}\n标签：{tags}'
+            },
+            dataset: {
+                en: 'Summarize the dataset or data sources used by the paper. Mention the task domain, likely data type, and any dataset limitations that can be inferred from the title or abstract.\n\nPaper title: {title}\nAbstract: {abstract}\nTags: {tags}',
+                zh: '请总结这篇论文使用的数据集或数据来源，说明任务领域、数据类型以及从标题或摘要中可以推断出的数据限制。\n\n论文标题：{title}\n摘要：{abstract}\n标签：{tags}'
+            }
+        };
+
+        // ==================== STATE ====================
+        // Core runtime state variables managed in memory and synchronized with localStorage.
+        
+        // allPapers: in-memory array of all loaded paper objects (from Zotero or JSON files).
+        // Each paper has: id, title, abstract, tags, authors, year, publication, url, doi, etc.
+        let allPapers = [];
+        
+        // currentPaper / currentSummary: track the currently selected/displayed paper and its summaries
+        // (used by UI to show details panel and keyword graph).
+        let currentPaper = null;
+        let currentSummary = null;
+        
+        // selectedTags: Set of tag strings currently selected by user for filtering papers.
+        // Updated by renderTags() UI and used by getFilteredPapers() to narrow the paper list.
+        let selectedTags = new Set();
+        
+        // keywordQuery: currently active keyword filter string; entered via search input or clicked from chips.
+        // Affects paper list filtering in getFilteredPapers().
+        let keywordQuery = '';
+        
+        // latestKeywords: sorted array of [term, score] tuples extracted from the current paper/summaries.
+        // Displayed as navigation chips and used as nodes in the keyword mindmap graph.
+        let latestKeywords = [];
+        
+        // mindMapAnimationId: requestAnimationFrame ID for the running force-directed graph animation.
+        // Cancelled when switching papers to clean up resources.
+        let mindMapAnimationId = null;
+
+        // ==================== STORAGE ====================
+        // saveToLocalStorage / loadFromLocalStorage: wrapper functions for JSON serialization/deserialization
+        // with unified error handling. Catches quota-exceeded and parsing errors, displays user alerts.
+        function saveToLocalStorage(key, data) {
+            try {
+                localStorage.setItem(key, JSON.stringify(data));
+            } catch (e) {
+                console.error(`LocalStorage error for ${key}:`, e);
+                showAlert(`Storage error: ${e.message}`, 'warning');
+            }
+        }
+
+        function loadFromLocalStorage(key, fallback = null) {
+            try {
+                const item = localStorage.getItem(key);
+                return item ? JSON.parse(item) : fallback;
+            } catch (e) {
+                console.error(`LocalStorage error for ${key}:`, e);
+                return fallback;
+            }
+        }
+
+        // saveConfig: persist current form field values to localStorage under key 'config'.
+        // Called whenever user changes a field (via addEventListener on change/input events).
+        function saveConfig() {
+            saveToLocalStorage('config', {
+                libraryType: document.getElementById('libraryType').value,
+                zoteroGroupId: document.getElementById('zoteroGroupId').value,
+                zoteroUserId: document.getElementById('zoteroUserId').value,
+                zoteroApiKey: document.getElementById('zoteroApiKey').value,
+                mistralApiKey: document.getElementById('mistralApiKey').value
+            });
+        }
+
+        // getMergedConfig: combine configuration from three sources with precedence:
+        // 1. DEFAULT_CONFIG (fallback)
+        // 2. localStorage 'config' key (persisted user input)
+        // 3. window.APP_CONFIG (injected from config.local.js, overrides all)
+        // Returns merged object suitable for API calls or form prefilling.
+        function getMergedConfig() {
+            const stored = loadFromLocalStorage('config', {}) || {};
+            return {
+                ...DEFAULT_CONFIG,
+                ...stored,
+                ...APP_CONFIG
+            };
+        }
+
+        // hasCompleteApiConfig: check if config has all required fields for both Zotero and Mistral APIs.
+        // Validates: (zoteroGroupId OR zoteroUserId based on libraryType), zoteroApiKey, mistralApiKey.
+        // Used to determine if critical operations can proceed.
+        function hasCompleteApiConfig(config) {
+            const mode = (config.libraryType || 'group').toLowerCase();
+            const hasZoteroScope = mode === 'user'
+                ? Boolean(config.zoteroUserId)
+                : Boolean(config.zoteroGroupId);
+            return Boolean(config.zoteroApiKey) && Boolean(config.mistralApiKey) && hasZoteroScope;
+        }
+
+        // loadConfig: populate form fields from merged config. Fills the UI with current config values
+        // when page loads so user sees pre-filled API keys/IDs if available from config.local.js or prior saves.
+        function loadConfig() {
+            const config = getMergedConfig();
+            document.getElementById('libraryType').value = config.libraryType;
+            document.getElementById('zoteroGroupId').value = config.zoteroGroupId;
+            document.getElementById('zoteroUserId').value = config.zoteroUserId;
+            document.getElementById('zoteroApiKey').value = config.zoteroApiKey;
+            document.getElementById('mistralApiKey').value = config.mistralApiKey;
+        }
+
+        // Add input event listeners to save config
+        document.addEventListener('DOMContentLoaded', () => {
+            ['libraryType', 'zoteroGroupId', 'zoteroUserId', 'zoteroApiKey', 'mistralApiKey'].forEach(id => {
+                const elem = document.getElementById(id);
+                if (elem) {
+                    elem.addEventListener('change', saveConfig);
+                    elem.addEventListener('input', saveConfig);
+                }
+            });
+        });
+
+        // ==================== ALERTS ====================
+        // showAlert: display a dismissible Bootstrap alert (info/success/warning/danger) to the user.
+        // Auto-dismisses after 5 seconds or when user clicks close button. Clears previous alert.
+        function showAlert(message, type = 'info') {
+            const container = document.getElementById('alertContainer');
+            const alert = document.createElement('div');
+            alert.className = `alert alert-${type} alert-dismissible fade show`;
+            alert.innerHTML = `
+                ${escapeHtml(message)}
+                <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+            `;
+            container.innerHTML = '';
+            container.appendChild(alert);
+            setTimeout(() => {
+                if (alert.parentNode) alert.remove();
+            }, 5000);
+        }
+
+        // ==================== FETCH PAPERS ====================
+        // fetchAndSavePapers: main entry point for user to sync papers from Zotero. Validates config,
+        // calls fetchFromZotero(), saves results to allPapers & localStorage, updates UI (tags, list),
+        // shows success/error alert.
+        async function fetchAndSavePapers() {
+            saveConfig();
+            const libraryType = document.getElementById('libraryType').value;
+            const groupId = document.getElementById('zoteroGroupId').value;
+            const userId = document.getElementById('zoteroUserId').value;
+            const apiKey = document.getElementById('zoteroApiKey').value;
+
+            if (!apiKey) {
+                showAlert('Please enter Zotero API Key', 'warning');
+                return;
+            }
+
+            if (libraryType === 'group' && !groupId) {
+                showAlert('Please enter Zotero Group ID for group library', 'warning');
+                return;
+            }
+
+            if (libraryType === 'user' && !userId) {
+                showAlert('Please enter Zotero User ID for user library', 'warning');
+                return;
+            }
+
+            try {
+                const btn = document.getElementById('fetchPapersBtn');
+                btn.disabled = true;
+                btn.innerHTML = '⏳ Fetching...';
+
+                const baseUrl = libraryType === 'user'
+                    ? `https://api.zotero.org/users/${userId}`
+                    : `https://api.zotero.org/groups/${groupId}`;
+
+                const papers = await fetchFromZotero(baseUrl, apiKey);
+                saveToLocalStorage('papers', papers);
+                allPapers = papers;
+                
+                renderTags();
+                renderPapersList(getFilteredPapers());
+
+                btn.disabled = false;
+                btn.innerHTML = '⬇️ Fetch Papers';
+                showAlert(`Successfully fetched ${papers.length} papers`, 'success');
+            } catch (error) {
+                document.getElementById('fetchPapersBtn').disabled = false;
+                document.getElementById('fetchPapersBtn').innerHTML = '⬇️ Fetch Papers';
+                showAlert(`Fetch failed: ${error.message}`, 'danger');
+                console.error(error);
+            }
+        }
+
+        // fetchFromZotero: pull items from Zotero API via pagination. Filters out attachments/annotations,
+        // attempts optional Crossref enrichment by DOI, normalizes each item via cleanItem().
+        // Returns array of standardized paper objects.
+        async function fetchFromZotero(baseUrl, apiKey, pageSize = 100, maxItems = 1000) {
+            const items = [];
+            let start = 0;
+
+            while (items.length < maxItems) {
+                const limit = Math.min(pageSize, maxItems - items.length);
+                const url = `${baseUrl}/items?format=json&limit=${limit}&start=${start}`;
+                const response = await fetch(url, {
+                    headers: { 'Zotero-API-Key': apiKey }
+                });
+
+                if (!response.ok) {
+                    throw new Error(`HTTP ${response.status}: ${await response.text()}`);
+                }
+
+                const page = await response.json();
+                if (!Array.isArray(page) || page.length === 0) break;
+
+                items.push(...page);
+                start += page.length;
+                if (page.length < pageSize) break;
+            }
+
+            const papers = [];
+            for (let i = 0; i < items.length; i++) {
+                const item = items[i];
+                const data = item?.data || {};
+                
+                if (['attachment', 'annotation', 'note'].includes(data.itemType)) continue;
+                if (!data.title) continue;
+
+                // Try to fetch Crossref data for enrichment
+                let crossrefData = null;
+                if (data.DOI) {
+                    try {
+                        const doi = normalizeDoi(data.DOI);
+                        crossrefData = await fetchCrossrefByDoi(doi);
+                        await new Promise(r => setTimeout(r, 100)); // Rate limiting
+                    } catch {
+                        // Ignore Crossref errors
+                    }
+                }
+
+                const paper = cleanItem(item, crossrefData);
+                if (paper) papers.push(paper);
+            }
+
+            return papers;
+        }
+
+        // fetchCrossrefByDoi: optional enrichment step to fetch additional metadata (abstract, authors)
+        // from Crossref API by DOI. Called during paper fetch with rate limiting (100ms delay).
+        // Returns null on error or if no DOI provided.
+        async function fetchCrossrefByDoi(doi) {
+            if (!doi) return null;
+            const url = `https://api.crossref.org/works/${encodeURIComponent(doi)}`;
+            try {
+                const response = await fetch(url, {
+                    headers: { 'User-Agent': 'paper-summarizer' }
+                });
+                if (!response.ok) return null;
+                const data = await response.json();
+                return data?.message || null;
+            } catch {
+                return null;
+            }
+        }
+
+        // normalizeDoi / normalizeText / stripJatsTags / normalizeTags / normalizeAuthors / cleanItem:
+        // Data cleaning pipeline functions. Each handles a specific field type:
+        // - normalizeDoi: removes URL prefix, whitespace.
+        // - normalizeText: collapses whitespace, trims.
+        // - stripJatsTags: removes XML/HTML tags from abstract text.
+        // - normalizeTags: converts tag objects to strings, filters empty.
+        // - normalizeAuthors: extracts author names by creatorType, handles both name formats.
+        // - cleanItem: combines all above, produces final standardized paper object.
+        function normalizeDoi(value = '') {
+            return String(value || '')
+                .trim()
+                .replace(/^https?:\/\/doi\.org\//i, '')
+                .replace(/^doi:\s*/i, '')
+                .trim();
+        }
+
+        function normalizeText(value = '') {
+            return String(value || '').replace(/\s+/g, ' ').trim();
+        }
+
+        function stripJatsTags(text = '') {
+            return String(text || '')
+                .replace(/<[^>]+>/g, ' ')
+                .replace(/\s+/g, ' ')
+                .trim();
+        }
+
+        function normalizeTags(tags = []) {
+            return (tags || [])
+                .map(tag => normalizeText(typeof tag === 'object' && tag ? tag.tag : tag))
+                .filter(Boolean);
+        }
+
+        function normalizeAuthors(creators = []) {
+            return (creators || [])
+                .filter(creator => ['author', 'editor', 'contributor'].includes(creator?.creatorType))
+                .map(creator => normalizeText(`${creator?.firstName || ''} ${creator?.lastName || ''}`) || normalizeText(creator?.name || ''))
+                .filter(Boolean);
+        }
+
+        function cleanItem(item, crossref) {
+            const data = item?.data || {};
+            const title = normalizeText(data.title);
+            if (!title) return null;
+
+            const doi = normalizeDoi(data.DOI);
+            const authors = normalizeAuthors(data.creators || []).length > 0
+                ? normalizeAuthors(data.creators || [])
+                : (crossref?.author || []).map(a => normalizeText(`${a?.given || ''} ${a?.family || ''}`)).filter(Boolean);
+
+            return {
+                id: `paper_${data.key || String(Math.random()).slice(2, 10).toUpperCase()}`,
+                zoteroKey: data.key || null,
+                itemType: data.itemType || '',
+                title,
+                abstract: normalizeText(data.abstractNote) || stripJatsTags(crossref?.abstract || ''),
+                doi,
+                tags: normalizeTags(data.tags || []),
+                authors,
+                year: parseInt(String(data.date || '').match(/(19|20)\d{2}/)?.[0]) || null,
+                publication: normalizeText(data.publicationTitle || data.bookTitle || ''),
+                url: normalizeText(data.url || '')
+            };
+        }
+
+        // ==================== GENERATE SUMMARIES ====================
+        // generateAndSaveSummaries: main entry point to generate AI summaries for all papers.
+        // For each paper, calls askMistral() for each summary type (general/methodology/dataset),
+        // respects language setting, caches results in localStorage, shows progress/error alerts.
+        async function generateAndSaveSummaries() {
+            saveConfig();
+            const mistralApiKey = document.getElementById('mistralApiKey').value;
+            
+            if (!mistralApiKey) {
+                showAlert('Please enter Mistral API Key', 'warning');
+                return;
+            }
+
+            if (allPapers.length === 0) {
+                showAlert('No papers loaded. Fetch papers first.', 'warning');
+                return;
+            }
+
+            try {
+                const btn = document.getElementById('generateSummariesBtn');
+                btn.disabled = true;
+                btn.innerHTML = '⏳ Generating...';
+
+                let generated = 0;
+                let failed = 0;
+
+                for (const paper of allPapers) {
+                    const language = document.getElementById('languageSelect')?.value || 'en';
+                    const summaries = loadFromLocalStorage(`summary_${paper.id}`, {});
+                    const languageBucket = (summaries[language] && typeof summaries[language] === 'object')
+                        ? summaries[language]
+                        : {};
+
+                    for (const type of ['general', 'methodology', 'dataset']) {
+                        if (languageBucket[type]) continue; // Skip if already cached
+
+                        try {
+                            const prompt = makePrompt(type, language, paper);
+                            const content = await askMistral(mistralApiKey, 'mistral-small-latest', prompt);
+                            languageBucket[type] = content;
+                            generated++;
+                            await new Promise(r => setTimeout(r, 1200)); // Rate limiting
+                        } catch (error) {
+                            console.error(`Failed for ${paper.id}/${type}:`, error);
+                            failed++;
+                        }
+                    }
+
+                    summaries[language] = languageBucket;
+                    saveToLocalStorage(`summary_${paper.id}`, summaries);
+                }
+
+                btn.disabled = false;
+                btn.innerHTML = '✨ Generate Summaries';
+                showAlert(`Generated ${generated} summaries (${failed} failed)`, 'success');
+            } catch (error) {
+                document.getElementById('generateSummariesBtn').disabled = false;
+                document.getElementById('generateSummariesBtn').innerHTML = '✨ Generate Summaries';
+                showAlert(`Generation failed: ${error.message}`, 'danger');
+                console.error(error);
+            }
+        }
+
+        // makePrompt: substitute placeholders ({title}, {abstract}, {tags}) in SUMMARY_PROMPTS template
+        // with actual paper data for the given summary type and language.
+        function makePrompt(type, language, paper) {
+            const template = SUMMARY_PROMPTS[type][language] || SUMMARY_PROMPTS[type]['en'];
+            return template
+                .replace('{title}', paper.title || '')
+                .replace('{abstract}', paper.abstract || 'No abstract provided.')
+                .replace('{tags}', (paper.tags || []).join(', ') || 'No tags provided.');
+        }
+
+        // askMistral: call Mistral API with a prompt, using a system message to ensure
+        // accurate/careful responses. Temperature set to 0.2 for consistency.
+        // Throws on HTTP errors or if response format is unexpected.
+        async function askMistral(apiKey, model, prompt) {
+            const response = await fetch('https://api.mistral.ai/v1/chat/completions', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                    'Authorization': `Bearer ${apiKey}`
+                },
+                body: JSON.stringify({
+                    model,
+                    messages: [
+                        { role: 'system', content: 'You are a careful research assistant that writes accurate summaries.' },
+                        { role: 'user', content: prompt }
+                    ],
+                    temperature: 0.2
+                })
+            });
+
+            if (!response.ok) {
+                throw new Error(`Mistral API error ${response.status}`);
+            }
+
+            const data = await response.json();
+            return data?.choices?.[0]?.message?.content || '';
+        }
+
+        // ==================== UI: TAGS ====================
+        // renderTags: count tag frequency across all papers, categorize into HIGH/MEDIUM/LOW groups,
+        // create clickable tag buttons that toggle selectedTags Set and re-filter paper list.
+        function renderTags() {
+            const counts = {};
+            for (const paper of allPapers) {
+                for (const tag of paper.tags || []) {
+                    counts[tag] = (counts[tag] || 0) + 1;
+                }
+            }
+
+            const groups = { high: {}, medium: {}, low: {} };
+            Object.entries(counts).forEach(([tag, count]) => {
+                if (count >= TAG_HIGH_MIN) groups.high[tag] = count;
+                else if (count >= TAG_MEDIUM_MIN) groups.medium[tag] = count;
+                else groups.low[tag] = count;
+            });
+
+            const container = document.getElementById('tagsContainer');
+            container.innerHTML = '';
+
+            ['high', 'medium', 'low'].forEach(level => {
+                const tags = groups[level];
+                if (Object.keys(tags).length === 0) return;
+
+                const section = document.createElement('div');
+                section.className = 'mb-3';
+                section.innerHTML = `<small class="text-muted">${level.toUpperCase()}</small>`;
+
+                Object.entries(tags)
+                    .sort((a, b) => b[1] - a[1] || a[0].localeCompare(b[0]))
+                    .forEach(([tag, count]) => {
+                        const btn = document.createElement('button');
+                        btn.className = 'tag-btn btn btn-sm btn-outline-primary';
+                        btn.textContent = `${tag} (${count})`;
+                        btn.onclick = () => {
+                            btn.classList.toggle('active');
+                            if (btn.classList.contains('active')) {
+                                selectedTags.add(tag);
+                            } else {
+                                selectedTags.delete(tag);
+                            }
+                            renderPapersList(getFilteredPapers());
+                        };
+                        if (selectedTags.has(tag)) btn.classList.add('active');
+                        section.appendChild(btn);
+                    });
+
+                container.appendChild(section);
+            });
+        }
+
+        function clearAllTags() {
+            selectedTags.clear();
+            document.querySelectorAll('.tag-btn').forEach(btn => btn.classList.remove('active'));
+            renderPapersList(getFilteredPapers());
+        }
+
+        // ==================== UI: PAPERS LIST ====================
+        // getFilteredPapers: apply active filters (selectedTags and keywordQuery) to allPapers,
+        // sort by year descending then title alphabetically. Returns filtered/sorted subset.
+        function getFilteredPapers() {
+            let filtered = allPapers;
+
+            if (selectedTags.size > 0) {
+                filtered = filtered.filter(p => (p.tags || []).some(t => selectedTags.has(t)));
+            }
+
+            if (keywordQuery) {
+                filtered = filtered.filter(p => {
+                    const haystack = `${p.title || ''} ${p.abstract || ''} ${(p.tags || []).join(' ')}`.toLowerCase();
+                    return haystack.includes(keywordQuery);
+                });
+            }
+
+            return filtered.sort((a, b) => {
+                const yearDiff = (b.year || 0) - (a.year || 0);
+                return yearDiff !== 0 ? yearDiff : (a.title || '').localeCompare(b.title || '');
+            });
+        }
+
+        // renderPapersList: render UI list of papers given a filtered array. Each item is a button
+        // that calls showPaperDetails when clicked. Displays title, year, first 2 tags.
+        // Shows "No matching papers" if list is empty.
+        function renderPapersList(papers) {
+            const container = document.getElementById('papersList');
+            container.innerHTML = '';
+            document.getElementById('paperCount').textContent = papers.length;
+
+            if (papers.length === 0) {
+                container.innerHTML = '<div class="text-center text-muted p-3">No matching papers</div>';
+                return;
+            }
+
+            papers.forEach(paper => {
+                const item = document.createElement('button');
+                item.className = 'paper-item';
+                item.type = 'button';
+                item.onclick = () => showPaperDetails(paper);
+
+                const year = paper.year ? ` (${paper.year})` : '';
+                const tags = (paper.tags || []).slice(0, 2).join(', ');
+                
+                item.innerHTML = `
+                    <div><strong>${escapeHtml(paper.title || 'Untitled')}${year}</strong></div>
+                    <small class="text-muted">${escapeHtml(tags || 'No tags')}</small>
+                `;
+
+                container.appendChild(item);
+            });
+        }
+
+        // ==================== UI: PAPER DETAILS ====================
+        // showPaperDetails: populate and display the paper details panel for a selected paper.
+        // Fills in title, metadata (ID, year, type, authors), tags, abstract, URL/DOI link.
+        // Then calls loadPaperSummary() to fetch/render summaries and keyword graph.
+        function showPaperDetails(paper) {
+            currentPaper = paper;
+            currentSummary = null;
+
+            document.getElementById('paperTitle').textContent = paper.title || 'Untitled';
+            document.getElementById('paperId').textContent = paper.id || 'N/A';
+            document.getElementById('paperYear').textContent = paper.year || 'N/A';
+            document.getElementById('paperType').textContent = paper.itemType || 'N/A';
+
+            const authors = paper.authors || [];
+            document.getElementById('paperAuthors').textContent = authors.length > 0
+                ? `${authors.slice(0, 3).join(', ')}${authors.length > 3 ? ' et al.' : ''}`
+                : 'N/A';
+
+            if (paper.tags && paper.tags.length > 0) {
+                document.getElementById('paperTags').innerHTML = paper.tags
+                    .map(tag => `<span class="badge bg-info">${escapeHtml(tag)}</span>`)
+                    .join(' ');
+                document.getElementById('paperTagsContainer').style.display = 'block';
+            } else {
+                document.getElementById('paperTagsContainer').style.display = 'none';
+            }
+
+            if (paper.abstract) {
+                document.getElementById('paperAbstract').textContent = paper.abstract;
+                document.getElementById('paperAbstractContainer').style.display = 'block';
+            } else {
+                document.getElementById('paperAbstractContainer').style.display = 'none';
+            }
+
+            const paperUrl = paper.url || (paper.doi ? `https://doi.org/${paper.doi}` : '');
+
+            const paperUrlLink = document.getElementById('paperUrl');
+            const paperUrlContainer = document.getElementById('paperUrlContainer');
+            paperUrlContainer.style.display = 'block';
+
+            if (paperUrl) {
+                paperUrlLink.href = paperUrl;
+                paperUrlLink.textContent = paper.url || (paper.doi ? `DOI: ${paperUrl}` : paperUrl);
+                paperUrlLink.style.pointerEvents = '';
+                paperUrlLink.style.color = '';
+            } else {
+                paperUrlLink.removeAttribute('href');
+                paperUrlLink.textContent = 'No direct URL available';
+                paperUrlLink.style.pointerEvents = 'none';
+                paperUrlLink.style.color = '#6b7280';
+            }
+
+            document.getElementById('paperDetailsPanel').style.display = 'block';
+            document.getElementById('summaryPanel').style.display = 'block';
+
+            loadPaperSummary(paper);
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+
+        // loadPaperSummary: load summaries for a paper from localStorage or fallback to files in
+        // summaries/ directory. Supports multiple file formats (language buckets, legacy vulgarize/general/dataset).
+        // Then calls renderKeywordInsights() to extract & display keywords.
+        async function loadPaperSummary(paper) {
+            const language = document.getElementById('languageSelect')?.value || 'en';
+            let summaries = loadFromLocalStorage(`summary_${paper.id}`, {});
+
+            if (!summaries[language]) {
+                const fileCandidates = [
+                    `/summaries/${paper.id}.json`,
+                    `summaries/${paper.id}.json`,
+                    `./summaries/${paper.id}.json`
+                ];
+
+                for (const url of fileCandidates) {
+                    try {
+                        const response = await fetch(url, { cache: 'no-store' });
+                        if (!response.ok) continue;
+
+                        const payload = await response.json();
+                        const fileSummary = payload?.summaries?.[language]
+                            || payload?.[language]
+                            || ((payload?.general || payload?.vulgarize || payload?.methodology || payload?.dataset)
+                                ? {
+                                    general: payload.general || payload.vulgarize || '',
+                                    methodology: payload.methodology || '',
+                                    dataset: payload.dataset || ''
+                                }
+                                : null);
+
+                        if (fileSummary && typeof fileSummary === 'object') {
+                            summaries = {
+                                ...summaries,
+                                [language]: {
+                                    general: fileSummary.general || fileSummary.vulgarize || '',
+                                    methodology: fileSummary.methodology || '',
+                                    dataset: fileSummary.dataset || ''
+                                }
+                            };
+                            saveToLocalStorage(`summary_${paper.id}`, summaries);
+                            break;
+                        }
+                    } catch {
+                        // try next candidate
+                    }
+                }
+            }
+
+            if (!summaries[language]) {
+                ['summary-general', 'summary-methodology', 'summary-dataset'].forEach(id => {
+                    document.getElementById(id).innerHTML = '<p class="text-muted">No summary generated. Generate summaries first.</p>';
+                });
+                document.getElementById('keywordNavList').innerHTML = '<span class="text-muted small">No keywords available.</span>';
+                document.getElementById('keywordMindmap').innerHTML = '';
+                return;
+            }
+
+            document.getElementById('summary-general').textContent = summaries[language]?.general || 'N/A';
+            document.getElementById('summary-methodology').textContent = summaries[language]?.methodology || 'N/A';
+            document.getElementById('summary-dataset').textContent = summaries[language]?.dataset || 'N/A';
+
+            currentSummary = summaries[language];
+            renderKeywordInsights(paper, summaries[language], language);
+        }
+
+        // switchSummaryTab: toggle visibility between summary tab panels (general/methodology/dataset).
+        // Removes active class from all tabs and buttons, applies active to clicked tab and button.
+        function switchSummaryTab(tab) {
+            document.querySelectorAll('.tab-content').forEach(el => el.classList.remove('active'));
+            document.querySelectorAll('.tab-button').forEach(el => el.classList.remove('active'));
+            
+            document.getElementById(`summary-${tab}`).classList.add('active');
+            event.target.classList.add('active');
+        }
+
+        // ==================== KEYWORDS & INSIGHTS ====================
+                /*
+                 renderKeywordInsights
+                 - Purpose: extract and weight keywords from the current paper and its summaries,
+                     producing `latestKeywords` which drives the navigation chips and the mindmap.
+                 - Inputs:
+                         - paper: object containing title, abstract, tags, etc.
+                         - summary: object with `general`, `methodology`, `dataset` text fields
+                         - language: language code used for contextual notes
+                 - Behavior:
+                         1. Collect terms from tags (higher weight), title/abstract and summaries (lower weight).
+                         2. Tokenize and normalize terms, filter stopwords and short tokens.
+                         3. Aggregate counts, take top N terms, then call renderers for UI and graph.
+                 - Output: sets `latestKeywords` and triggers `renderKeywordNavigation` and
+                     `renderKeywordMindMap`.
+                */
+                function renderKeywordInsights(paper, summary, language) {
+            if (!paper) return;
+
+            const keywordCounts = new Map();
+            const addTerm = (term, weight = 1) => {
+                const value = normalizeKeyword(term);
+                if (!value || STOPWORDS.has(value)) return;
+                keywordCounts.set(value, (keywordCounts.get(value) || 0) + weight);
+            };
+
+            (paper.tags || []).forEach(tag => addTerm(tag, 4));
+            tokenize(`${paper.title || ''} ${paper.abstract || ''}`).forEach(term => addTerm(term, 1));
+            tokenize(`${summary?.general || ''} ${summary?.methodology || ''} ${summary?.dataset || ''}`).forEach(term => addTerm(term, 1));
+
+            latestKeywords = [...keywordCounts.entries()]
+                .sort((a, b) => b[1] - a[1] || a[0].localeCompare(b[0]))
+                .slice(0, 16);
+
+            renderKeywordNavigation(language);
+            renderKeywordMindMap(language);
+        }
+
+        /*
+         renderKeywordNavigation
+         - Purpose: render clickable keyword chips (navigation) from `latestKeywords`.
+         - Each chip shows term · score and calls `applyKeywordQuery` when clicked.
+         - Also displays a small language/context note.
+        */
+        function renderKeywordNavigation(language) {
+            const list = document.getElementById('keywordNavList');
+            list.innerHTML = '';
+
+            if (latestKeywords.length === 0) {
+                list.innerHTML = '<span class="text-muted small">No keywords available.</span>';
+                return;
+            }
+
+            latestKeywords.forEach(([term, score]) => {
+                const chip = document.createElement('span');
+                chip.className = `keyword-chip badge rounded-pill bg-secondary ${keywordQuery === term ? 'active' : ''}`;
+                chip.textContent = `${term} · ${score}`;
+                chip.onclick = () => applyKeywordQuery(term);
+                list.appendChild(chip);
+            });
+
+            const note = document.createElement('div');
+            note.className = 'small text-muted w-100 mt-2';
+            note.textContent = `Language context: ${language}. Click keywords to filter.`;
+            list.appendChild(note);
+        }
+
+                /*
+                 renderKeywordMindMap
+                 - Purpose: draw a lightweight, dependency-free force-directed SVG graph that
+                     visualizes keywords as nodes and pairwise co-occurrence as links.
+                 - High-level algorithm:
+                         1. Build `nodes` from top keywords (position, velocity, radius proportional to score).
+                         2. Compute co-occurrence counts by splitting combined content into sentences and
+                                counting sentences that contain both terms for each pair.
+                         3. Create an `edgeMap` and convert it to a sorted edge list (keep strongest edges).
+                         4. Create SVG elements for links and nodes (lines + circle+text groups).
+                         5. Run a simple physics simulation per animation frame:
+                                 - apply pairwise repulsive forces to avoid overlap,
+                                 - apply spring-like link forces pulling connected nodes together (stronger
+                                     when co-occurrence weight is higher),
+                                 - apply a gentle pull-to-center and damping for stability,
+                                 - integrate velocity to update positions and re-render SVG transforms/lines.
+                         6. Cap the animation (frame limit) to avoid long-running CPU use for static views.
+                 - Notes: This implementation trades full physical correctness for simplicity and
+                     small-code footprint; it's intended for visual inspection and small keyword sets.
+                */
+                function renderKeywordMindMap(language) {
+            const svg = document.getElementById('keywordMindmap');
+            svg.innerHTML = '';
+
+            if (mindMapAnimationId) {
+                cancelAnimationFrame(mindMapAnimationId);
+                mindMapAnimationId = null;
+            }
+
+            if (!latestKeywords.length || !currentPaper) return;
+
+            const ns = 'http://www.w3.org/2000/svg';
+            const width = Math.max(760, svg.clientWidth || 800);
+            const height = Math.max(360, Number(svg.getAttribute('height')) || 400);
+            svg.setAttribute('viewBox', `0 0 ${width} ${height}`);
+
+            const terms = latestKeywords.slice(0, 12).map(([term, score]) => ({ term, score }));
+            const content = `${currentPaper?.title || ''}. ${currentPaper?.abstract || ''}. ${currentSummary?.general || ''}. ${currentSummary?.methodology || ''}. ${currentSummary?.dataset || ''}`.toLowerCase();
+            const sentences = content.split(/[.!?;\n]+/).map(s => s.trim()).filter(Boolean);
+
+            const nodes = terms.map((item, i) => ({
+                ...item,
+                x: width * (0.25 + Math.random() * 0.5),
+                y: height * (0.2 + Math.random() * 0.6),
+                vx: 0,
+                vy: 0,
+                r: Math.max(16, 10 + item.score * 1.5),
+                i
+            }));
+
+            const edgeMap = new Map();
+            const registerEdge = (a, b, w) => {
+                const key = a < b ? `${a}|${b}` : `${b}|${a}`;
+                edgeMap.set(key, (edgeMap.get(key) || 0) + w);
+            };
+
+            for (let i = 0; i < nodes.length; i += 1) {
+                for (let j = i + 1; j < nodes.length; j += 1) {
+                    const a = nodes[i].term.toLowerCase();
+                    const b = nodes[j].term.toLowerCase();
+                    let co = 0;
+                    for (const sentence of sentences) {
+                        if (sentence.includes(a) && sentence.includes(b)) co += 1;
+                    }
+                    if (co > 0) registerEdge(i, j, co);
+                }
+            }
+
+            const pairEdges = [...edgeMap.entries()]
+                .map(([key, weight]) => {
+                    const [ia, ib] = key.split('|').map(Number);
+                    return { source: ia, target: ib, weight };
+                })
+                .sort((l, r) => r.weight - l.weight)
+                .slice(0, 22);
+
+            const linkLayer = document.createElementNS(ns, 'g');
+            const nodeLayer = document.createElementNS(ns, 'g');
+            svg.appendChild(linkLayer);
+            svg.appendChild(nodeLayer);
+
+            const linkEls = pairEdges.map(edge => {
+                const line = document.createElementNS(ns, 'line');
+                line.setAttribute('stroke', '#94a3b8');
+                line.setAttribute('stroke-opacity', String(Math.min(0.85, 0.2 + edge.weight * 0.2)));
+                line.setAttribute('stroke-width', String(Math.min(4, 0.8 + edge.weight * 0.6)));
+                linkLayer.appendChild(line);
+                return line;
+            });
+
+            const nodeEls = nodes.map(node => {
+                const g = document.createElementNS(ns, 'g');
+                g.style.cursor = 'pointer';
+
+                const circle = document.createElementNS(ns, 'circle');
+                circle.setAttribute('r', String(node.r));
+                circle.setAttribute('fill', keywordQuery === node.term ? '#4f46e5' : '#c7d2fe');
+                circle.setAttribute('stroke', keywordQuery === node.term ? '#2e1065' : '#6366f1');
+                circle.setAttribute('stroke-width', '1.5');
+
+                const text = document.createElementNS(ns, 'text');
+                text.setAttribute('text-anchor', 'middle');
+                text.setAttribute('dominant-baseline', 'middle');
+                text.setAttribute('font-size', '11px');
+                text.setAttribute('fill', '#374151');
+                text.textContent = node.term.length > 14 ? `${node.term.slice(0, 13)}…` : node.term;
+
+                g.appendChild(circle);
+                g.appendChild(text);
+                g.onclick = () => applyKeywordQuery(node.term);
+                nodeLayer.appendChild(g);
+                return { g, circle, text };
+            });
+
+            const hint = document.createElementNS(ns, 'text');
+            hint.setAttribute('x', '12');
+            hint.setAttribute('y', '20');
+            hint.setAttribute('font-size', '12px');
+            hint.setAttribute('fill', '#6b7280');
+            hint.textContent = `Dynamic graph (${language}) — pair links show co-occurrence`; 
+            svg.appendChild(hint);
+
+            const centerForceX = width / 2;
+            const centerForceY = height / 2 + 8;
+            const damping = 0.9;
+            let frame = 0;
+
+            function step() {
+                // Repulsion
+                for (let i = 0; i < nodes.length; i += 1) {
+                    for (let j = i + 1; j < nodes.length; j += 1) {
+                        const a = nodes[i];
+                        const b = nodes[j];
+                        let dx = b.x - a.x;
+                        let dy = b.y - a.y;
+                        const dist2 = Math.max(36, dx * dx + dy * dy);
+                        const dist = Math.sqrt(dist2);
+                        dx /= dist;
+                        dy /= dist;
+                        const push = 120 / dist2;
+                        a.vx -= dx * push;
+                        a.vy -= dy * push;
+                        b.vx += dx * push;
+                        b.vy += dy * push;
+                    }
+                }
+
+                // Link springs
+                for (const edge of pairEdges) {
+                    const a = nodes[edge.source];
+                    const b = nodes[edge.target];
+                    let dx = b.x - a.x;
+                    let dy = b.y - a.y;
+                    const dist = Math.max(1, Math.sqrt(dx * dx + dy * dy));
+                    const desired = Math.max(70, 165 - edge.weight * 18);
+                    const k = 0.004 + edge.weight * 0.0015;
+                    const force = (dist - desired) * k;
+                    dx /= dist;
+                    dy /= dist;
+                    a.vx += dx * force;
+                    a.vy += dy * force;
+                    b.vx -= dx * force;
+                    b.vy -= dy * force;
+                }
+
+                // Pull to center and integrate
+                for (const n of nodes) {
+                    n.vx += (centerForceX - n.x) * 0.0009;
+                    n.vy += (centerForceY - n.y) * 0.0009;
+                    n.vx *= damping;
+                    n.vy *= damping;
+                    n.x += n.vx * 2.2;
+                    n.y += n.vy * 2.2;
+
+                    n.x = Math.max(n.r + 10, Math.min(width - n.r - 10, n.x));
+                    n.y = Math.max(n.r + 24, Math.min(height - n.r - 10, n.y));
+                }
+
+                // Paint links
+                pairEdges.forEach((edge, idx) => {
+                    const a = nodes[edge.source];
+                    const b = nodes[edge.target];
+                    const line = linkEls[idx];
+                    line.setAttribute('x1', String(a.x));
+                    line.setAttribute('y1', String(a.y));
+                    line.setAttribute('x2', String(b.x));
+                    line.setAttribute('y2', String(b.y));
+                });
+
+                // Paint nodes
+                nodes.forEach((node, idx) => {
+                    const el = nodeEls[idx];
+                    el.g.setAttribute('transform', `translate(${node.x},${node.y})`);
+                });
+
+                frame += 1;
+                if (frame < 720) {
+                    mindMapAnimationId = requestAnimationFrame(step);
+                } else {
+                    mindMapAnimationId = null;
+                }
+            }
+
+            step();
+        }
+
+        // applyKeywordQuery
+        // - Apply the selected keyword as a filter (`keywordQuery`), update the search input,
+        //   re-render paper list and refresh navigation/mindmap views. If the filter yields
+        //   a different paper set, automatically open the first matching paper.
+        function applyKeywordQuery(value) {
+            keywordQuery = normalizeKeyword(value || '');
+            const keywordInput = document.getElementById('keywordSearchInput');
+            if (keywordInput) keywordInput.value = keywordQuery;
+
+            const filtered = getFilteredPapers();
+            renderPapersList(filtered);
+            renderKeywordNavigation(document.getElementById('languageSelect')?.value || 'en');
+            renderKeywordMindMap(document.getElementById('languageSelect')?.value || 'en');
+
+            if (filtered.length > 0 && !filtered.some(p => p.id === currentPaper?.id)) {
+                showPaperDetails(filtered[0]);
+            }
+        }
+
+        // tokenize
+        // - Convert raw text into normalized tokens suitable for keyword extraction.
+        // - Removes non-letter/number characters, lowercases, normalizes whitespace,
+        //   filters stopwords and very short tokens.
+        function tokenize(text) {
+            return String(text || '')
+                .toLowerCase()
+                .replace(/[^\p{L}\p{N}]+/gu, ' ')
+                .split(/\s+/)
+                .map(normalizeKeyword)
+                .filter(Boolean)
+                .filter(term => term.length > 2 && !STOPWORDS.has(term));
+        }
+
+        // normalizeKeyword
+        // - Lightweight normalization for keyword tokens: trim, lowercase, collapse spaces.
+        function normalizeKeyword(text) {
+            return String(text || '')
+                .trim()
+                .toLowerCase()
+                .replace(/\s+/g, ' ');
+        }
+
+        // ==================== EXPORT ====================
+        // copySummariesToClipboard / downloadSummariesAsText: export summary data. Copy writes to
+        // system clipboard (user can paste elsewhere). Download triggers browser file download dialog
+        // with summaries as .txt file named after paper ID.
+        function copySummariesToClipboard() {
+            if (!currentSummary || !currentPaper) {
+                showAlert('No summary loaded', 'warning');
+                return;
+            }
+
+            const text = [
+                `=== ${currentSummary?.title || currentPaper?.title || 'Paper'} ===`,
+                '',
+                '=== General ===',
+                currentSummary?.general || '',
+                '',
+                '=== Methodology ===',
+                currentSummary?.methodology || '',
+                '',
+                '=== Dataset ===',
+                currentSummary?.dataset || ''
+            ].join('\n').trim();
+
+            navigator.clipboard.writeText(text).then(() => {
+                showAlert('Copied to clipboard', 'success');
+            }).catch(() => {
+                showAlert('Copy failed', 'danger');
+            });
+        }
+
+        function downloadSummariesAsText() {
+            if (!currentSummary || !currentPaper) {
+                showAlert('No summary loaded', 'warning');
+                return;
+            }
+
+            const text = [
+                `=== ${currentSummary?.title || currentPaper?.title || 'Paper'} ===`,
+                '',
+                '=== General ===',
+                currentSummary?.general || '',
+                '',
+                '=== Methodology ===',
+                currentSummary?.methodology || '',
+                '',
+                '=== Dataset ===',
+                currentSummary?.dataset || ''
+            ].join('\n').trim();
+
+            const blob = new Blob([text], { type: 'text/plain' });
+            const url = URL.createObjectURL(blob);
+            const a = document.createElement('a');
+            a.href = url;
+            a.download = `${(currentPaper.id || 'summary').replace(/[^a-z0-9_-]+/gi, '_')}.txt`;
+            a.click();
+            URL.revokeObjectURL(url);
+        }
+
+        // ==================== UTILITIES ====================
+        // escapeHtml: prevent XSS by escaping user/data content before inserting into DOM.
+        // Replaces &, <, >, ", ' with HTML entities.
+        function escapeHtml(value) {
+            return String(value || '')
+                .replace(/&/g, '&amp;')
+                .replace(/</g, '&lt;')
+                .replace(/>/g, '&gt;')
+                .replace(/"/g, '&quot;')
+                .replace(/'/g, '&#39;');
+        }
+
+        // loadInitialPapersFromJson: fallback data loader if localStorage is empty (e.g., first page load).
+        // Tries multiple file paths (/data/papers.json, /papers.json, etc.) and returns first valid JSON array.
+        // Allows app to show sample data without requiring Zotero fetch.
+        async function loadInitialPapersFromJson() {
+            const candidates = ['/data/papers.json', '/papers.json', 'data/papers.json', 'papers.json'];
+            for (const url of candidates) {
+                try {
+                    const response = await fetch(url, { cache: 'no-store' });
+                    if (!response.ok) continue;
+                    const payload = await response.json();
+                    if (Array.isArray(payload) && payload.length > 0) {
+                        return payload;
+                    }
+                } catch {
+                    // try next candidate
+                }
+            }
+            return [];
+        }
+
+        // ==================== INIT ====================
+        // Initialization sequence on DOMContentLoaded:
+        // 1. Load config from merged sources (DEFAULT_CONFIG + localStorage + APP_CONFIG).
+        // 2. Restore papers from localStorage if available, else load from JSON file.
+        // 3. Render UI: tags, paper list, first paper details.
+        // 4. Attach event listeners for keyword search and language selection.
+        document.addEventListener('DOMContentLoaded', () => {
+            loadConfig();
+
+            // Restore papers from localStorage
+            const savedPapers = loadFromLocalStorage('papers', []);
+            if (savedPapers.length > 0) {
+                allPapers = savedPapers;
+                renderTags();
+                renderPapersList(getFilteredPapers());
+                if (allPapers.length > 0) showPaperDetails(allPapers[0]);
+            } else {
+                loadInitialPapersFromJson().then((jsonPapers) => {
+                    if (Array.isArray(jsonPapers) && jsonPapers.length > 0) {
+                        allPapers = jsonPapers;
+                        saveToLocalStorage('papers', allPapers);
+                        renderTags();
+                        renderPapersList(getFilteredPapers());
+                        showPaperDetails(allPapers[0]);
+                    } else {
+                        renderPapersList([]);
+                        showAlert('No papers found. Click "Fetch Papers" to load from Zotero.', 'warning');
+                    }
+                });
+            }
+
+            // Keyword search
+            const keywordInput = document.getElementById('keywordSearchInput');
+            if (keywordInput) {
+                keywordInput.addEventListener('keydown', (e) => {
+                    if (e.key === 'Enter') {
+                        keywordQuery = normalizeKeyword(keywordInput.value);
+                        renderPapersList(getFilteredPapers());
+                    }
+                });
+            }
+
+            // Language change
+            const languageSelect = document.getElementById('languageSelect');
+            if (languageSelect) {
+                languageSelect.addEventListener('change', () => {
+                    if (currentPaper) {
+                        loadPaperSummary(currentPaper);
+                    }
+                });
+            }
+        });
+    </script>
 </body>
 </html>

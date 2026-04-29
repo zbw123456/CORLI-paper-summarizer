@@ -1,0 +1,8 @@
+**Overview of the Paper**
+
+This tutorial paper introduces a practical method for creating custom natural language processing (NLP) tools to analyze discourse features in second language (L2) writing. The authors focus on the development of the **Engagement Analyzer**, a model designed to annotate linguistic patterns such as epistemic stance and appraisal in L2 writing research. By leveraging recent advancements in NLP, the paper demonstrates how researchers can build scalable and replicable annotation tools to study context-sensitive language use in L2 writing.
+
+The paper walks through the entire process—from corpus annotation and model training to evaluation and dissemination—using the **spaCy** Python library. This step-by-step guide makes it accessible for researchers without deep NLP expertise to develop their own tools. The authors emphasize that custom NLP models can improve efficiency in analyzing complex linguistic features, which are often difficult to annotate manually.
+
+**Key Takeaway**
+The main insight is that **custom NLP tools can enhance the scalability and reliability of discourse analysis in L2 writing research**. By following the tutorial, researchers can create tailored models to study nuanced language features, making large-scale annotation projects more feasible. The paper serves as a valuable resource for those looking to integrate NLP into their linguistic research workflows.

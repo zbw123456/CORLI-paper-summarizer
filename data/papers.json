@@ -1,5 +1,428 @@
 [
   {
+    "id": "paper_FNE7P2W5",
+    "zoteroKey": "FNE7P2W5",
+    "libraryType": "group",
+    "itemType": "preprint",
+    "correctedItemType": "preprint",
+    "title": "Design Opportunities for Explainable AI Paraphrasing Tools: A User Study with Non-native English Speakers",
+    "abstract": "We investigate how non-native English speakers (NNESs) interact with diverse information aids to assess and select AI-generated paraphrases. We develop ParaScope, an AI paraphrasing assistant that integrates diverse information aids, such as back-translation, explanations, and usage examples, and logs user interaction data. Our in-lab study with 22 NNESs reveals that user preferences for information aids vary by language proficiency, with workflows progressing from global to more detailed information. While back-translation was the most frequently used aid, it was not a decisive factor in suggestion acceptance; users combined multiple information aids to make informed decisions. Our findings demonstrate the potential of explainable AI paraphrasing tools to enhance NNESs' confidence, autonomy, and writing efficiency, while also emphasizing the importance of thoughtful design to prevent information overload. Based on these findings, we offer design implications for explainable AI paraphrasing tools that support NNESs in making informed decisions when using AI writing systems.",
+    "doi": "10.48550/arXiv.2405.07475",
+    "tags": [
+      "AI Writing Assistants",
+      "Back-Translation",
+      "Explainable AI (XAI)",
+      "Generative AI",
+      "Human-AI Collaboration",
+      "Human-Computer Interaction",
+      "Information Overload",
+      "Language Proficiency",
+      "Non-Native English Speakers (NNES)",
+      "User Interface Design",
+      "User Study"
+    ],
+    "authors": [
+      "Yewon Kim",
+      "Thanh-Long V. Le",
+      "Donghwi Kim",
+      "Mina Lee",
+      "Sung-Ju Lee"
+    ],
+    "year": 2024,
+    "publication": "",
+    "url": "https://arxiv.org/abs/2405.07475v2",
+    "summaryFile": "summaries/paper_FNE7P2W5.json"
+  },
+  {
+    "id": "paper_2XWT9BEK",
+    "zoteroKey": "2XWT9BEK",
+    "libraryType": "group",
+    "itemType": "magazineArticle",
+    "correctedItemType": "magazineArticle",
+    "title": "Idiomify -- Building a Collocation-supplemented Reverse Dictionary of English Idioms with Word2Vec for non-native learners",
+    "abstract": "The aim of idiomify is to build a collocation-supplemented reverse dictionary of idioms for the non-native learners of English. We aim to do so because the reverse dictionary could help the non-natives explore idioms on demand, and the collocations could also guide them on using idioms more adequately. The cornerstone of the project is a reliable way of mining idioms from corpora, which is however a challenge because idioms extensively vary in forms. We tackle this by automatically deriving matching rules from their base forms. We use Point-wise Mutual Inclusion (PMI), Term Frequency - Inverse Document Frequency (TF-IDF) to model collocations, since both of them are popular metric for pairwise significance. We also try Term Frequency (TF) as the baseline model. As for implementing the reverse-dictionary, three approaches could be taken: inverted index, graphs and distributional semantics. We choose to take the last approach and implement the reverse dictionary with Word2Vec, because it is the most flexible approach of all and Word2Vec is a simple yet strong baseline. Evaluating the methods has revealed rooms for improvement. We learn that we can better identify idioms with the help of slop, wildcard and reordering techniques. We also learn that we can get the best of both PMI and TF-IDF if we use machine learning to find the sweet spot. Lastly, We learn that Idiomify could be further improved with a mixture of inverted index and distributional semantics approach. The limits aside, the proposed methods are feasible, and their benefits to the non-natives are apparent, which therefore can be used to aid the non-natives in acquiring English idioms.",
+    "doi": "",
+    "tags": [
+      "Collocation Extraction",
+      "Computer-Assisted Language Learning (CALL)",
+      "Corpus Mining",
+      "Evaluation Metrics",
+      "Idiom Acquisition",
+      "Lexical Resources",
+      "Machine Learning",
+      "Natural Language Processing (NLP)",
+      "Non-native English Learners",
+      "Pattern Matching",
+      "Pointwise Mutual Information (PMI)",
+      "Second Language Learning (L2)",
+      "Word2Vec"
+    ],
+    "authors": [
+      "Eu-Bin Kim"
+    ],
+    "year": 2022,
+    "publication": "arXiv.org",
+    "url": "https://arxiv.org/abs/2204.05634v1",
+    "summaryFile": "summaries/paper_2XWT9BEK.json"
+  },
+  {
+    "id": "paper_DN58HRLA",
+    "zoteroKey": "DN58HRLA",
+    "libraryType": "group",
+    "itemType": "preprint",
+    "correctedItemType": "preprint",
+    "title": "Iterative Data Curation with Theoretical Guarantees",
+    "abstract": "In recent years, more and more large data sets have become available. Data accuracy, the absence of verifiable errors in data, is crucial for these large materials to enable high-quality research, downstream applications, and model training. This results in the problem of how to curate or improve data accuracy in such large and growing data, especially when the data is too large for manual curation to be feasible. This paper presents a unified procedure for iterative and continuous improvement of data sets. We provide theoretical guarantees that data accuracy tests speed up error reduction and, most importantly, that the proposed approach will, asymptotically, eliminate all errors in data with probability one. We corroborate the theoretical results with simulations and a real-world use case.",
+    "doi": "",
+    "tags": [],
+    "authors": [
+      "Väinö Yrjänäinen",
+      "Johan Jonasson",
+      "Måns Magnusson"
+    ],
+    "year": 2025,
+    "publication": "",
+    "url": "https://arxiv.org/abs/2510.11428v2",
+    "summaryFile": "summaries/paper_DN58HRLA.json"
+  },
+  {
+    "id": "paper_WAYGZSP8",
+    "zoteroKey": "WAYGZSP8",
+    "libraryType": "group",
+    "itemType": "preprint",
+    "correctedItemType": "preprint",
+    "title": "Large corpora and large language models: a replicable method for automating grammatical annotation",
+    "abstract": "Much linguistic research relies on annotated datasets of features extracted from text corpora, but the rapid quantitative growth of these corpora has created practical difficulties for linguists to manually annotate large data samples. In this paper, we present a replicable, supervised method that leverages large language models for assisting the linguist in grammatical annotation through prompt engineering, training, and evaluation. We introduce a methodological pipeline applied to the case study of formal variation in the English evaluative verb construction 'consider X (as) (to be) Y', based on the large language model Claude 3.5 Sonnet and corpus data from Davies' NOW and EnTenTen21 (SketchEngine). Overall, we reach a model accuracy of over 90% on our held-out test samples with only a small amount of training data, validating the method for the annotation of very large quantities of tokens of the construction in the future. We discuss the generalisability of our results for a wider range of case studies of grammatical constructions and grammatical variation and change, underlining the value of AI copilots as tools for future linguistic research, notwithstanding some important caveats.",
+    "doi": "",
+    "tags": [
+      "Corpus Linguistics",
+      "annotation",
+      "grammatical variation",
+      "large language models"
+    ],
+    "authors": [
+      "Cameron Morin",
+      "Matti Marttinen Larsson"
+    ],
+    "year": 2025,
+    "publication": "",
+    "url": "https://arxiv.org/abs/2411.11260v2",
+    "summaryFile": "summaries/paper_WAYGZSP8.json"
+  },
+  {
+    "id": "paper_QXLJNQ92",
+    "zoteroKey": "QXLJNQ92",
+    "libraryType": "group",
+    "itemType": "preprint",
+    "correctedItemType": "preprint",
+    "title": "Large Language Model probabilities cannot distinguish between possible and impossible language",
+    "abstract": "A controversial test for Large Language Models concerns the ability to discern possible from impossible language. While some evidence attests to the models' sensitivity to what crosses the limits of grammatically impossible language, this evidence has been contested on the grounds of the soundness of the testing material. We use model-internal representations to tap directly into the way Large Language Models represent the 'grammatical-ungrammatical' distinction. In a novel benchmark, we elicit probabilities from 4 models and compute minimal-pair surprisal differences, juxtaposing probabilities assigned to grammatical sentences to probabilities assigned to (i) lower frequency grammatical sentences, (ii) ungrammatical sentences, (iii) semantically odd sentences, and (iv) pragmatically odd sentences. The prediction is that if string-probabilities can function as proxies for the limits of grammar, the ungrammatical condition will stand out among the conditions that involve linguistic violations, showing a spike in the surprisal rates. Our results do not reveal a unique surprisal signature for ungrammatical prompts, as the semantically and pragmatically odd conditions consistently show higher surprisal. We thus demonstrate that probabilities do not constitute reliable proxies for model-internal representations of syntactic knowledge. Consequently, claims about models being able to distinguish possible from impossible language need verification through a different methodology.",
+    "doi": "",
+    "tags": [
+      "Grammar",
+      "large language models",
+      "limits"
+    ],
+    "authors": [
+      "Evelina Leivada",
+      "Raquel Montero",
+      "Paolo Morosi",
+      "Natalia Moskvina",
+      "Tamara Serrano",
+      "Marcel Aguilar",
+      "Fritz Guenther"
+    ],
+    "year": 2025,
+    "publication": "",
+    "url": "https://arxiv.org/abs/2509.15114v1",
+    "summaryFile": "summaries/paper_QXLJNQ92.json"
+  },
+  {
+    "id": "paper_AJXBQ4C2",
+    "zoteroKey": "AJXBQ4C2",
+    "libraryType": "group",
+    "itemType": "conferencePaper",
+    "correctedItemType": "conferencePaper",
+    "title": "Laugh at Your Own Pace: Basic Performance Evaluation of Language Learning Assistance by Adjustment of Video Playback Speeds Based on Laughter Detection",
+    "abstract": "Among various methods to learn a second language (L2), such as listening and shadowing, Extensive Viewing involves learning L2 by watching many videos. However, it is difficult for many L2 learners to smoothly and effortlessly comprehend video contents made for native speakers at the original speed. Therefore, we developed a language learning assistance system that automatically adjusts the playback speed according to the learner's comprehension. Our system judges that learners understand the contents if they laugh at the punchlines of comedy dramas, and vice versa. Experimental results show that this system supports learners with relatively low L2 ability (under 700 in TOEIC Score in the experimental condition) to understand video contents. Our system can widen learners' possible options of native speakers' videos as Extensive Viewing material.",
+    "doi": "",
+    "tags": [
+      "Adaptive Video Playback",
+      "Comedy Dramas",
+      "Computer-Assisted Language Learning (CALL)",
+      "Educational Technology",
+      "Extensive Viewing",
+      "L2 Listening Comprehension",
+      "Laughter Detection",
+      "Learner Proficiency",
+      "Second Language Acquisition (SLA)",
+      "TOEIC",
+      "Video-Based Learning"
+    ],
+    "authors": [
+      "Naoto Nishida",
+      "Hinako Nozaki",
+      "Buntarou Shizuki"
+    ],
+    "year": 2025,
+    "publication": "",
+    "url": "https://arxiv.org/abs/2504.09835v1",
+    "summaryFile": "summaries/paper_AJXBQ4C2.json"
+  },
+  {
+    "id": "paper_UYB4HEYB",
+    "zoteroKey": "UYB4HEYB",
+    "libraryType": "group",
+    "itemType": "preprint",
+    "correctedItemType": "preprint",
+    "title": "Lexical Complexity Prediction: An Overview",
+    "abstract": "The occurrence of unknown words in texts significantly hinders reading comprehension. To improve accessibility for specific target populations, computational modelling has been applied to identify complex words in texts and substitute them for simpler alternatives. In this paper, we present an overview of computational approaches to lexical complexity prediction focusing on the work carried out on English data. We survey relevant approaches to this problem which include traditional machine learning classifiers (e.g. SVMs, logistic regression) and deep neural networks as well as a variety of features, such as those inspired by literature in psycholinguistics as well as word frequency, word length, and many others. Furthermore, we introduce readers to past competitions and available datasets created on this topic. Finally, we include brief sections on applications of lexical complexity prediction, such as readability and text simplification, together with related studies on languages other than English.",
+    "doi": "",
+    "tags": [
+      "Assistive Technologies",
+      "Benchmark Datasets",
+      "Complex Word Identification (CWI)",
+      "Computational Linguistics",
+      "Lexical Complexity Prediction",
+      "Lexical Resources",
+      "Lexical Simplification",
+      "Logistic Regression",
+      "Machine Learning",
+      "Multilingual NLP",
+      "Natural language processing (NLP)",
+      "Psycholinguistic Features",
+      "Readability Assessment",
+      "Reading Comprehension",
+      "Support Vector Machines (SVM)",
+      "Text Simplification",
+      "Word Frequency"
+    ],
+    "authors": [
+      "Kai North",
+      "Marcos Zampieri",
+      "Matthew Shardlow"
+    ],
+    "year": 2023,
+    "publication": "",
+    "url": "https://arxiv.org/abs/2303.04851v1",
+    "summaryFile": "summaries/paper_UYB4HEYB.json"
+  },
+  {
+    "id": "paper_6P6DFMAT",
+    "zoteroKey": "6P6DFMAT",
+    "libraryType": "group",
+    "itemType": "preprint",
+    "correctedItemType": "preprint",
+    "title": "Modeling Word Emotion in Historical Language: Quantity Beats Supposed Stability in Seed Word Selection",
+    "abstract": "To understand historical texts, we must be aware that language -- including the emotional connotation attached to words -- changes over time. In this paper, we aim at estimating the emotion which is associated with a given word in former language stages of English and German. Emotion is represented following the popular Valence-Arousal-Dominance (VAD) annotation scheme. While being more expressive than polarity alone, existing word emotion induction methods are typically not suited for addressing it. To overcome this limitation, we present adaptations of two popular algorithms to VAD. To measure their effectiveness in diachronic settings, we present the first gold standard for historical word emotions, which was created by scholars with proficiency in the respective language stages and covers both English and German. In contrast to claims in previous work, our findings indicate that hand-selecting small sets of seed words with supposedly stable emotional meaning is actually harmful rather than helpful.",
+    "doi": "",
+    "tags": [
+      "Computational Linguistics",
+      "Cross-Linguistic Analysis",
+      "Emotional Stability",
+      "Historical Corpora",
+      "Historical Linguistics",
+      "Psycholinguistics",
+      "Seed Words",
+      "Sentiment Analysis",
+      "Valence-Arousal-Dominance (VAD)",
+      "annotation"
+    ],
+    "authors": [
+      "Johannes Hellrich",
+      "Sven Buechel",
+      "Udo Hahn"
+    ],
+    "year": 2018,
+    "publication": "",
+    "url": "https://arxiv.org/abs/1806.08115v2",
+    "summaryFile": "summaries/paper_6P6DFMAT.json"
+  },
+  {
+    "id": "paper_ZP4QVHJ5",
+    "zoteroKey": "ZP4QVHJ5",
+    "libraryType": "group",
+    "itemType": "conferencePaper",
+    "correctedItemType": "conferencePaper",
+    "title": "On the Distinctive Co-occurrence Characteristics of Antonymy",
+    "abstract": "Antonymy has long received particular attention in lexical semantics. Previous studies have shown that antonym pairs frequently co-occur in text, across genres and parts of speech, more often than would be expected by chance. However, whether this co-occurrence pattern is distinctive of antonymy remains unclear, due to a lack of comparison with other semantic relations. This work fills the gap by comparing antonymy with three other relations across parts of speech using robust co-occurrence metrics. We find that antonymy is distinctive in three respects: antonym pairs co-occur with high strength, in a preferred linear order, and within short spans. All results are available online.",
+    "doi": "",
+    "tags": [
+      "Antonymy",
+      "Co-occurrence Analysis",
+      "Contrastive Analysis",
+      "Corpus Linguistics",
+      "Distributional Semantics",
+      "Lexical Patterns",
+      "Lexical Semantics",
+      "Parts of Speech (POS)",
+      "Quantitative Linguistics",
+      "Semantic Distinctiveness",
+      "Semantic Relations",
+      "Text Co-occurrence"
+    ],
+    "authors": [
+      "Zhihan Cao",
+      "Hiroaki Yamada",
+      "Takenobu Tokunaga"
+    ],
+    "year": 2025,
+    "publication": "",
+    "url": "https://arxiv.org/abs/2509.11534v1",
+    "summaryFile": "summaries/paper_ZP4QVHJ5.json"
+  },
+  {
+    "id": "paper_NTRNVIAD",
+    "zoteroKey": "NTRNVIAD",
+    "libraryType": "group",
+    "itemType": "preprint",
+    "correctedItemType": "preprint",
+    "title": "Oscillatory dynamics between language usage and economic activity",
+    "abstract": "Over the past two centuries, the frequency of word usage in major Western languages has exhibited small amplitude regular cycles, superimposed on larger background trends. We show that these cycles of word usage organize into semantically coherent clusters that track, interact with, or precede macroeconomic rhythms. To explore the nature of this interaction, we build on a minimal mathematical model that captures usage dynamics through parameters linked to real world processes. Parameter fitting reveals that word usage operates near a Hopf bifurcation, a critical regime associated with heightened sensitivity, uncovering a robust and specific coupling between language usage and economic activity. In linguistic datasets that allow long term quantitative analysis, rooted in capitalist contexts, this coupling appears as an oscillatory dynamic, reflecting a feedback process in which language both shapes material reality and manages the changes it produces.",
+    "doi": "",
+    "tags": [
+      "Collective Attention",
+      "Corpus Linguistics",
+      "Historical Linguistics",
+      "Language Usage",
+      "Long-Term Trends",
+      "Macroeconomic Rhythms",
+      "Mathematical Modeling",
+      "Quantitative Linguistics",
+      "Semantic Clustering",
+      "Time Series Analysis",
+      "Word Frequency Dynamics"
+    ],
+    "authors": [
+      "Alejandro Pardo Pintos",
+      "Diego E. Shalom",
+      "Guillermo Cecchi",
+      "Gabriel Mindlin",
+      "Marcos A. Trevisan"
+    ],
+    "year": 2025,
+    "publication": "",
+    "url": "https://arxiv.org/abs/2507.08957v1",
+    "summaryFile": "summaries/paper_NTRNVIAD.json"
+  },
+  {
+    "id": "paper_YRWSD54H",
+    "zoteroKey": "YRWSD54H",
+    "libraryType": "group",
+    "itemType": "preprint",
+    "correctedItemType": "preprint",
+    "title": "SiDiaC: Sinhala Diachronic Corpus",
+    "abstract": "SiDiaC, the first comprehensive Sinhala Diachronic Corpus, covers a historical span from the 5th to the 20th century CE. SiDiaC comprises 58k words across 46 literary works, annotated carefully based on the written date, after filtering based on availability, authorship, copyright compliance, and data attribution. Texts from the National Library of Sri Lanka were digitised using Google Document AI OCR, followed by post-processing to correct formatting and modernise the orthography. The construction of SiDiaC was informed by practices from other corpora, such as FarPaHC, particularly in syntactic annotation and text normalisation strategies, due to the shared characteristics of low-resourced language status. This corpus is categorised based on genres into two layers: primary and secondary. Primary categorisation is binary, classifying each book into Non-Fiction or Fiction, while the secondary categorisation is more specific, grouping texts under Religious, History, Poetry, Language, and Medical genres. Despite challenges including limited access to rare texts and reliance on secondary date sources, SiDiaC serves as a foundational resource for Sinhala NLP, significantly extending the resources available for Sinhala, enabling diachronic studies in lexical change, neologism tracking, historical syntax, and corpus-based lexicography.",
+    "doi": "10.48550/arXiv.2509.17912",
+    "tags": [
+      "Language Texts",
+      "Natural language processing (NLP)",
+      "Optical Character Recognition (OCR)",
+      "SiDiaC (Sinhala Diachronic Corpus)",
+      "Syntactic Annotation"
+    ],
+    "authors": [
+      "Nevidu Jayatilleke",
+      "Nisansa de Silva"
+    ],
+    "year": 2025,
+    "publication": "",
+    "url": "https://arxiv.org/abs/2509.17912v2",
+    "summaryFile": "summaries/paper_YRWSD54H.json"
+  },
+  {
+    "id": "paper_P995IDHH",
+    "zoteroKey": "P995IDHH",
+    "libraryType": "group",
+    "itemType": "magazineArticle",
+    "correctedItemType": "journalArticle",
+    "title": "Snooker Statistics and Zipf's Law",
+    "abstract": "Zipf's law is well known in linguistics: the frequency of a word is inversely proportional to its rank. This is a special case of a more general power law, a common phenomenon in many kinds of real-world statistical data. Here, it is shown that snooker statistics also follow such a mathematical pattern, but with varying (estimated) parameter values. Two types of rankings (prize money earned and centuries scored), and three time-frames (all-time, decade, and year) are considered. The results indicate that the power law parameter values depend on the type of ranking used as well as the time-frame considered. Furthermore, in some cases the resulting parameter values vary significantly over time, for which a plausible explanation is provided.",
+    "doi": "10.3390/stats5040058",
+    "tags": [
+      "Frequency-Rank Relationship",
+      "Sports Analytics",
+      "Statistical Linguistics",
+      "Statistical Regularities",
+      "Time-Frame Analysis"
+    ],
+    "authors": [
+      "Wim Hordijk"
+    ],
+    "year": 2022,
+    "publication": "arXiv.org",
+    "url": "https://arxiv.org/abs/2201.06818v2",
+    "summaryFile": "summaries/paper_P995IDHH.json"
+  },
+  {
+    "id": "paper_DTQF3EN6",
+    "zoteroKey": "DTQF3EN6",
+    "libraryType": "group",
+    "itemType": "preprint",
+    "correctedItemType": "preprint",
+    "title": "Subtle Misogyny Detection and Mitigation: An Expert-Annotated Dataset",
+    "abstract": "Using novel approaches to dataset development, the Biasly dataset captures the nuance and subtlety of misogyny in ways that are unique within the literature. Built in collaboration with multi-disciplinary experts and annotators themselves, the dataset contains annotations of movie subtitles, capturing colloquial expressions of misogyny in North American film. The dataset can be used for a range of NLP tasks, including classification, severity score regression, and text generation for rewrites. In this paper, we discuss the methodology used, analyze the annotations obtained, and provide baselines using common NLP algorithms in the context of misogyny detection and mitigation. We hope this work will promote AI for social good in NLP for bias detection, explanation, and removal.",
+    "doi": "10.48550/arXiv.2311.09443",
+    "tags": [
+      "AI for Social Good",
+      "Benchmark Baselines",
+      "Bias Mitigation",
+      "Computational Social Science",
+      "Dataset Development",
+      "Ethical AI",
+      "Misogyny Detection",
+      "Multi-Disciplinary Collaboration",
+      "Natural Language Processing (NLP)",
+      "Rewriting / Text Revision",
+      "Text Generation"
+    ],
+    "authors": [
+      "Brooklyn Sheppard",
+      "Anna Richter",
+      "Allison Cohen",
+      "Elizabeth Allyn Smith",
+      "Tamara Kneese",
+      "Carolyne Pelletier",
+      "Ioana Baldini",
+      "Yue Dong"
+    ],
+    "year": 2023,
+    "publication": "",
+    "url": "https://arxiv.org/abs/2311.09443v1",
+    "summaryFile": "summaries/paper_DTQF3EN6.json"
+  },
+  {
+    "id": "paper_2XP7P9WI",
+    "zoteroKey": "2XP7P9WI",
+    "libraryType": "group",
+    "itemType": "preprint",
+    "correctedItemType": "preprint",
+    "title": "Syntactic Language Change in English and German: Metrics, Parsers, and Convergences",
+    "abstract": "Many studies have shown that human languages tend to optimize for lower complexity and increased communication efficiency. Syntactic dependency distance, which measures the linear distance between dependent words, is often considered a key indicator of language processing difficulty and working memory load. The current paper looks at diachronic trends in syntactic language change in both English and German, using corpora of parliamentary debates from the last c. 160 years. We base our observations on five dependency parsers, including the widely used Stanford CoreNLP as well as 4 newer alternatives. Our analysis of syntactic language change goes beyond linear dependency distance and explores 15 metrics relevant to dependency distance minimization (DDM) and/or based on tree graph properties, such as the tree height and degree variance. Even though we have evidence that recent parsers trained on modern treebanks are not heavily affected by data 'noise' such as spelling changes and OCR errors in our historic data, we find that results of syntactic language change are sensitive to the parsers involved, which is a caution against using a single parser for evaluating syntactic language change as done in previous work. We also show that syntactic language change over the time period investigated is largely similar between English and German for the different metrics explored: only 4% of cases we examine yield opposite conclusions regarding upwards and downtrends of syntactic metrics across German and English. We also show that changes in syntactic measures seem to be more frequent at the tails of sentence length distributions. To our best knowledge, ours is the most comprehensive analysis of syntactic language change using modern NLP technology in recent corpora of English and German.",
+    "doi": "10.48550/arXiv.2402.11549",
+    "tags": [
+      "Corpus Linguistics",
+      "Cross-Linguistic Comparison",
+      "Dependency Distance Minimization (DDM)",
+      "Diachronic Syntax",
+      "Language Complexity",
+      "Robustness Analysis",
+      "Sentence Length"
+    ],
+    "authors": [
+      "Yanran Chen",
+      "Wei Zhao",
+      "Anne Breitbarth",
+      "Manuel Stoeckel",
+      "Alexander Mehler",
+      "Steffen Eger"
+    ],
+    "year": 2024,
+    "publication": "",
+    "url": "https://arxiv.org/abs/2402.11549v2",
+    "summaryFile": "summaries/paper_2XP7P9WI.json"
+  },
+  {
     "id": "paper_VZ8Z3MJS",
     "zoteroKey": "VZ8Z3MJS",
     "libraryType": "group",
@@ -8,7 +431,10 @@
     "title": "Generating Contexts for ESP Vocabulary Exercises with LLMs",
     "abstract": "",
     "doi": "",
-    "tags": [],
+    "tags": [
+      "Natural language processing (NLP)",
+      "zero-shot"
+    ],
     "authors": [
       "Iglika Nikolova-Stoupak",
       "Serge Bibauw",
@@ -27,7 +453,100 @@
     ],
     "year": 2024,
     "publication": "",
-    "url": "https://aclanthology.org/2024.nlp4call-1.12/"
+    "url": "https://aclanthology.org/2024.nlp4call-1.12/",
+    "summaryFile": "summaries/paper_VZ8Z3MJS.json"
+  },
+  {
+    "id": "paper_ABAGDTCA",
+    "zoteroKey": "ABAGDTCA",
+    "libraryType": "group",
+    "itemType": "conferencePaper",
+    "correctedItemType": "conferencePaper",
+    "title": "Translationese-index: Using Likelihood Ratios for Graded and Generalizable Measurement of Translationese",
+    "abstract": "Translationese refers to linguistic properties that usually occur in translated texts. Previous works study translationese by framing it as a binary classification between original texts and translated texts. In this paper, we argue that translationese should be graded instead of binary and propose the first measure for translationese -- the translationese-index (T-index), computed from the likelihood ratios of two contrastively fine-tuned language models (LMs). We use synthesized translations and translations in the wild to evaluate T-index's generalizability in cross-domain settings and its validity against human judgments. Our results show that T-index can generalize to unseen genres, authors, and language pairs. Moreover, T-index computed using two 0.5B LMs fine-tuned on only 1-5k pairs of synthetic data can effectively capture translationese, as demonstrated by alignment with human pointwise ratings and pairwise judgments. Additionally, the correlation between T-index and existing machine translation (MT) quality estimation (QE) metrics such as BLEU and COMET is low, suggesting that T-index is not covered by these metrics and can serve as a complementary metric in MT QE.",
+    "doi": "10.48550/arXiv.2507.12260",
+    "tags": [
+      "Binary Classification",
+      "Computational Linguistics",
+      "Corpus Linguistics",
+      "Language Models (LMs)",
+      "Likelihood Ratios",
+      "Machine Translation",
+      "Natural Language Processing (NLP)",
+      "Translationese Index (T-index)"
+    ],
+    "authors": [
+      "Yikang Liu",
+      "Wanyang Zhang",
+      "Yiming Wang",
+      "Jialong Tang",
+      "Pei Zhang",
+      "Baosong Yang",
+      "Fei Huang",
+      "Rui Wang",
+      "Hai Hu"
+    ],
+    "year": 2025,
+    "publication": "",
+    "url": "https://arxiv.org/abs/2507.12260v2",
+    "summaryFile": "summaries/paper_ABAGDTCA.json"
+  },
+  {
+    "id": "paper_QLZDWZUH",
+    "zoteroKey": "QLZDWZUH",
+    "libraryType": "group",
+    "itemType": "journalArticle",
+    "correctedItemType": "journalArticle",
+    "title": "Building custom NLP tools to annotate discourse-functional features for second language writing research: A tutorial",
+    "abstract": "The current tutorial paper describes a process of developing a custom natural language processing model with a particular focus on a discourse annotation task. After an overview of recent developments in natural language processing (NLP), the paper discusses the development of the Engagement Analyzer (Eguchi & Kyle, 2023), focusing on corpus annotation, the machine learning model, model training, evaluation, and dissemination. A step-by-step tutorial of this process via the spaCy Python package is provided. The paper highlights the feasibility of developing custom NLP tools to enhance the scalability and replicability of the annotation of context-sensitive linguistic features in L2 writing research.",
+    "doi": "10.1016/j.rmal.2024.100153",
+    "tags": [
+      "Appraisal analysis",
+      "Corpus annotation",
+      "Epistemic stance",
+      "L2 writing",
+      "Natural language processing"
+    ],
+    "authors": [
+      "Masaki Eguchi",
+      "Kristopher Kyle"
+    ],
+    "year": 2024,
+    "publication": "Research Methods in Applied Linguistics",
+    "url": "https://www.sciencedirect.com/science/article/pii/S2772766124000594",
+    "summaryFile": "summaries/paper_QLZDWZUH.json"
+  },
+  {
+    "id": "paper_D2DQHNMP",
+    "zoteroKey": "D2DQHNMP",
+    "libraryType": "group",
+    "itemType": "magazineArticle",
+    "correctedItemType": "magazineArticle",
+    "title": "HistBERT: A Pre-trained Language Model for Diachronic Lexical Semantic Analysis",
+    "abstract": "Contextualized word embeddings have demonstrated state-of-the-art performance in various natural language processing tasks including those that concern historical semantic change. However, language models such as BERT was trained primarily on contemporary corpus data. To investigate whether training on historical corpus data improves diachronic semantic analysis, we present a pre-trained BERT-based language model, HistBERT, trained on the balanced Corpus of Historical American English. We examine the effectiveness of our approach by comparing the performance of the original BERT and that of HistBERT, and we report promising results in word similarity and semantic shift analysis. Our work suggests that the effectiveness of contextual embeddings in diachronic semantic analysis is dependent on the temporal profile of the input text and care should be taken in applying this methodology to study historical semantic change.",
+    "doi": "",
+    "tags": [
+      "BERT",
+      "Contextualized Word Embeddings",
+      "Corpus of Historical American English (COHA)",
+      "Diachronic Semantic Change",
+      "Digital Humanities",
+      "Domain Adaptation",
+      "HistBERT",
+      "Historical Linguistics",
+      "Natural Language Processing (NLP)",
+      "Pre-trained Language Models",
+      "Temporal Adaptation",
+      "Word Similarity"
+    ],
+    "authors": [
+      "Wenjun Qiu",
+      "Yang Xu"
+    ],
+    "year": 2022,
+    "publication": "arXiv.org",
+    "url": "https://arxiv.org/abs/2202.03612v1",
+    "summaryFile": "summaries/paper_D2DQHNMP.json"
   },
   {
     "id": "paper_KDCMHJAD",
@@ -59,7 +578,8 @@
     ],
     "year": 2020,
     "publication": "",
-    "url": "https://eric.ed.gov/?id=ED611099"
+    "url": "https://eric.ed.gov/?id=ED611099",
+    "summaryFile": "summaries/paper_KDCMHJAD.json"
   },
   {
     "id": "paper_5KRAT9C2",
@@ -84,7 +604,8 @@
     ],
     "year": 2023,
     "publication": "",
-    "url": "http://arxiv.org/abs/2305.14552"
+    "url": "http://arxiv.org/abs/2305.14552",
+    "summaryFile": "summaries/paper_5KRAT9C2.json"
   },
   {
     "id": "paper_722MU5FC",
@@ -104,7 +625,8 @@
     ],
     "year": 2024,
     "publication": "",
-    "url": "https://dl.acm.org/doi/10.1145/3626772.3657798"
+    "url": "https://dl.acm.org/doi/10.1145/3626772.3657798",
+    "summaryFile": "summaries/paper_722MU5FC.json"
   },
   {
     "id": "paper_WCM694B5",
@@ -126,7 +648,8 @@
     ],
     "year": 2022,
     "publication": "SN Computer Science",
-    "url": "https://link.springer.com/article/10.1007/s42979-022-01481-7"
+    "url": "https://link.springer.com/article/10.1007/s42979-022-01481-7",
+    "summaryFile": "summaries/paper_WCM694B5.json"
   },
   {
     "id": "paper_SEQ7EXND",
@@ -148,40 +671,8 @@
     ],
     "year": 2024,
     "publication": "",
-    "url": "https://www.sciencedirect.com/science/article/pii/S2772766124000594?via%3Dihub"
-  },
-  {
-    "id": "paper_FNE7P2W5",
-    "zoteroKey": "FNE7P2W5",
-    "libraryType": "group",
-    "itemType": "webpage",
-    "correctedItemType": "webpage",
-    "title": "Design Opportunities for Explainable AI Paraphrasing Tools: A User Study with Non-native English Speakers",
-    "abstract": "We investigate how non-native English speakers (NNESs) interact with diverse information aids to assess and select AI-generated paraphrases. We develop ParaScope, an AI paraphrasing assistant that integrates diverse information aids, such as back-translation, explanations, and usage examples, and logs user interaction data. Our in-lab study with 22 NNESs reveals that user preferences for information aids vary by language proficiency, with workflows progressing from global to more detailed information. While back-translation was the most frequently used aid, it was not a decisive factor in suggestion acceptance; users combined multiple information aids to make informed decisions. Our findings demonstrate the potential of explainable AI paraphrasing tools to enhance NNESs' confidence, autonomy, and writing efficiency, while also emphasizing the importance of thoughtful design to prevent information overload. Based on these findings, we offer design implications for explainable AI paraphrasing tools that support NNESs in making informed decisions when using AI writing systems.",
-    "doi": "10.48550/arXiv.2405.07475",
-    "tags": [
-      "AI Writing Assistants",
-      "Back-Translation",
-      "Explainable AI (XAI)",
-      "Generative AI",
-      "Human-AI Collaboration",
-      "Human-Computer Interaction",
-      "Information Overload",
-      "Language Proficiency",
-      "Non-Native English Speakers (NNES)",
-      "User Interface Design",
-      "User Study"
-    ],
-    "authors": [
-      "Yewon Kim",
-      "Thanh-Long V. Le",
-      "Donghwi Kim",
-      "Mina Lee",
-      "Sung-Ju Lee"
-    ],
-    "year": 2024,
-    "publication": "",
-    "url": "https://arxiv.org/abs/2405.07475v2"
+    "url": "https://www.sciencedirect.com/science/article/pii/S2772766124000594?via%3Dihub",
+    "summaryFile": "summaries/paper_SEQ7EXND.json"
   },
   {
     "id": "paper_PFW2ATQA",
@@ -203,7 +694,8 @@
     ],
     "year": 2026,
     "publication": "",
-    "url": "https://arxiv.org/abs/2601.15797v1"
+    "url": "https://arxiv.org/abs/2601.15797v1",
+    "summaryFile": "summaries/paper_PFW2ATQA.json"
   },
   {
     "id": "paper_E34JXEEN",
@@ -232,7 +724,8 @@
     ],
     "year": 2022,
     "publication": "",
-    "url": "https://arxiv.org/abs/2211.15731v1"
+    "url": "https://arxiv.org/abs/2211.15731v1",
+    "summaryFile": "summaries/paper_E34JXEEN.json"
   },
   {
     "id": "paper_NUJ2QIPU",
@@ -258,7 +751,8 @@
     ],
     "year": 2026,
     "publication": "",
-    "url": "https://arxiv.org/abs/2601.16836v2"
+    "url": "https://arxiv.org/abs/2601.16836v2",
+    "summaryFile": "summaries/paper_NUJ2QIPU.json"
   },
   {
     "id": "paper_822I3M8I",
@@ -286,154 +780,8 @@
     ],
     "year": 2024,
     "publication": "",
-    "url": "https://arxiv.org/abs/2406.06052v1"
-  },
-  {
-    "id": "paper_ABAGDTCA",
-    "zoteroKey": "ABAGDTCA",
-    "libraryType": "group",
-    "itemType": "webpage",
-    "correctedItemType": "webpage",
-    "title": "Translationese-index: Using Likelihood Ratios for Graded and Generalizable Measurement of Translationese",
-    "abstract": "Translationese refers to linguistic properties that usually occur in translated texts. Previous works study translationese by framing it as a binary classification between original texts and translated texts. In this paper, we argue that translationese should be graded instead of binary and propose the first measure for translationese -- the translationese-index (T-index), computed from the likelihood ratios of two contrastively fine-tuned language models (LMs). We use synthesized translations and translations in the wild to evaluate T-index's generalizability in cross-domain settings and its validity against human judgments. Our results show that T-index can generalize to unseen genres, authors, and language pairs. Moreover, T-index computed using two 0.5B LMs fine-tuned on only 1-5k pairs of synthetic data can effectively capture translationese, as demonstrated by alignment with human pointwise ratings and pairwise judgments. Additionally, the correlation between T-index and existing machine translation (MT) quality estimation (QE) metrics such as BLEU and COMET is low, suggesting that T-index is not covered by these metrics and can serve as a complementary metric in MT QE.",
-    "doi": "10.48550/arXiv.2507.12260",
-    "tags": [
-      "Binary Classification",
-      "Computational Linguistics",
-      "Corpus Linguistics",
-      "Language Models (LMs)",
-      "Likelihood Ratios",
-      "Machine Translation",
-      "Natural Language Processing (NLP)",
-      "Translationese Index (T-index)"
-    ],
-    "authors": [
-      "Yikang Liu",
-      "Wanyang Zhang",
-      "Yiming Wang",
-      "Jialong Tang",
-      "Pei Zhang",
-      "Baosong Yang",
-      "Fei Huang",
-      "Rui Wang",
-      "Hai Hu"
-    ],
-    "year": 2025,
-    "publication": "",
-    "url": "https://arxiv.org/abs/2507.12260v2"
-  },
-  {
-    "id": "paper_2XP7P9WI",
-    "zoteroKey": "2XP7P9WI",
-    "libraryType": "group",
-    "itemType": "webpage",
-    "correctedItemType": "webpage",
-    "title": "Syntactic Language Change in English and German: Metrics, Parsers, and Convergences",
-    "abstract": "Many studies have shown that human languages tend to optimize for lower complexity and increased communication efficiency. Syntactic dependency distance, which measures the linear distance between dependent words, is often considered a key indicator of language processing difficulty and working memory load. The current paper looks at diachronic trends in syntactic language change in both English and German, using corpora of parliamentary debates from the last c. 160 years. We base our observations on five dependency parsers, including the widely used Stanford CoreNLP as well as 4 newer alternatives. Our analysis of syntactic language change goes beyond linear dependency distance and explores 15 metrics relevant to dependency distance minimization (DDM) and/or based on tree graph properties, such as the tree height and degree variance. Even though we have evidence that recent parsers trained on modern treebanks are not heavily affected by data 'noise' such as spelling changes and OCR errors in our historic data, we find that results of syntactic language change are sensitive to the parsers involved, which is a caution against using a single parser for evaluating syntactic language change as done in previous work. We also show that syntactic language change over the time period investigated is largely similar between English and German for the different metrics explored: only 4% of cases we examine yield opposite conclusions regarding upwards and downtrends of syntactic metrics across German and English. We also show that changes in syntactic measures seem to be more frequent at the tails of sentence length distributions. To our best knowledge, ours is the most comprehensive analysis of syntactic language change using modern NLP technology in recent corpora of English and German.",
-    "doi": "10.48550/arXiv.2402.11549",
-    "tags": [
-      "Corpus Linguistics",
-      "Cross-Linguistic Comparison",
-      "Dependency Distance Minimization (DDM)",
-      "Diachronic Syntax",
-      "Language Complexity",
-      "Robustness Analysis",
-      "Sentence Length"
-    ],
-    "authors": [
-      "Yanran Chen",
-      "Wei Zhao",
-      "Anne Breitbarth",
-      "Manuel Stoeckel",
-      "Alexander Mehler",
-      "Steffen Eger"
-    ],
-    "year": 2024,
-    "publication": "",
-    "url": "https://arxiv.org/abs/2402.11549v2"
-  },
-  {
-    "id": "paper_DTQF3EN6",
-    "zoteroKey": "DTQF3EN6",
-    "libraryType": "group",
-    "itemType": "webpage",
-    "correctedItemType": "webpage",
-    "title": "Subtle Misogyny Detection and Mitigation: An Expert-Annotated Dataset",
-    "abstract": "Using novel approaches to dataset development, the Biasly dataset captures the nuance and subtlety of misogyny in ways that are unique within the literature. Built in collaboration with multi-disciplinary experts and annotators themselves, the dataset contains annotations of movie subtitles, capturing colloquial expressions of misogyny in North American film. The dataset can be used for a range of NLP tasks, including classification, severity score regression, and text generation for rewrites. In this paper, we discuss the methodology used, analyze the annotations obtained, and provide baselines using common NLP algorithms in the context of misogyny detection and mitigation. We hope this work will promote AI for social good in NLP for bias detection, explanation, and removal.",
-    "doi": "10.48550/arXiv.2311.09443",
-    "tags": [
-      "AI for Social Good",
-      "Benchmark Baselines",
-      "Bias Mitigation",
-      "Computational Social Science",
-      "Dataset Development",
-      "Ethical AI",
-      "Misogyny Detection",
-      "Multi-Disciplinary Collaboration",
-      "Natural Language Processing (NLP)",
-      "Rewriting / Text Revision",
-      "Text Generation"
-    ],
-    "authors": [
-      "Brooklyn Sheppard",
-      "Anna Richter",
-      "Allison Cohen",
-      "Elizabeth Allyn Smith",
-      "Tamara Kneese",
-      "Carolyne Pelletier",
-      "Ioana Baldini",
-      "Yue Dong"
-    ],
-    "year": 2023,
-    "publication": "",
-    "url": "https://arxiv.org/abs/2311.09443v1"
-  },
-  {
-    "id": "paper_P995IDHH",
-    "zoteroKey": "P995IDHH",
-    "libraryType": "group",
-    "itemType": "webpage",
-    "correctedItemType": "journalArticle",
-    "title": "Snooker Statistics and Zipf's Law",
-    "abstract": "Zipf's law is well known in linguistics: the frequency of a word is inversely proportional to its rank. This is a special case of a more general power law, a common phenomenon in many kinds of real-world statistical data. Here, it is shown that snooker statistics also follow such a mathematical pattern, but with varying (estimated) parameter values. Two types of rankings (prize money earned and centuries scored), and three time-frames (all-time, decade, and year) are considered. The results indicate that the power law parameter values depend on the type of ranking used as well as the time-frame considered. Furthermore, in some cases the resulting parameter values vary significantly over time, for which a plausible explanation is provided.",
-    "doi": "10.3390/stats5040058",
-    "tags": [
-      "Frequency-Rank Relationship",
-      "Sports Analytics",
-      "Statistical Linguistics",
-      "Statistical Regularities",
-      "Time-Frame Analysis"
-    ],
-    "authors": [
-      "Wim Hordijk"
-    ],
-    "year": 2022,
-    "publication": "",
-    "url": "https://arxiv.org/abs/2201.06818v2"
-  },
-  {
-    "id": "paper_YRWSD54H",
-    "zoteroKey": "YRWSD54H",
-    "libraryType": "group",
-    "itemType": "webpage",
-    "correctedItemType": "webpage",
-    "title": "SiDiaC: Sinhala Diachronic Corpus",
-    "abstract": "SiDiaC, the first comprehensive Sinhala Diachronic Corpus, covers a historical span from the 5th to the 20th century CE. SiDiaC comprises 58k words across 46 literary works, annotated carefully based on the written date, after filtering based on availability, authorship, copyright compliance, and data attribution. Texts from the National Library of Sri Lanka were digitised using Google Document AI OCR, followed by post-processing to correct formatting and modernise the orthography. The construction of SiDiaC was informed by practices from other corpora, such as FarPaHC, particularly in syntactic annotation and text normalisation strategies, due to the shared characteristics of low-resourced language status. This corpus is categorised based on genres into two layers: primary and secondary. Primary categorisation is binary, classifying each book into Non-Fiction or Fiction, while the secondary categorisation is more specific, grouping texts under Religious, History, Poetry, Language, and Medical genres. Despite challenges including limited access to rare texts and reliance on secondary date sources, SiDiaC serves as a foundational resource for Sinhala NLP, significantly extending the resources available for Sinhala, enabling diachronic studies in lexical change, neologism tracking, historical syntax, and corpus-based lexicography.",
-    "doi": "10.48550/arXiv.2509.17912",
-    "tags": [
-      "Language Texts",
-      "Natural language processing (NLP)",
-      "Optical Character Recognition (OCR)",
-      "SiDiaC (Sinhala Diachronic Corpus)",
-      "Syntactic Annotation"
-    ],
-    "authors": [
-      "Nevidu Jayatilleke",
-      "Nisansa de Silva"
-    ],
-    "year": 2025,
-    "publication": "",
-    "url": "https://arxiv.org/abs/2509.17912v2"
+    "url": "https://arxiv.org/abs/2406.06052v1",
+    "summaryFile": "summaries/paper_822I3M8I.json"
   },
   {
     "id": "paper_EHUJF25P",
@@ -458,301 +806,8 @@
     ],
     "year": 2025,
     "publication": "",
-    "url": ""
-  },
-  {
-    "id": "paper_NTRNVIAD",
-    "zoteroKey": "NTRNVIAD",
-    "libraryType": "group",
-    "itemType": "webpage",
-    "correctedItemType": "webpage",
-    "title": "Oscillatory dynamics between language usage and economic activity",
-    "abstract": "Over the past two centuries, the frequency of word usage in major Western languages has exhibited small amplitude regular cycles, superimposed on larger background trends. We show that these cycles of word usage organize into semantically coherent clusters that track, interact with, or precede macroeconomic rhythms. To explore the nature of this interaction, we build on a minimal mathematical model that captures usage dynamics through parameters linked to real world processes. Parameter fitting reveals that word usage operates near a Hopf bifurcation, a critical regime associated with heightened sensitivity, uncovering a robust and specific coupling between language usage and economic activity. In linguistic datasets that allow long term quantitative analysis, rooted in capitalist contexts, this coupling appears as an oscillatory dynamic, reflecting a feedback process in which language both shapes material reality and manages the changes it produces.",
-    "doi": "",
-    "tags": [
-      "Collective Attention",
-      "Corpus Linguistics",
-      "Historical Linguistics",
-      "Language Usage",
-      "Long-Term Trends",
-      "Macroeconomic Rhythms",
-      "Mathematical Modeling",
-      "Quantitative Linguistics",
-      "Semantic Clustering",
-      "Time Series Analysis",
-      "Word Frequency Dynamics"
-    ],
-    "authors": [
-      "Alejandro Pardo Pintos",
-      "Diego E. Shalom",
-      "Guillermo Cecchi",
-      "Gabriel Mindlin",
-      "Marcos A. Trevisan"
-    ],
-    "year": 2025,
-    "publication": "",
-    "url": "https://arxiv.org/abs/2507.08957v1"
-  },
-  {
-    "id": "paper_ZP4QVHJ5",
-    "zoteroKey": "ZP4QVHJ5",
-    "libraryType": "group",
-    "itemType": "webpage",
-    "correctedItemType": "webpage",
-    "title": "On the Distinctive Co-occurrence Characteristics of Antonymy",
-    "abstract": "Antonymy has long received particular attention in lexical semantics. Previous studies have shown that antonym pairs frequently co-occur in text, across genres and parts of speech, more often than would be expected by chance. However, whether this co-occurrence pattern is distinctive of antonymy remains unclear, due to a lack of comparison with other semantic relations. This work fills the gap by comparing antonymy with three other relations across parts of speech using robust co-occurrence metrics. We find that antonymy is distinctive in three respects: antonym pairs co-occur with high strength, in a preferred linear order, and within short spans. All results are available online.",
-    "doi": "",
-    "tags": [
-      "Antonymy",
-      "Co-occurrence Analysis",
-      "Contrastive Analysis",
-      "Corpus Linguistics",
-      "Distributional Semantics",
-      "Lexical Patterns",
-      "Lexical Semantics",
-      "Parts of Speech (POS)",
-      "Quantitative Linguistics",
-      "Semantic Distinctiveness",
-      "Semantic Relations",
-      "Text Co-occurrence"
-    ],
-    "authors": [
-      "Zhihan Cao",
-      "Hiroaki Yamada",
-      "Takenobu Tokunaga"
-    ],
-    "year": 2025,
-    "publication": "",
-    "url": "https://arxiv.org/abs/2509.11534v1"
-  },
-  {
-    "id": "paper_6P6DFMAT",
-    "zoteroKey": "6P6DFMAT",
-    "libraryType": "group",
-    "itemType": "webpage",
-    "correctedItemType": "webpage",
-    "title": "Modeling Word Emotion in Historical Language: Quantity Beats Supposed Stability in Seed Word Selection",
-    "abstract": "To understand historical texts, we must be aware that language -- including the emotional connotation attached to words -- changes over time. In this paper, we aim at estimating the emotion which is associated with a given word in former language stages of English and German. Emotion is represented following the popular Valence-Arousal-Dominance (VAD) annotation scheme. While being more expressive than polarity alone, existing word emotion induction methods are typically not suited for addressing it. To overcome this limitation, we present adaptations of two popular algorithms to VAD. To measure their effectiveness in diachronic settings, we present the first gold standard for historical word emotions, which was created by scholars with proficiency in the respective language stages and covers both English and German. In contrast to claims in previous work, our findings indicate that hand-selecting small sets of seed words with supposedly stable emotional meaning is actually harmful rather than helpful.",
-    "doi": "",
-    "tags": [
-      "Computational Linguistics",
-      "Cross-Linguistic Analysis",
-      "Emotional Stability",
-      "Historical Corpora",
-      "Historical Linguistics",
-      "Psycholinguistics",
-      "Seed Words",
-      "Sentiment Analysis",
-      "Valence-Arousal-Dominance (VAD)",
-      "annotation"
-    ],
-    "authors": [
-      "Johannes Hellrich",
-      "Sven Buechel",
-      "Udo Hahn"
-    ],
-    "year": 2018,
-    "publication": "",
-    "url": "https://arxiv.org/abs/1806.08115v2"
-  },
-  {
-    "id": "paper_UYB4HEYB",
-    "zoteroKey": "UYB4HEYB",
-    "libraryType": "group",
-    "itemType": "webpage",
-    "correctedItemType": "webpage",
-    "title": "Lexical Complexity Prediction: An Overview",
-    "abstract": "The occurrence of unknown words in texts significantly hinders reading comprehension. To improve accessibility for specific target populations, computational modelling has been applied to identify complex words in texts and substitute them for simpler alternatives. In this paper, we present an overview of computational approaches to lexical complexity prediction focusing on the work carried out on English data. We survey relevant approaches to this problem which include traditional machine learning classifiers (e.g. SVMs, logistic regression) and deep neural networks as well as a variety of features, such as those inspired by literature in psycholinguistics as well as word frequency, word length, and many others. Furthermore, we introduce readers to past competitions and available datasets created on this topic. Finally, we include brief sections on applications of lexical complexity prediction, such as readability and text simplification, together with related studies on languages other than English.",
-    "doi": "",
-    "tags": [
-      "Assistive Technologies",
-      "Benchmark Datasets",
-      "Complex Word Identification (CWI)",
-      "Computational Linguistics",
-      "Lexical Complexity Prediction",
-      "Lexical Resources",
-      "Lexical Simplification",
-      "Logistic Regression",
-      "Machine Learning",
-      "Multilingual NLP",
-      "Natural language processing (NLP)",
-      "Psycholinguistic Features",
-      "Readability Assessment",
-      "Reading Comprehension",
-      "Support Vector Machines (SVM)",
-      "Text Simplification",
-      "Word Frequency"
-    ],
-    "authors": [
-      "Kai North",
-      "Marcos Zampieri",
-      "Matthew Shardlow"
-    ],
-    "year": 2023,
-    "publication": "",
-    "url": "https://arxiv.org/abs/2303.04851v1"
-  },
-  {
-    "id": "paper_AJXBQ4C2",
-    "zoteroKey": "AJXBQ4C2",
-    "libraryType": "group",
-    "itemType": "webpage",
-    "correctedItemType": "webpage",
-    "title": "Laugh at Your Own Pace: Basic Performance Evaluation of Language Learning Assistance by Adjustment of Video Playback Speeds Based on Laughter Detection",
-    "abstract": "Among various methods to learn a second language (L2), such as listening and shadowing, Extensive Viewing involves learning L2 by watching many videos. However, it is difficult for many L2 learners to smoothly and effortlessly comprehend video contents made for native speakers at the original speed. Therefore, we developed a language learning assistance system that automatically adjusts the playback speed according to the learner's comprehension. Our system judges that learners understand the contents if they laugh at the punchlines of comedy dramas, and vice versa. Experimental results show that this system supports learners with relatively low L2 ability (under 700 in TOEIC Score in the experimental condition) to understand video contents. Our system can widen learners' possible options of native speakers' videos as Extensive Viewing material.",
-    "doi": "",
-    "tags": [
-      "Adaptive Video Playback",
-      "Comedy Dramas",
-      "Computer-Assisted Language Learning (CALL)",
-      "Educational Technology",
-      "Extensive Viewing",
-      "L2 Listening Comprehension",
-      "Laughter Detection",
-      "Learner Proficiency",
-      "Second Language Acquisition (SLA)",
-      "TOEIC",
-      "Video-Based Learning"
-    ],
-    "authors": [
-      "Naoto Nishida",
-      "Hinako Nozaki",
-      "Buntarou Shizuki"
-    ],
-    "year": 2025,
-    "publication": "",
-    "url": "https://arxiv.org/abs/2504.09835v1"
-  },
-  {
-    "id": "paper_QXLJNQ92",
-    "zoteroKey": "QXLJNQ92",
-    "libraryType": "group",
-    "itemType": "webpage",
-    "correctedItemType": "webpage",
-    "title": "Large Language Model probabilities cannot distinguish between possible and impossible language",
-    "abstract": "A controversial test for Large Language Models concerns the ability to discern possible from impossible language. While some evidence attests to the models' sensitivity to what crosses the limits of grammatically impossible language, this evidence has been contested on the grounds of the soundness of the testing material. We use model-internal representations to tap directly into the way Large Language Models represent the 'grammatical-ungrammatical' distinction. In a novel benchmark, we elicit probabilities from 4 models and compute minimal-pair surprisal differences, juxtaposing probabilities assigned to grammatical sentences to probabilities assigned to (i) lower frequency grammatical sentences, (ii) ungrammatical sentences, (iii) semantically odd sentences, and (iv) pragmatically odd sentences. The prediction is that if string-probabilities can function as proxies for the limits of grammar, the ungrammatical condition will stand out among the conditions that involve linguistic violations, showing a spike in the surprisal rates. Our results do not reveal a unique surprisal signature for ungrammatical prompts, as the semantically and pragmatically odd conditions consistently show higher surprisal. We thus demonstrate that probabilities do not constitute reliable proxies for model-internal representations of syntactic knowledge. Consequently, claims about models being able to distinguish possible from impossible language need verification through a different methodology.",
-    "doi": "",
-    "tags": [
-      "Grammar",
-      "large language models",
-      "limits"
-    ],
-    "authors": [
-      "Evelina Leivada",
-      "Raquel Montero",
-      "Paolo Morosi",
-      "Natalia Moskvina",
-      "Tamara Serrano",
-      "Marcel Aguilar",
-      "Fritz Guenther"
-    ],
-    "year": 2025,
-    "publication": "",
-    "url": "https://arxiv.org/abs/2509.15114v1"
-  },
-  {
-    "id": "paper_2XWT9BEK",
-    "zoteroKey": "2XWT9BEK",
-    "libraryType": "group",
-    "itemType": "webpage",
-    "correctedItemType": "webpage",
-    "title": "Idiomify -- Building a Collocation-supplemented Reverse Dictionary of English Idioms with Word2Vec for non-native learners",
-    "abstract": "The aim of idiomify is to build a collocation-supplemented reverse dictionary of idioms for the non-native learners of English. We aim to do so because the reverse dictionary could help the non-natives explore idioms on demand, and the collocations could also guide them on using idioms more adequately. The cornerstone of the project is a reliable way of mining idioms from corpora, which is however a challenge because idioms extensively vary in forms. We tackle this by automatically deriving matching rules from their base forms. We use Point-wise Mutual Inclusion (PMI), Term Frequency - Inverse Document Frequency (TF-IDF) to model collocations, since both of them are popular metric for pairwise significance. We also try Term Frequency (TF) as the baseline model. As for implementing the reverse-dictionary, three approaches could be taken: inverted index, graphs and distributional semantics. We choose to take the last approach and implement the reverse dictionary with Word2Vec, because it is the most flexible approach of all and Word2Vec is a simple yet strong baseline. Evaluating the methods has revealed rooms for improvement. We learn that we can better identify idioms with the help of slop, wildcard and reordering techniques. We also learn that we can get the best of both PMI and TF-IDF if we use machine learning to find the sweet spot. Lastly, We learn that Idiomify could be further improved with a mixture of inverted index and distributional semantics approach. The limits aside, the proposed methods are feasible, and their benefits to the non-natives are apparent, which therefore can be used to aid the non-natives in acquiring English idioms.",
-    "doi": "",
-    "tags": [
-      "Collocation Extraction",
-      "Computer-Assisted Language Learning (CALL)",
-      "Corpus Mining",
-      "Evaluation Metrics",
-      "Idiom Acquisition",
-      "Lexical Resources",
-      "Machine Learning",
-      "Natural Language Processing (NLP)",
-      "Non-native English Learners",
-      "Pattern Matching",
-      "Pointwise Mutual Information (PMI)",
-      "Second Language Learning (L2)",
-      "Word2Vec"
-    ],
-    "authors": [
-      "Eu-Bin Kim"
-    ],
-    "year": 2022,
-    "publication": "",
-    "url": "https://arxiv.org/abs/2204.05634v1"
-  },
-  {
-    "id": "paper_D2DQHNMP",
-    "zoteroKey": "D2DQHNMP",
-    "libraryType": "group",
-    "itemType": "webpage",
-    "correctedItemType": "webpage",
-    "title": "HistBERT: A Pre-trained Language Model for Diachronic Lexical Semantic Analysis",
-    "abstract": "Contextualized word embeddings have demonstrated state-of-the-art performance in various natural language processing tasks including those that concern historical semantic change. However, language models such as BERT was trained primarily on contemporary corpus data. To investigate whether training on historical corpus data improves diachronic semantic analysis, we present a pre-trained BERT-based language model, HistBERT, trained on the balanced Corpus of Historical American English. We examine the effectiveness of our approach by comparing the performance of the original BERT and that of HistBERT, and we report promising results in word similarity and semantic shift analysis. Our work suggests that the effectiveness of contextual embeddings in diachronic semantic analysis is dependent on the temporal profile of the input text and care should be taken in applying this methodology to study historical semantic change.",
-    "doi": "",
-    "tags": [
-      "BERT",
-      "Contextualized Word Embeddings",
-      "Corpus of Historical American English (COHA)",
-      "Diachronic Semantic Change",
-      "Digital Humanities",
-      "Domain Adaptation",
-      "HistBERT",
-      "Historical Linguistics",
-      "Natural Language Processing (NLP)",
-      "Pre-trained Language Models",
-      "Temporal Adaptation",
-      "Word Similarity"
-    ],
-    "authors": [
-      "Wenjun Qiu",
-      "Yang Xu"
-    ],
-    "year": 2022,
-    "publication": "",
-    "url": "https://arxiv.org/abs/2202.03612v1"
-  },
-  {
-    "id": "paper_DN58HRLA",
-    "zoteroKey": "DN58HRLA",
-    "libraryType": "group",
-    "itemType": "webpage",
-    "correctedItemType": "webpage",
-    "title": "Iterative Data Curation with Theoretical Guarantees",
-    "abstract": "In recent years, more and more large data sets have become available. Data accuracy, the absence of verifiable errors in data, is crucial for these large materials to enable high-quality research, downstream applications, and model training. This results in the problem of how to curate or improve data accuracy in such large and growing data, especially when the data is too large for manual curation to be feasible. This paper presents a unified procedure for iterative and continuous improvement of data sets. We provide theoretical guarantees that data accuracy tests speed up error reduction and, most importantly, that the proposed approach will, asymptotically, eliminate all errors in data with probability one. We corroborate the theoretical results with simulations and a real-world use case.",
-    "doi": "",
-    "tags": [],
-    "authors": [
-      "Väinö Yrjänäinen",
-      "Johan Jonasson",
-      "Måns Magnusson"
-    ],
-    "year": 2025,
-    "publication": "",
-    "url": "https://arxiv.org/abs/2510.11428v2"
-  },
-  {
-    "id": "paper_WAYGZSP8",
-    "zoteroKey": "WAYGZSP8",
-    "libraryType": "group",
-    "itemType": "webpage",
-    "correctedItemType": "webpage",
-    "title": "Large corpora and large language models: a replicable method for automating grammatical annotation",
-    "abstract": "Much linguistic research relies on annotated datasets of features extracted from text corpora, but the rapid quantitative growth of these corpora has created practical difficulties for linguists to manually annotate large data samples. In this paper, we present a replicable, supervised method that leverages large language models for assisting the linguist in grammatical annotation through prompt engineering, training, and evaluation. We introduce a methodological pipeline applied to the case study of formal variation in the English evaluative verb construction 'consider X (as) (to be) Y', based on the large language model Claude 3.5 Sonnet and corpus data from Davies' NOW and EnTenTen21 (SketchEngine). Overall, we reach a model accuracy of over 90% on our held-out test samples with only a small amount of training data, validating the method for the annotation of very large quantities of tokens of the construction in the future. We discuss the generalisability of our results for a wider range of case studies of grammatical constructions and grammatical variation and change, underlining the value of AI copilots as tools for future linguistic research, notwithstanding some important caveats.",
-    "doi": "",
-    "tags": [
-      "Corpus Linguistics",
-      "annotation",
-      "grammatical variation",
-      "large language models"
-    ],
-    "authors": [
-      "Cameron Morin",
-      "Matti Marttinen Larsson"
-    ],
-    "year": 2025,
-    "publication": "",
-    "url": "https://arxiv.org/abs/2411.11260v2"
+    "url": "",
+    "summaryFile": "summaries/paper_EHUJF25P.json"
   },
   {
     "id": "paper_LXVBHK5Z",
@@ -781,7 +836,8 @@
     ],
     "year": 2025,
     "publication": "",
-    "url": "http://arxiv.org/abs/2512.00214"
+    "url": "http://arxiv.org/abs/2512.00214",
+    "summaryFile": "summaries/paper_LXVBHK5Z.json"
   },
   {
     "id": "paper_JFDP8L4L",
@@ -805,7 +861,8 @@
     ],
     "year": 2025,
     "publication": "",
-    "url": "http://arxiv.org/abs/2502.11830"
+    "url": "http://arxiv.org/abs/2502.11830",
+    "summaryFile": "summaries/paper_JFDP8L4L.json"
   },
   {
     "id": "paper_29DT688T",
@@ -831,7 +888,8 @@
     ],
     "year": 2026,
     "publication": "",
-    "url": "http://arxiv.org/abs/2601.15236"
+    "url": "http://arxiv.org/abs/2601.15236",
+    "summaryFile": "summaries/paper_29DT688T.json"
   },
   {
     "id": "paper_BL2IDIHH",
@@ -884,7 +942,8 @@
     ],
     "year": 2020,
     "publication": "",
-    "url": "http://arxiv.org/abs/2005.14165"
+    "url": "http://arxiv.org/abs/2005.14165",
+    "summaryFile": "summaries/paper_BL2IDIHH.json"
   },
   {
     "id": "paper_NCAJST5Y",
@@ -914,7 +973,8 @@
     ],
     "year": 2024,
     "publication": "International Journal of Speech Technology",
-    "url": "https://link.springer.com/article/10.1007/s10772-024-10141-5"
+    "url": "https://link.springer.com/article/10.1007/s10772-024-10141-5",
+    "summaryFile": "summaries/paper_NCAJST5Y.json"
   },
   {
     "id": "paper_DWLSMAF5",
@@ -947,7 +1007,8 @@
     ],
     "year": 2023,
     "publication": "",
-    "url": "http://arxiv.org/abs/2110.08567"
+    "url": "http://arxiv.org/abs/2110.08567",
+    "summaryFile": "summaries/paper_DWLSMAF5.json"
   },
   {
     "id": "paper_HIUUY82T",
@@ -976,7 +1037,8 @@
     ],
     "year": 2025,
     "publication": "",
-    "url": "http://arxiv.org/abs/2503.01635"
+    "url": "http://arxiv.org/abs/2503.01635",
+    "summaryFile": "summaries/paper_HIUUY82T.json"
   },
   {
     "id": "paper_GXL4Z9MX",
@@ -1005,7 +1067,8 @@
     ],
     "year": 2023,
     "publication": "Research Methods in Applied Linguistics",
-    "url": "https://www.sciencedirect.com/science/article/pii/S2772766123000101"
+    "url": "https://www.sciencedirect.com/science/article/pii/S2772766123000101",
+    "summaryFile": "summaries/paper_GXL4Z9MX.json"
   },
   {
     "id": "paper_9UAU4625",
@@ -1033,7 +1096,8 @@
     ],
     "year": 2024,
     "publication": "Research Methods in Applied Linguistics",
-    "url": "https://www.sciencedirect.com/science/article/pii/S2772766124000260"
+    "url": "https://www.sciencedirect.com/science/article/pii/S2772766124000260",
+    "summaryFile": "summaries/paper_9UAU4625.json"
   },
   {
     "id": "paper_9WDBNR46",
@@ -1055,7 +1119,8 @@
     ],
     "year": 2026,
     "publication": "Theory and Practice in Language Studies",
-    "url": "https://tpls.academypublication.com/index.php/tpls/article/view/11687"
+    "url": "https://tpls.academypublication.com/index.php/tpls/article/view/11687",
+    "summaryFile": "summaries/paper_9WDBNR46.json"
   },
   {
     "id": "paper_Q68J7SEA",
@@ -1081,6 +1146,7 @@
     ],
     "year": 2023,
     "publication": "",
-    "url": "http://arxiv.org/abs/2304.10428"
+    "url": "http://arxiv.org/abs/2304.10428",
+    "summaryFile": "summaries/paper_Q68J7SEA.json"
   }
 ]

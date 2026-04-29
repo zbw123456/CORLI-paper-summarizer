@@ -1,0 +1,30 @@
+# OS
+.DS_Store
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.venv/
+venv/
+.env
+config.local.js
+
+# Logs
+*.log
+flask.log
+
+# Node (legacy/local)
+node_modules/
+
+# Local caches and generated runtime artifacts
+cache/
+
+# Editor
+.vscode/*
+!.vscode/tasks.json
+.idea/
+
+# Build/search artifacts
+*.code-search

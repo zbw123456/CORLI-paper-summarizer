@@ -1,0 +1,47 @@
+### **Methodology Summary: Building Custom NLP Tools for Discourse-Functional Annotation in L2 Writing Research**
+
+#### **1. Overview of NLP Developments**
+- The paper begins with a contextual review of recent advancements in NLP, particularly those relevant to discourse analysis and L2 writing research.
+
+#### **2. Development of the Engagement Analyzer (Eguchi & Kyle, 2023)**
+The methodology is structured around the creation of a custom NLP model for discourse annotation, with the following key steps:
+
+- **Corpus Annotation**
+  - **Purpose**: Annotating discourse-functional features (e.g., epistemic stance, appraisal analysis) in L2 writing.
+  - **Process**: Manual annotation of a corpus to create a gold-standard dataset for training and evaluation.
+  - **Uncertainty**: The abstract does not specify the size of the corpus, annotation guidelines, or inter-annotator agreement metrics.
+
+- **Machine Learning Model Design**
+  - **Focus**: A model tailored for discourse-functional feature extraction (e.g., engagement markers, stance-taking).
+  - **Uncertainty**: The abstract does not detail the model architecture (e.g., transformer-based, rule-based, or hybrid).
+
+- **Model Training**
+  - **Approach**: Supervised learning using the annotated corpus as training data.
+  - **Uncertainty**: Specifics on hyperparameters, training splits, or augmentation techniques are not provided.
+
+- **Evaluation**
+  - **Metrics**: Likely includes precision, recall, F1-score, and possibly inter-annotator agreement if evaluated against human annotations.
+  - **Uncertainty**: The abstract does not specify evaluation methods or results.
+
+- **Dissemination**
+  - **Output**: The model (Engagement Analyzer) is made available for research use, possibly via a Python package (e.g., spaCy).
+  - **Uncertainty**: The abstract does not mention licensing, accessibility, or integration with existing tools.
+
+#### **3. Tutorial Implementation (via spaCy)**
+- A step-by-step guide is provided for replicating the process using the **spaCy** Python library.
+- **Key Components**:
+  - Custom pipeline construction for discourse annotation.
+  - Training and fine-tuning the model on domain-specific data.
+  - Evaluating performance and deploying the tool.
+- **Uncertainty**: The abstract does not detail the tutorial’s structure or prerequisites (e.g., Python proficiency, NLP background).
+
+#### **4. Feasibility and Impact**
+- **Claim**: Custom NLP tools can enhance scalability and replicability in L2 writing research.
+- **Support**: The paper positions the Engagement Analyzer as a proof-of-concept for such tools.
+
+### **Key Uncertainties (Due to Limited Abstract Details)**
+- Exact corpus size, annotation scheme, and inter-annotator agreement.
+- Model architecture, training hyperparameters, and evaluation metrics.
+- Tutorial’s depth and prerequisites for implementation.
+
+Would you like me to infer additional details cautiously (e.g., typical practices in NLP discourse annotation) or focus strictly on the abstract’s content?

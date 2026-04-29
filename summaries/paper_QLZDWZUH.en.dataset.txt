@@ -1,0 +1,18 @@
+### **Summary of the Dataset and Data Sources**
+
+**Task Domain:**
+The paper focuses on **discourse annotation** in the context of **second language (L2) writing research**, specifically targeting **discourse-functional features** such as **appraisal analysis** and **epistemic stance**. The goal is to develop a custom NLP tool (the **Engagement Analyzer**) to automate the annotation of these features in L2 writing samples.
+
+**Likely Data Type:**
+- The dataset likely consists of **written L2 learner texts** (e.g., essays, responses) annotated for discourse-functional features.
+- The annotation schema may include **linguistic markers of engagement, stance, and appraisal** (e.g., hedging, boosting, attitude markers).
+- The data is likely **text-based** (structured as corpora of L2 writing) rather than speech or multimodal data.
+
+**Dataset Limitations (Inferred from Title & Abstract):**
+1. **Domain-Specificity:** The tool is tailored for **L2 writing research**, meaning it may not generalize well to other domains (e.g., native speaker writing, spoken discourse).
+2. **Context Sensitivity:** The paper emphasizes **context-sensitive linguistic features**, suggesting that the model may struggle with ambiguous or highly nuanced expressions.
+3. **Scalability & Replicability:** While the tutorial promotes **custom NLP tools for annotation**, the effectiveness depends on the quality and representativeness of the training corpus.
+4. **Focus on Discourse Features:** The model may not capture **non-linguistic cues** (e.g., rhetorical structure, discourse organization) unless explicitly annotated.
+
+**Key Takeaway:**
+The dataset is likely a **corpus of L2 writing samples** annotated for discourse-functional features, used to train and evaluate a custom NLP model (Engagement Analyzer) for scalable and replicable annotation. The limitations stem from its **specialized focus on L2 writing** and the **challenges of annotating context-sensitive discourse features**.
