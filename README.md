@@ -60,6 +60,20 @@ For first-time setup on a new machine:
 
 No Node.js backend is required.
 
+## Reviewer Questions
+
+**Input validation and size limits**
+- This project does not accept arbitrary local file uploads, so there is no large-file parsing path that could crash the app.
+- User-facing inputs are limited to Zotero credentials, IDs, and API keys, which are validated before requests are sent.
+- Paper fetching is paginated and bounded: `fetchFromZotero()` uses `pageSize` and `maxItems` limits, and the UI only processes returned paper metadata, not raw attachments.
+- If a Zotero/API response is malformed or incomplete, the app filters unsupported items and falls back to safe defaults instead of trying to parse broken content.
+
+**Dependencies / requirements file**
+- This is a static frontend project, so there is no `package.json` or `requirements.txt` yet.
+- Runtime dependencies are intentionally minimal: a modern browser plus a static server such as `./start-server.sh` (which uses `http-server`, `python3`, or `python` as available).
+- Optional integrations are documented in `README.md` and `.env.example` / `config.local.example.js` rather than a package manifest.
+- If the project later gains Node/Python scripts, a `package.json` or `requirements.txt` can be added without changing the current frontend runtime.
+
 ## Tools & Transparency
 
 - Metadata: Zotero API (Zotero Group/User libraries)
@@ -104,7 +118,7 @@ L'auteur remercie sincèrement les encadrant·es : Thomas Gaillat, Maria ZIMINA-
 
 ## Aperçu du projet
 
-**Paper Summarizer** est un outil frontend en JavaScript pur pour récupérer les métadonnées des articles académiques depuis Zotero et générer des résumés et analyses multilingues par Mistral (small4).
+**Paper Summarizer** est un outil frontend en JavaScript pur pour récupérer les métadonnées des articles académiques depuis Zotero et générer des résumés et analyses multilingues par Mistral (mistral-small-latest).
 
 **Fonctionnalités principales:**
 - Synchronisation des données Zotero : supporte les bibliothèques utilisateur/groupe, récupère le titre, résumé, auteurs, année, DOI, etc.
