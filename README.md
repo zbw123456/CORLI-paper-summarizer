@@ -55,7 +55,7 @@ For first-time setup on a new machine:
 <p align="center">
 	<img src="screenshot2.png" alt="Detail view screenshot" style="max-width:720px; width:100%; height:auto; border:1px solid #e5e7eb;">
 	<br>
-	<em>Screenshot: paper detail and summary view.</em>
+	<em>Screenshot: paper keywords and Mindmap demo.</em>
 </p>
 
 No Node.js backend is required.
