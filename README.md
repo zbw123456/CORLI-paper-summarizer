@@ -19,7 +19,7 @@ The author sincerely thanks the three supervisors: Thomas Gaillat, Maria ZIMINA-
 
 **Technology Stack:**
 - Frontend: HTML + Bootstrap 5 + vanilla JavaScript (framework-free)
-- Data sources: Zotero API, Mistral API, Crossref (optional)
+- Data sources: Zotero Group ID, Zotero API, Mistral API
 - Deployment: static server only
 
 **Use Cases:**
@@ -74,7 +74,7 @@ L'auteur remercie sincèrement les trois superviseurs : Thomas Gaillat, Maria ZI
 
 **Pile technologique:**
 - Frontend : HTML + Bootstrap 5 + JavaScript vanilla (sans framework)
-- Sources de données : API Zotero, API Mistral, Crossref (optionnel)
+- Sources de données : Zotero Group, ID API Zotero, API Mistral
 - Déploiement : serveur statique uniquement
 
 **Cas d'utilisation:**
