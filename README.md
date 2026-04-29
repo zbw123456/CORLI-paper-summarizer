@@ -1,5 +1,6 @@
 # Paper Summarizer (Pure JavaScript)
 *(See French version below / Voir la version française ci-dessous)*
+
 **Author:** Bowen Zhang  
 **This work was conducted as part of a funded internship from the CORLI Consortium: https://corli.huma-num.fr**
 **Copyright:** Centre National de la Recherche Scientifique (CNRS)
