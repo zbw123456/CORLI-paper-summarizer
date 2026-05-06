@@ -86,7 +86,8 @@ Aucun backend Node.js n'est requis.
 
 Notes sur la génération par IA :
 - Les fichiers contenant du contenu généré par IA (sorties) — `/summaries/*.json` — incluent chacun les champs `source` et `model` (par ex. `"source": "mistral", "model": "mistral-small-latest"`).
-- Les scripts d'exécution qui appellent le modèle d'IA : `index.html` (flux de résumé côté client), `mistral_summarizer.py` et `src/mistralClient.js` (aides/emballages). Ces scripts envoient des requêtes à `mistral-small-latest` et enregistrent le texte retourné comme résumés.
+- Script d'exécution qui appelle le modèle d'IA dans ce dépôt : `index.html` (flux de résumé côté client ; fonctions `generateAndSaveSummaries()` et `askMistral()`).
+- Note : `mistral_summarizer.py` et `src/mistralClient.js` ne sont pas présents dans cette version du dépôt.
 - Aucun fichier source complet n'est généré par le modèle d'IA ; seuls les résumés d'articles et les sorties textuelles sont produits par Mistral.
 
 Si vous avez utilisé une autre assistance IA pour produire la documentation ou les commentaires de code, veuillez ajouter une note explicite ici en identifiant le fichier et le modèle utilisés.
